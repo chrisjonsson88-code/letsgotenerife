@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Let's Go Tenerife">
+  <defs>
+    <clipPath id="c"><circle cx="60" cy="60" r="56"/></clipPath>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7c2d12"/>
+      <stop offset="1" stop-color="#f97316"/>
+    </linearGradient>
+  </defs>
+  <g clip-path="url(#c)">
+    <rect width="120" height="120" fill="url(#sky)"/>
+    <circle cx="82" cy="38" r="13" fill="#fbbf24"/>
+    <path d="M-4 86 L40 40 L50 46 L58 30 L66 30 L74 46 L124 86 Z" fill="#070a12"/>
+    <path d="M58 30 L66 30 L70 38 L62 42 L54 38 Z" fill="#f4efe6"/>
+    <path d="M-4 84 Q15 78 30 84 T60 84 T90 84 T124 84 V124 H-4 Z" fill="#ea580c"/>
+    <path d="M-4 96 Q15 90 30 96 T60 96 T90 96 T124 96 V124 H-4 Z" fill="#fb923c" opacity=".85"/>
+  </g>
+  <circle cx="60" cy="60" r="56" fill="none" stroke="#fbbf24" stroke-width="4"/>
+</svg>

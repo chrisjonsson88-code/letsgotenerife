@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aviso legal y privacidad | Let's Go Tenerife</title>
+  <meta name="robots" content="noindex, follow">
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #f97316;
+      --dark-bg: #070a12;
+      --card-bg: #141c30;
+      --card-border: rgba(255, 255, 255, 0.09);
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --pending-bg: #fde047;
+      --pending-text: #1c1917;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background: var(--dark-bg);
+      color: var(--text-main);
+      line-height: 1.7;
+    }
+    header {
+      border-bottom: 1px solid var(--card-border);
+      padding: 18px 16px;
+    }
+    .bar {
+      max-width: 860px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--text-main);
+      text-decoration: none;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 800;
+      font-size: 1.2rem;
+    }
+    .brand img { width: 36px; height: 36px; }
+    .lang-switch { display: flex; gap: 6px; }
+    .lang-switch button {
+      background: transparent;
+      color: var(--text-muted);
+      border: 1px solid var(--card-border);
+      border-radius: 999px;
+      padding: 6px 14px;
+      font: inherit;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .lang-switch button[aria-pressed="true"] {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: #ffffff;
+    }
+    main {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 40px 16px 80px;
+    }
+    h1 {
+      font-family: 'Outfit', sans-serif;
+      font-size: clamp(2rem, 1.4rem + 3vw, 3rem);
+      line-height: 1.1;
+      margin-bottom: 8px;
+    }
+    .updated { color: var(--text-muted); margin-bottom: 28px; }
+    nav.toc {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 36px;
+    }
+    nav.toc a {
+      color: var(--text-main);
+      text-decoration: none;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 10px;
+      padding: 8px 14px;
+      font-size: 0.92rem;
+    }
+    nav.toc a:hover, nav.toc a:focus-visible { border-color: var(--primary); color: var(--primary); }
+    section {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 18px;
+      padding: 28px 24px;
+      margin-bottom: 22px;
+    }
+    h2 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.5rem;
+      margin-bottom: 14px;
+      color: var(--primary);
+    }
+    h3 { font-size: 1.05rem; margin: 18px 0 6px; }
+    p, li { color: #cbd5e1; }
+    p + p { margin-top: 10px; }
+    ul { padding-left: 20px; margin-top: 8px; }
+    li + li { margin-top: 4px; }
+    a { color: var(--primary); }
+    dl { display: grid; grid-template-columns: max-content 1fr; gap: 6px 16px; }
+    dt { color: var(--text-muted); }
+    dd { color: var(--text-main); overflow-wrap: anywhere; }
+    .pending {
+      background: var(--pending-bg);
+      color: var(--pending-text);
+      border-radius: 4px;
+      padding: 0 5px;
+      font-weight: 700;
+    }
+    .note {
+      border-left: 4px solid var(--primary);
+      padding: 10px 14px;
+      margin-top: 14px;
+      background: rgba(249, 115, 22, 0.08);
+      border-radius: 0 10px 10px 0;
+    }
+    .back {
+      display: inline-block;
+      margin-top: 10px;
+      background: var(--primary);
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 700;
+      padding: 12px 22px;
+      border-radius: 12px;
+    }
+    [hidden] { display: none !important; }
+    @media (max-width: 520px) {
+      dl { grid-template-columns: 1fr; }
+      dt { margin-top: 6px; }
+      section { padding: 22px 16px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="bar">
+      <a class="brand" href="index.html"><img src="logo.svg" alt="" width="36" height="36"> Let's Go Tenerife</a>
+      <div class="lang-switch" role="group" aria-label="Idioma / Language">
+        <button type="button" data-lang="es" aria-pressed="true">ES</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== ESPAÑOL ===================== -->
+  <main lang="es" data-lang-block="es">
+    <h1>Aviso legal y privacidad</h1>
+    <p class="updated">Última actualización: 23 de octubre de 2026</p>
+
+    <nav class="toc" aria-label="Contenido">
+      <a href="#es-aviso">Aviso legal</a>
+      <a href="#es-reservas">Reservas y cancelaciones</a>
+      <a href="#es-privacidad">Privacidad</a>
+      <a href="#es-cookies">Cookies</a>
+    </nav>
+
+    <section id="es-aviso">
+      <h2>1. Aviso legal</h2>
+      <p>En cumplimiento del artículo 10 de la Ley 34/2002, de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSI-CE), se informa de los datos del titular de esta web:</p>
+      <dl style="margin-top:14px">
+        <dt>Titular</dt><dd>Christofer Hernández Jonsson</dd>
+        <dt>Nombre comercial</dt><dd>Let's Go Tenerife</dd>
+        <dt>NIF / NIE</dt><dd>78569953K</dd>
+        <dt>Domicilio</dt><dd>C/ María del Cristo Ossuna, 5, 38205 San Cristóbal de La Laguna, Tenerife, España</dd>
+        <dt>Correo</dt><dd><a href="mailto:info@letsgotenerife.com">info@letsgotenerife.com</a></dd>
+        <dt>Teléfono y WhatsApp</dt><dd><a href="tel:+34677644458">+34 677 64 44 58</a></dd>
+        <dt>Web</dt><dd>www.letsgotenerife.com</dd>
+      </dl>
+
+      <h3>Qué hacemos</h3>
+      <p>Let's Go Tenerife es un <strong>intermediario</strong>: informamos de excursiones y actividades en Tenerife y gestionamos las reservas. <strong>No somos quienes realizan las actividades.</strong> Cada actividad la organiza y la realiza la empresa que la presta, que es responsable de su seguridad, seguros, permisos, guías y vehículos o embarcaciones:</p>
+      <ul>
+        <li><strong>Excursiones en quad:</strong> Quad Tenerife (Las Chafiras, San Miguel de Abona).</li>
+        <li><strong>Parasailing:</strong> AJ Fly Watersports (Puerto Colón, Costa Adeje).</li>
+        <li><strong>Catamarán:</strong> Kalima Kat (Puerto Colón, Costa Adeje).</li>
+      </ul>
+
+      <h3>Uso de la web</h3>
+      <p>Puedes usar esta web libremente para informarte y pedir reservas. No está permitido usarla para fines ilegales ni copiar sus textos o su diseño sin permiso. Las fotos son de bancos de imágenes libres (Unsplash) o propias, y sirven como referencia: la experiencia real puede variar.</p>
+      <p>Hacemos lo posible para que precios, horarios y descripciones estén al día, pero pueden cambiar. Lo que vale es lo que te confirmemos por WhatsApp o por escrito antes de pagar.</p>
+      <p>Si enlazamos a otras webs (por ejemplo, las reseñas de Google), no somos responsables de su contenido.</p>
+
+      <h3>Ley aplicable</h3>
+      <p>Se aplica la ley española. Si eres consumidor, puedes reclamar ante los juzgados de tu domicilio. También puedes pedir hojas de reclamaciones o acudir a la Dirección General de Consumo del Gobierno de Canarias.</p>
+    </section>
+
+    <section id="es-reservas">
+      <h2>2. Reservas, pagos y cancelaciones</h2>
+      <ul>
+        <li><strong>Toda reserva está sujeta a disponibilidad.</strong> Cuando nos escribes, consultamos con la empresa y te confirmamos por WhatsApp en un plazo de 12 a 24 horas. La reserva solo es firme cuando te la confirmamos.</li>
+        <li><strong>Formas de pago</strong> (eliges tú):
+          <ul>
+            <li>Una <strong>señal del 30%</strong> para asegurar la plaza, que solo se paga después de confirmar, y el 70% restante el día de la actividad.</li>
+            <li>El <strong>importe total</strong> por adelantado.</li>
+          </ul>
+        </li>
+        <li><strong>Cancelación gratis hasta 24 horas antes</strong> de la actividad: te devolvemos todo lo pagado. Si cancelas con menos de 24 horas o no te presentas, no se devuelve lo pagado.</li>
+        <li><strong>Mal tiempo o motivos de seguridad:</strong> si la empresa cancela la actividad, te ofrecemos otro día. Si no te viene bien, te devolvemos el dinero.</li>
+        <li><strong>Requisitos:</strong> cada actividad tiene los suyos (por ejemplo, en el quad el conductor debe tener más de 25 años y carnet B con al menos 2 años de antigüedad, y llevar el carnet original). Si no se cumplen el día de la actividad, la empresa puede no dejar participar y no se devuelve el importe.</li>
+        <li>Las devoluciones se hacen por el mismo medio de pago en un plazo máximo de 14 días.</li>
+      </ul>
+      <p class="note">Las actividades de ocio en una fecha concreta no tienen derecho de desistimiento de 14 días (artículo 103.l de la Ley General para la Defensa de los Consumidores y Usuarios). Por eso se aplica la política de cancelación de arriba.</p>
+    </section>
+
+    <section id="es-privacidad">
+      <h2>3. Política de privacidad</h2>
+      <h3>Responsable</h3>
+      <p>Christofer Hernández Jonsson (Let's Go Tenerife), con los datos de contacto indicados en el aviso legal.</p>
+
+      <h3>Qué datos tratamos</h3>
+      <p>Solo los que nos das al pedir una reserva por WhatsApp, teléfono o correo: nombre, teléfono, número de personas, fecha, actividad y zona u hotel de recogida. Si pagas una señal, la plataforma de pago nos indica el pago, pero <strong>no vemos los datos de tu tarjeta</strong>.</p>
+
+      <h3>Para qué los usamos y base legal</h3>
+      <ul>
+        <li>Para gestionar y confirmar tu reserva, y avisarte de cambios. Base legal: la ejecución del contrato que pides (art. 6.1.b del RGPD).</li>
+        <li>Para cumplir obligaciones contables y fiscales. Base legal: obligación legal (art. 6.1.c del RGPD).</li>
+      </ul>
+      <p>No enviamos publicidad sin tu permiso y no vendemos tus datos.</p>
+
+      <h3>Con quién los compartimos</h3>
+      <ul>
+        <li>Con la <strong>empresa que realiza la actividad</strong> (Quad Tenerife, AJ Fly Watersports o Kalima Kat), solo lo necesario para la reserva y la recogida.</li>
+        <li>Con <strong>WhatsApp</strong> (Meta), que usamos para hablar contigo. Meta puede tratar datos fuera de la UE con las garantías del Marco de Privacidad de Datos UE-EE. UU.</li>
+        <li>Con la plataforma de pago que uses y con nuestro asesor fiscal, si hace falta.</li>
+      </ul>
+
+      <h3>Cuánto tiempo los guardamos</h3>
+      <p>Mientras dure la reserva y, después, el tiempo que exige la ley para la contabilidad (en general, hasta 6 años). Las conversaciones que no terminan en reserva se borran en un plazo de 12 meses.</p>
+
+      <h3>Tus derechos</h3>
+      <p>Puedes pedir ver, corregir o borrar tus datos, oponerte a su uso, limitarlo o recibirlos en un formato portable. Escríbenos a <a href="mailto:info@letsgotenerife.com">info@letsgotenerife.com</a> o por WhatsApp. Si no estás conforme con la respuesta, puedes reclamar ante la Agencia Española de Protección de Datos (<a href="https://www.aepd.es" rel="noopener">www.aepd.es</a>).</p>
+    </section>
+
+    <section id="es-cookies">
+      <h2>4. Cookies</h2>
+      <p>Esta web <strong>no usa cookies de publicidad ni de análisis</strong>, y no te sigue entre páginas.</p>
+      <ul>
+        <li>Guardamos en tu navegador el <strong>idioma que eliges</strong> (almacenamiento local, clave <code>letsgo_tenerife_lang</code>). Es técnico y no hace falta consentimiento. Puedes borrarlo desde los ajustes de tu navegador.</li>
+        <li>Para mostrar letras e iconos cargamos archivos de <strong>Google Fonts</strong> y <strong>cdnjs (Cloudflare)</strong>. Estos servicios reciben tu dirección IP para poder enviarte los archivos.</li>
+      </ul>
+      <p>Si en el futuro añadimos estadísticas o publicidad, te pediremos permiso antes con un aviso de cookies.</p>
+    </section>
+
+    <a class="back" href="index.html">← Volver a la web</a>
+  </main>
+
+  <!-- ===================== ENGLISH ===================== -->
+  <main lang="en" data-lang-block="en" hidden>
+    <h1>Legal notice &amp; privacy</h1>
+    <p class="updated">Last updated: 23 October 2026</p>
+
+    <nav class="toc" aria-label="Contents">
+      <a href="#en-notice">Legal notice</a>
+      <a href="#en-bookings">Bookings &amp; cancellations</a>
+      <a href="#en-privacy">Privacy</a>
+      <a href="#en-cookies">Cookies</a>
+    </nav>
+
+    <section id="en-notice">
+      <h2>1. Legal notice</h2>
+      <p>In accordance with article 10 of Spanish Law 34/2002 on Information Society Services (LSSI-CE), the owner of this website is:</p>
+      <dl style="margin-top:14px">
+        <dt>Owner</dt><dd>Christofer Hernández Jonsson</dd>
+        <dt>Trading name</dt><dd>Let's Go Tenerife</dd>
+        <dt>Tax ID (NIF / NIE)</dt><dd>78569953K</dd>
+        <dt>Address</dt><dd>C/ María del Cristo Ossuna, 5, 38205 San Cristóbal de La Laguna, Tenerife, Spain</dd>
+        <dt>Email</dt><dd><a href="mailto:info@letsgotenerife.com">info@letsgotenerife.com</a></dd>
+        <dt>Phone &amp; WhatsApp</dt><dd><a href="tel:+34677644458">+34 677 64 44 58</a></dd>
+        <dt>Website</dt><dd>www.letsgotenerife.com</dd>
+      </dl>
+
+      <h3>What we do</h3>
+      <p>Let's Go Tenerife is an <strong>intermediary</strong>: we inform about tours and activities in Tenerife and handle bookings. <strong>We do not run the activities ourselves.</strong> Each activity is organised and carried out by the company that provides it, which is responsible for safety, insurance, permits, guides and vehicles or boats:</p>
+      <ul>
+        <li><strong>Quad tours:</strong> Quad Tenerife (Las Chafiras, San Miguel de Abona).</li>
+        <li><strong>Parasailing:</strong> AJ Fly Watersports (Puerto Colón, Costa Adeje).</li>
+        <li><strong>Catamaran:</strong> Kalima Kat (Puerto Colón, Costa Adeje).</li>
+      </ul>
+
+      <h3>Use of the website</h3>
+      <p>You may use this website freely to get information and request bookings. You may not use it for illegal purposes or copy its texts or design without permission. Photos come from free image libraries (Unsplash) or are our own and are for reference only: the real experience may vary.</p>
+      <p>We do our best to keep prices, times and descriptions up to date, but they may change. What counts is what we confirm to you by WhatsApp or in writing before you pay.</p>
+      <p>We are not responsible for the content of other websites we link to (for example, Google reviews).</p>
+
+      <h3>Applicable law</h3>
+      <p>Spanish law applies. If you are a consumer, you may bring a claim before the courts of your place of residence. You can also request a complaint form or contact the Consumer Affairs office of the Government of the Canary Islands.</p>
+    </section>
+
+    <section id="en-bookings">
+      <h2>2. Bookings, payments &amp; cancellations</h2>
+      <ul>
+        <li><strong>All bookings are subject to availability.</strong> When you contact us, we check with the company and confirm by WhatsApp within 12–24 hours. Your booking is only final once we confirm it.</li>
+        <li><strong>Payment options</strong> (your choice):
+          <ul>
+            <li>A <strong>30% deposit</strong> to secure your place, paid only after confirmation, and the remaining 70% on the day of the activity.</li>
+            <li>The <strong>full amount</strong> in advance.</li>
+          </ul>
+        </li>
+        <li><strong>Free cancellation up to 24 hours before</strong> the activity: we refund everything you paid. Cancellations within 24 hours and no-shows are not refunded.</li>
+        <li><strong>Bad weather or safety reasons:</strong> if the company cancels, we offer you another day. If that doesn't suit you, we refund your money.</li>
+        <li><strong>Requirements:</strong> each activity has its own (for example, quad drivers must be over 25, hold a category B licence for at least 2 years and bring the original licence). If they are not met on the day, the company may refuse participation and the amount is not refunded.</li>
+        <li>Refunds are made to the original payment method within 14 days at the latest.</li>
+      </ul>
+      <p class="note">Leisure activities booked for a specific date are not covered by the 14-day right of withdrawal (article 103.l of the Spanish Consumer Protection Act). The cancellation policy above applies instead.</p>
+    </section>
+
+    <section id="en-privacy">
+      <h2>3. Privacy policy</h2>
+      <h3>Data controller</h3>
+      <p>Christofer Hernández Jonsson (Let's Go Tenerife), with the contact details shown in the legal notice.</p>
+
+      <h3>What data we process</h3>
+      <p>Only what you give us when you request a booking by WhatsApp, phone or email: name, phone number, number of people, date, activity and pick-up area or hotel. If you pay a deposit, the payment platform tells us the payment was made, but <strong>we never see your card details</strong>.</p>
+
+      <h3>Why we use it and legal basis</h3>
+      <ul>
+        <li>To manage and confirm your booking and inform you of changes. Legal basis: performance of the contract you request (art. 6.1.b GDPR).</li>
+        <li>To meet accounting and tax obligations. Legal basis: legal obligation (art. 6.1.c GDPR).</li>
+      </ul>
+      <p>We do not send advertising without your permission and we never sell your data.</p>
+
+      <h3>Who we share it with</h3>
+      <ul>
+        <li>The <strong>company running the activity</strong> (Quad Tenerife, AJ Fly Watersports or Kalima Kat), only what is needed for the booking and pick-up.</li>
+        <li><strong>WhatsApp</strong> (Meta), which we use to talk to you. Meta may process data outside the EU under the EU-US Data Privacy Framework.</li>
+        <li>The payment platform you use and our tax adviser, when needed.</li>
+      </ul>
+
+      <h3>How long we keep it</h3>
+      <p>For as long as the booking lasts and then for the period required by accounting law (generally up to 6 years). Conversations that don't lead to a booking are deleted within 12 months.</p>
+
+      <h3>Your rights</h3>
+      <p>You can ask to access, correct or delete your data, object to or restrict its use, or receive it in a portable format. Write to <a href="mailto:info@letsgotenerife.com">info@letsgotenerife.com</a> or message us on WhatsApp. If you are not satisfied with our answer, you can complain to the Spanish Data Protection Agency (<a href="https://www.aepd.es" rel="noopener">www.aepd.es</a>).</p>
+    </section>
+
+    <section id="en-cookies">
+      <h2>4. Cookies</h2>
+      <p>This website <strong>does not use advertising or analytics cookies</strong> and does not track you across pages.</p>
+      <ul>
+        <li>We store the <strong>language you choose</strong> in your browser (local storage, key <code>letsgo_tenerife_lang</code>). This is technical and needs no consent. You can delete it in your browser settings.</li>
+        <li>To display fonts and icons we load files from <strong>Google Fonts</strong> and <strong>cdnjs (Cloudflare)</strong>. These services receive your IP address in order to send you the files.</li>
+      </ul>
+      <p>If we ever add statistics or advertising, we will ask for your permission first with a cookie banner.</p>
+    </section>
+
+    <a class="back" href="index.html">← Back to the website</a>
+  </main>
+
+  <script>
+    (function () {
+      var buttons = document.querySelectorAll('.lang-switch button');
+      var blocks = document.querySelectorAll('[data-lang-block]');
+
+      function setLang(lang) {
+        blocks.forEach(function (block) { block.hidden = block.getAttribute('data-lang-block') !== lang; });
+        buttons.forEach(function (btn) { btn.setAttribute('aria-pressed', String(btn.getAttribute('data-lang') === lang)); });
+        document.documentElement.lang = lang;
+      }
+
+      buttons.forEach(function (btn) {
+        btn.addEventListener('click', function () { setLang(btn.getAttribute('data-lang')); });
+      });
+
+      // Mismo idioma que eligió el visitante en la web principal (ES por defecto; el resto, EN)
+      var saved = null;
+      try { saved = localStorage.getItem('letsgo_tenerife_lang'); } catch (e) { /* almacenamiento no disponible */ }
+      if (saved && saved !== 'es') { setLang('en'); }
+    })();
+  </script>
+</body>
+</html>
