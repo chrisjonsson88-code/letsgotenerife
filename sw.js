@@ -1,4 +1,4 @@
-const CACHE_NAME = 'letsgo-tenerife-v6';
+const CACHE_NAME = 'letsgo-tenerife-v7';
 const ASSETS = [
   '/',
   'index.html',

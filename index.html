@@ -11,6 +11,14 @@
   <meta name="keywords" content="quad tenerife, teide quad tour, excursion quad tenerife sur, sunset quad tenerife, quad safari tenerife, alquiler quad teide">
   <meta name="author" content="Let's Go Tenerife">
 
+  <!-- Hreflang: tell Google about the language versions -->
+  <link rel="alternate" hreflang="x-default" href="https://www.letsgotenerife.com/">
+  <link rel="alternate" hreflang="es" href="https://www.letsgotenerife.com/">
+  <link rel="alternate" hreflang="en" href="https://www.letsgotenerife.com/en/">
+  <link rel="alternate" hreflang="fr" href="https://www.letsgotenerife.com/fr/">
+  <link rel="alternate" hreflang="de" href="https://www.letsgotenerife.com/de/">
+  <link rel="alternate" hreflang="ru" href="https://www.letsgotenerife.com/ru/">
+
   <!-- Open Graph / Facebook / WhatsApp -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.letsgotenerife.com/">
@@ -26,6 +34,7 @@
 
   <!-- PWA Manifest -->
   <link rel="manifest" href="manifest.json">
+  <link rel="canonical" href="https://www.letsgotenerife.com/">
   <meta name="theme-color" content="#f97316">
   <link rel="icon" type="image/svg+xml" href="logo.svg">
 
@@ -474,6 +483,11 @@
       display: flex;
       flex-direction: column;
       gap: 8px;
+    }
+
+    /* display:flex above overrides the hidden attribute — enforce it */
+    .engine-field[hidden] {
+      display: none !important;
     }
 
     .engine-field label {
@@ -1361,7 +1375,7 @@
 </svg>
         <div class="brand-text-block">
           <div class="brand-title">Let's Go <span>Tenerife</span></div>
-          <span class="brand-subline">Your adventure starts here</span>
+          <span class="brand-subline" data-i18n="brand.subline">Your adventure starts here</span>
         </div>
       </a>
 
@@ -1418,10 +1432,10 @@
       <li><a href="#contacto" onclick="toggleMobileMenu()" data-i18n="nav.contact">Contacto Directo</a></li>
     </ul>
     <div style="margin-top: 36px; display: flex; flex-direction: column; gap: 14px;">
-      <a href="#booking-calc" class="btn btn-primary" onclick="toggleMobileMenu()" data-i18n="nav.bookNow">
+      <a href="#booking-calc" class="btn btn-primary" onclick="toggleMobileMenu()" data-i18n="nav.bookSpot">
         <i class="fa-solid fa-calendar-check"></i> Reservar Plaza
       </a>
-      <a href="https://wa.me/34677644458?text=¡Hola!%20Vengo%20de%20la%20web%20(Ref:%20VIP-30).%20Quiero%20consultar%20disponibilidad%20para%20un%20tour%20en%20quad." class="btn btn-whatsapp" target="_blank">
+      <a href="https://wa.me/34677644458?text=¡Hola!%20Vengo%20de%20la%20web%20(Ref:%20VIP-30).%20Quiero%20consultar%20disponibilidad%20para%20un%20tour%20en%20quad." class="btn btn-whatsapp" target="_blank" data-wa="general">
         <i class="fa-brands fa-whatsapp"></i> WhatsApp Directo
       </a>
     </div>
@@ -1445,7 +1459,7 @@
         <a href="#booking-calc" class="btn btn-primary" data-i18n="hero.ctaPrimary">
           <i class="fa-solid fa-calendar-check"></i> Reservar ahora
         </a>
-        <a href="https://wa.me/34677644458?text=¡Hola!%20Vengo%20de%20la%20web%20(Ref:%20VIP-30).%20Quiero%20información%20para%20reservar%20un%20tour%20en%20quad." class="btn btn-whatsapp" target="_blank" data-i18n="hero.ctaSecondary">
+        <a href="https://wa.me/34677644458?text=¡Hola!%20Vengo%20de%20la%20web%20(Ref:%20VIP-30).%20Quiero%20información%20para%20reservar%20un%20tour%20en%20quad." class="btn btn-whatsapp" target="_blank" data-i18n="hero.ctaSecondary" data-wa="general">
           <i class="fa-brands fa-whatsapp"></i> Hablar por WhatsApp Ahora
         </a>
       </div>
@@ -1530,7 +1544,7 @@
             <option value="Costa Adeje">Costa Adeje</option>
             <option value="Golf del Sur / San Miguel">Golf del Sur / San Miguel</option>
             <option value="Callao Salvaje">Callao Salvaje</option>
-            <option value="Directo en Base (Las Chafiras)">Iré directo a Las Chafiras</option>
+            <option value="Directo en Base (Las Chafiras)" data-i18n="calc.locDirect">Iré directo a Las Chafiras</option>
           </select>
         </div>
 
@@ -1615,7 +1629,8 @@
             <div class="tour-card-actions">
               <a href="https://wa.me/34677644458?text=¡Hola!%20Vengo%20de%20la%20web%20(Ref:%20VIP-30).%20Quiero%20reservar%20el%20Teide%20Tour%20en%20quad.%20¿Tenéis%20plazas?"
                  class="btn btn-whatsapp"
-                 target="_blank">
+                 target="_blank"
+                 data-wa="teide">
                 <i class="fa-brands fa-whatsapp"></i> <span data-i18n="btn.bookWa">Reservar por WhatsApp</span>
               </a>
               <a href="#booking-calc" class="btn btn-secondary" onclick="pickTour('teide')">
@@ -1661,7 +1676,8 @@
             <div class="tour-card-actions">
               <a href="https://wa.me/34677644458?text=¡Hola!%20Vengo%20de%20la%20web%20(Ref:%20VIP-30).%20Quiero%20reservar%20el%20Sunset%20Experience%20en%20quad.%20¿Tenéis%20plazas?"
                  class="btn btn-whatsapp"
-                 target="_blank">
+                 target="_blank"
+                 data-wa="sunset">
                 <i class="fa-brands fa-whatsapp"></i> <span data-i18n="btn.bookWa">Reservar por WhatsApp</span>
               </a>
               <a href="#booking-calc" class="btn btn-secondary" onclick="pickTour('sunset')">
@@ -1706,7 +1722,8 @@
             <div class="tour-card-actions">
               <a href="https://wa.me/34677644458?text=¡Hola!%20Vengo%20de%20la%20web%20(Ref:%20VIP-30).%20Quiero%20reservar%20el%20Tour%20VIP%20en%20pareja."
                  class="btn btn-whatsapp"
-                 target="_blank">
+                 target="_blank"
+                 data-wa="vip">
                 <i class="fa-brands fa-whatsapp"></i> <span data-i18n="btn.customizeVip">Personalizar Tour VIP</span>
               </a>
             </div>
@@ -1736,7 +1753,7 @@
             </ul>
             <div class="sea-price" data-i18n="sea.parasailing.price">60€ / persona</div>
             <div class="tour-card-actions">
-              <a href="https://wa.me/34677644458?text=%C2%A1Hola%21%20Vengo%20de%20la%20web%20%28Ref%3A%20VIP-30%29.%20Quiero%20reservar%3A%20Parasailing.%20%C2%BFTen%C3%A9is%20plazas%3F" class="btn btn-whatsapp" target="_blank" rel="noopener">
+              <a href="https://wa.me/34677644458?text=%C2%A1Hola%21%20Vengo%20de%20la%20web%20%28Ref%3A%20VIP-30%29.%20Quiero%20reservar%3A%20Parasailing.%20%C2%BFTen%C3%A9is%20plazas%3F" class="btn btn-whatsapp" target="_blank" rel="noopener" data-wa="parasailing">
                 <i class="fa-brands fa-whatsapp"></i> <span data-i18n="btn.bookWa">Reservar por WhatsApp</span>
               </a>
               <a href="#booking-calc" class="btn btn-secondary" onclick="pickTour('parasailing')">
@@ -1757,7 +1774,7 @@
             </ul>
             <div class="sea-price" data-i18n="sea.catamaran.price">Adulto 50€ · Niño (2–12) 40€</div>
             <div class="tour-card-actions">
-              <a href="https://wa.me/34677644458?text=%C2%A1Hola%21%20Vengo%20de%20la%20web%20%28Ref%3A%20VIP-30%29.%20Quiero%20reservar%3A%20Catamar%C3%A1n%203%20horas.%20%C2%BFTen%C3%A9is%20plazas%3F" class="btn btn-whatsapp" target="_blank" rel="noopener">
+              <a href="https://wa.me/34677644458?text=%C2%A1Hola%21%20Vengo%20de%20la%20web%20%28Ref%3A%20VIP-30%29.%20Quiero%20reservar%3A%20Catamar%C3%A1n%203%20horas.%20%C2%BFTen%C3%A9is%20plazas%3F" class="btn btn-whatsapp" target="_blank" rel="noopener" data-wa="catamaran">
                 <i class="fa-brands fa-whatsapp"></i> <span data-i18n="btn.bookWa">Reservar por WhatsApp</span>
               </a>
               <a href="#booking-calc" class="btn btn-secondary" onclick="pickTour('catamaran')">
@@ -1778,7 +1795,7 @@
             </ul>
             <div class="sea-price" data-i18n="sea.charter.price">765€ el barco entero</div>
             <div class="tour-card-actions">
-              <a href="https://wa.me/34677644458?text=%C2%A1Hola%21%20Vengo%20de%20la%20web%20%28Ref%3A%20VIP-30%29.%20Quiero%20reservar%3A%20Catamar%C3%A1n%20privado.%20%C2%BFTen%C3%A9is%20plazas%3F" class="btn btn-whatsapp" target="_blank" rel="noopener">
+              <a href="https://wa.me/34677644458?text=%C2%A1Hola%21%20Vengo%20de%20la%20web%20%28Ref%3A%20VIP-30%29.%20Quiero%20reservar%3A%20Catamar%C3%A1n%20privado.%20%C2%BFTen%C3%A9is%20plazas%3F" class="btn btn-whatsapp" target="_blank" rel="noopener" data-wa="charter">
                 <i class="fa-brands fa-whatsapp"></i> <span data-i18n="btn.bookWa">Reservar por WhatsApp</span>
               </a>
               <a href="#booking-calc" class="btn btn-secondary" onclick="pickTour('charter')">
@@ -2026,7 +2043,7 @@
               <div class="contact-icon-box"><i class="fa-brands fa-whatsapp"></i></div>
               <div class="contact-link-text">
                 <span>WhatsApp Directo</span>
-                <a href="https://wa.me/34677644458?text=¡Hola!%20Vengo%20de%20la%20web%20(Ref:%20VIP-30)." target="_blank">+34 677 64 44 58</a>
+                <a href="https://wa.me/34677644458?text=¡Hola!%20Vengo%20de%20la%20web%20(Ref:%20VIP-30)." target="_blank" data-wa="general">+34 677 64 44 58</a>
               </div>
             </li>
 
@@ -2049,7 +2066,7 @@
           <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 24px;" data-i18n="contact.ctaBoxDesc">
             Escríbenos por WhatsApp. Comprobamos la disponibilidad y te confirmamos en un plazo de 12 a 24 horas.
           </p>
-          <a href="https://wa.me/34677644458?text=¡Hola!%20Vengo%20de%20la%20web%20(Ref:%20VIP-30).%20Quiero%20consultar%20disponibilidad%20para%20un%20tour%20en%20quad." class="btn btn-whatsapp" target="_blank" style="width: 100%;">
+          <a href="https://wa.me/34677644458?text=¡Hola!%20Vengo%20de%20la%20web%20(Ref:%20VIP-30).%20Quiero%20consultar%20disponibilidad%20para%20un%20tour%20en%20quad." class="btn btn-whatsapp" target="_blank" style="width: 100%;" data-i18n="contact.quickBtn" data-wa="general">
             <i class="fa-brands fa-whatsapp"></i> Hablar por WhatsApp Ahora
           </a>
         </div>
@@ -2067,18 +2084,18 @@
       </div>
 
       <div class="footer-links">
-        <a href="#requisitos">Requisitos</a>
-        <a href="#faq">Preguntas</a>
-        <a href="#contacto">Contacto</a>
+        <a href="#requisitos" data-i18n="footer.reqs">Requisitos</a>
+        <a href="#faq" data-i18n="footer.faq">Preguntas</a>
+        <a href="#contacto" data-i18n="footer.contact">Contacto</a>
         <a href="aviso-legal.html">Aviso legal · Privacy</a>
       </div>
     </div>
   </footer>
 
   <!-- Floating WhatsApp CTA Button (30% Commission Ref pre-filled) -->
-  <a href="https://wa.me/34677644458?text=¡Hola!%20Vengo%20de%20la%20web%20(Ref:%20VIP-30).%20¿Tenéis%20plazas%20disponibles%20para%20un%20tour%20en%20quad?" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+  <a href="https://wa.me/34677644458?text=¡Hola!%20Vengo%20de%20la%20web%20(Ref:%20VIP-30).%20¿Tenéis%20plazas%20disponibles%20para%20un%20tour%20en%20quad?" class="whatsapp-float" target="_blank" aria-label="WhatsApp" data-wa="general">
     <i class="fa-brands fa-whatsapp"></i>
-    <span>¿Dudas? Reserva por WhatsApp</span>
+    <span data-i18n="float.cta">¿Dudas? Reserva por WhatsApp</span>
   </a>
 
   <!-- Mobile Sticky Bottom Booking Bar -->
@@ -2087,7 +2104,7 @@
       <a href="#booking-calc" class="btn btn-primary" data-i18n="btn.bookNow">
         <i class="fa-solid fa-calendar-check"></i> Reservar
       </a>
-      <a href="https://wa.me/34677644458?text=¡Hola!%20Vengo%20de%20la%20web%20(Ref:%20VIP-30).%20Quiero%20reservar%20un%20quad." class="btn btn-whatsapp" target="_blank">
+      <a href="https://wa.me/34677644458?text=¡Hola!%20Vengo%20de%20la%20web%20(Ref:%20VIP-30).%20Quiero%20reservar%20un%20quad." class="btn btn-whatsapp" target="_blank" data-wa="general">
         <i class="fa-brands fa-whatsapp"></i> WhatsApp
       </a>
     </div>
@@ -2257,7 +2274,58 @@
         "contact.callUs": "Teléfono",
         "contact.location": "Base de Salida",
         "contact.ctaBoxTitle": "Respuesta rápida por WhatsApp",
-        "contact.ctaBoxDesc": "Escríbenos por WhatsApp. Comprobamos la disponibilidad y te confirmamos en un plazo de 12 a 24 horas."
+        "contact.ctaBoxDesc": "Escríbenos por WhatsApp. Comprobamos la disponibilidad y te confirmamos en un plazo de 12 a 24 horas.",
+        "act.teide": "Teide Tour (aprox. 4h)",
+        "act.sunset": "Sunset Experience (aprox. 4h)",
+        "act.vip": "Tour VIP en pareja con comida",
+        "act.parasailing": "Parasailing",
+        "act.catamaran": "Catamarán 3h",
+        "act.charter": "Catamarán privado 3h",
+        "opt.qdouble": "1 Quad Doble (2 personas)",
+        "opt.qsingle": "1 Quad Individual (1 persona)",
+        "opt.q2double": "2 Quads Dobles (4 personas)",
+        "opt.q2single": "2 Quads Individuales (2 personas)",
+        "opt.qbig": "Grupo grande (+5 personas)",
+        "opt.vippair": "Tour VIP en pareja, 2 personas (comida incluida)",
+        "opt.p1": "1 persona", "opt.p2": "2 personas", "opt.p3": "3 personas", "opt.p4": "4 personas",
+        "opt.a1": "1 adulto", "opt.a2": "2 adultos", "opt.a2n1": "2 adultos + 1 niño (2–12)", "opt.a2n2": "2 adultos + 2 niños (2–12)", "opt.agrp": "Grupo (consultar)",
+        "opt.priv": "Barco entero, hasta 22 personas",
+        "calc.locDirect": "Iré directo a Las Chafiras",
+        "meet.colon3": "Puerto Colón, pantalán 3 (Costa Adeje)",
+        "meet.colon4": "Puerto Colón, pantalán 4 (Costa Adeje)",
+        "calc.undecided": "por decidir",
+        "calc.onRequest": "A consultar",
+        "calc.payFullWa": "todo de una vez",
+        "cal.prev": "Mes anterior",
+        "cal.next": "Mes siguiente",
+        "footer.reqs": "Requisitos",
+        "footer.faq": "Preguntas",
+        "footer.contact": "Contacto",
+        "float.cta": "¿Dudas? Reserva por WhatsApp",
+        "nav.bookSpot": "Reservar Plaza",
+        "brand.subline": "Tu aventura empieza aquí",
+        "contact.quickBtn": "Hablar por WhatsApp Ahora",
+        "wa.hi": "¡Hola! Reservo desde la web (Ref: VIP-30).",
+        "wa.act": "Actividad",
+        "wa.opt": "Opción",
+        "wa.day": "Día",
+        "wa.time": "Hora",
+        "wa.hotel": "Hotel/Zona",
+        "wa.meet": "Punto de encuentro",
+        "wa.total": "Total",
+        "wa.pay": "Pago",
+        "wa.name": "Nombre",
+        "wa.payDeposit": "señal",
+        "wa.payDepositNow": "ahora +",
+        "wa.payRest": "el día de la actividad",
+        "wa.close": "¿Me confirmáis la disponibilidad? Sé que se confirma en 12-24 h. ¡Gracias!",
+        "wa.t.teide": "Quiero reservar el Teide Tour en quad. ¿Tenéis plazas?",
+        "wa.t.sunset": "Quiero reservar el Sunset Experience en quad. ¿Tenéis plazas?",
+        "wa.t.vip": "Quiero reservar el Tour VIP en pareja.",
+        "wa.t.parasailing": "Quiero reservar Parasailing. ¿Tenéis plazas?",
+        "wa.t.catamaran": "Quiero reservar el Catamarán de 3 horas. ¿Tenéis plazas?",
+        "wa.t.charter": "Quiero reservar el Catamarán privado. ¿Tenéis plazas?",
+        "wa.t.general": "Quiero consultar disponibilidad para un tour en quad."
       },
       en: {
         "price.twoPeople": "2 people",
@@ -2411,7 +2479,58 @@
         "contact.callUs": "Telephone",
         "contact.location": "Base Location",
         "contact.ctaBoxTitle": "Quick reply on WhatsApp",
-        "contact.ctaBoxDesc": "Message us on WhatsApp. We check availability and confirm within 12 to 24 hours."
+        "contact.ctaBoxDesc": "Message us on WhatsApp. We check availability and confirm within 12 to 24 hours.",
+        "act.teide": "Teide Tour (approx. 4h)",
+        "act.sunset": "Sunset Experience (approx. 4h)",
+        "act.vip": "Private couples VIP tour with lunch",
+        "act.parasailing": "Parasailing",
+        "act.catamaran": "3-hour catamaran",
+        "act.charter": "Private catamaran 3h",
+        "opt.qdouble": "1 double quad (2 people)",
+        "opt.qsingle": "1 single quad (1 person)",
+        "opt.q2double": "2 double quads (4 people)",
+        "opt.q2single": "2 single quads (2 people)",
+        "opt.qbig": "Large group (+5 people)",
+        "opt.vippair": "VIP tour for two, lunch included",
+        "opt.p1": "1 person", "opt.p2": "2 people", "opt.p3": "3 people", "opt.p4": "4 people",
+        "opt.a1": "1 adult", "opt.a2": "2 adults", "opt.a2n1": "2 adults + 1 child (2–12)", "opt.a2n2": "2 adults + 2 children (2–12)", "opt.agrp": "Group (on request)",
+        "opt.priv": "Whole boat, up to 22 people",
+        "calc.locDirect": "I'll come straight to Las Chafiras",
+        "meet.colon3": "Puerto Colón, pier 3 (Costa Adeje)",
+        "meet.colon4": "Puerto Colón, pier 4 (Costa Adeje)",
+        "calc.undecided": "flexible on date",
+        "calc.onRequest": "On request",
+        "calc.payFullWa": "paid in full",
+        "cal.prev": "Previous month",
+        "cal.next": "Next month",
+        "footer.reqs": "Requirements",
+        "footer.faq": "FAQ",
+        "footer.contact": "Contact",
+        "float.cta": "Questions? Book on WhatsApp",
+        "nav.bookSpot": "Book Your Spot",
+        "brand.subline": "Your adventure starts here",
+        "contact.quickBtn": "Chat on WhatsApp Now",
+        "wa.hi": "Hi! I'd like to book from the website (Ref: VIP-30).",
+        "wa.act": "Activity",
+        "wa.opt": "Option",
+        "wa.day": "Day",
+        "wa.time": "Time",
+        "wa.hotel": "Hotel/Area",
+        "wa.meet": "Meeting point",
+        "wa.total": "Total",
+        "wa.pay": "Payment",
+        "wa.name": "Name",
+        "wa.payDeposit": "deposit",
+        "wa.payDepositNow": "now +",
+        "wa.payRest": "on the day of the tour",
+        "wa.close": "Could you confirm availability? I understand confirmation takes 12–24 h. Thanks!",
+        "wa.t.teide": "I'd like to book the Teide Tour in quad. Do you have places?",
+        "wa.t.sunset": "I'd like to book the Sunset Experience in quad. Do you have places?",
+        "wa.t.vip": "I'd like to book the couples VIP tour.",
+        "wa.t.parasailing": "I'd like to book Parasailing. Do you have places?",
+        "wa.t.catamaran": "I'd like to book the 3-hour catamaran. Do you have places?",
+        "wa.t.charter": "I'd like to book the private catamaran. Do you have places?",
+        "wa.t.general": "I'd like to check availability for a quad tour."
       },
       fr: {
         "price.twoPeople": "2 personnes",
@@ -2565,7 +2684,58 @@
         "contact.callUs": "Téléphone",
         "contact.location": "Point de Départ",
         "contact.ctaBoxTitle": "Réponse rapide sur WhatsApp",
-        "contact.ctaBoxDesc": "Écrivez-nous sur WhatsApp. Nous vérifions la disponibilité et confirmons sous 12 à 24 heures."
+        "contact.ctaBoxDesc": "Écrivez-nous sur WhatsApp. Nous vérifions la disponibilité et confirmons sous 12 à 24 heures.",
+        "act.teide": "Tour Teide (env. 4h)",
+        "act.sunset": "Sunset Experience (env. 4h)",
+        "act.vip": "Tour VIP privé en couple avec repas",
+        "act.parasailing": "Parachute ascensionnel",
+        "act.catamaran": "Catamaran 3h",
+        "act.charter": "Catamaran privé 3h",
+        "opt.qdouble": "1 quad double (2 personnes)",
+        "opt.qsingle": "1 quad simple (1 personne)",
+        "opt.q2double": "2 quads doubles (4 personnes)",
+        "opt.q2single": "2 quads simples (2 personnes)",
+        "opt.qbig": "Grand groupe (+5 personnes)",
+        "opt.vippair": "Tour VIP pour deux, repas inclus",
+        "opt.p1": "1 personne", "opt.p2": "2 personnes", "opt.p3": "3 personnes", "opt.p4": "4 personnes",
+        "opt.a1": "1 adulte", "opt.a2": "2 adultes", "opt.a2n1": "2 adultes + 1 enfant (2–12)", "opt.a2n2": "2 adultes + 2 enfants (2–12)", "opt.agrp": "Groupe (sur demande)",
+        "opt.priv": "Bateau entier, jusqu'à 22 personnes",
+        "calc.locDirect": "Je viens directement à Las Chafiras",
+        "meet.colon3": "Puerto Colón, ponton 3 (Costa Adeje)",
+        "meet.colon4": "Puerto Colón, ponton 4 (Costa Adeje)",
+        "calc.undecided": "date flexible",
+        "calc.onRequest": "Sur demande",
+        "calc.payFullWa": "tout en une fois",
+        "cal.prev": "Mois précédent",
+        "cal.next": "Mois suivant",
+        "footer.reqs": "Conditions",
+        "footer.faq": "FAQ",
+        "footer.contact": "Contact",
+        "float.cta": "Des questions ? Réservez sur WhatsApp",
+        "nav.bookSpot": "Réserver ma place",
+        "brand.subline": "Votre aventure commence ici",
+        "contact.quickBtn": "Discuter sur WhatsApp",
+        "wa.hi": "Bonjour ! Je réserve depuis le site web (Réf : VIP-30).",
+        "wa.act": "Activité",
+        "wa.opt": "Option",
+        "wa.day": "Jour",
+        "wa.time": "Horaire",
+        "wa.hotel": "Hôtel/Zone",
+        "wa.meet": "Point de rendez-vous",
+        "wa.total": "Total",
+        "wa.pay": "Paiement",
+        "wa.name": "Nom",
+        "wa.payDeposit": "acompte",
+        "wa.payDepositNow": "maintenant +",
+        "wa.payRest": "le jour de l'excursion",
+        "wa.close": "Pouvez-vous confirmer la disponibilité ? Je sais que la confirmation prend 12–24 h. Merci !",
+        "wa.t.teide": "Je voudrais réserver l'excursion en quad au Teide. Avez-vous des places ?",
+        "wa.t.sunset": "Je voudrais réserver la Sunset Experience en quad. Avez-vous des places ?",
+        "wa.t.vip": "Je voudrais réserver le Tour VIP en couple.",
+        "wa.t.parasailing": "Je voudrais réserver le parachute ascensionnel. Avez-vous des places ?",
+        "wa.t.catamaran": "Je voudrais réserver le catamaran de 3 heures. Avez-vous des places ?",
+        "wa.t.charter": "Je voudrais réserver le catamaran privé. Avez-vous des places ?",
+        "wa.t.general": "Je voudrais vérifier la disponibilité pour une sortie en quad."
       },
       de: {
         "price.twoPeople": "2 Personen",
@@ -2719,7 +2889,58 @@
         "contact.callUs": "Telefon",
         "contact.location": "Ausgangspunkt",
         "contact.ctaBoxTitle": "Schnelle Antwort per WhatsApp",
-        "contact.ctaBoxDesc": "Schreib uns per WhatsApp. Wir prüfen die Verfügbarkeit und bestätigen innerhalb von 12 bis 24 Stunden."
+        "contact.ctaBoxDesc": "Schreib uns per WhatsApp. Wir prüfen die Verfügbarkeit und bestätigen innerhalb von 12 bis 24 Stunden.",
+        "act.teide": "Teide-Tour (ca. 4 Std.)",
+        "act.sunset": "Sunset Experience (ca. 4 Std.)",
+        "act.vip": "Private Paar-VIP-Tour mit Mittagessen",
+        "act.parasailing": "Parasailing",
+        "act.catamaran": "Katamaran 3 Std.",
+        "act.charter": "Privater Katamaran 3 Std.",
+        "opt.qdouble": "1 Doppel-Quad (2 Personen)",
+        "opt.qsingle": "1 Einzel-Quad (1 Person)",
+        "opt.q2double": "2 Doppel-Quads (4 Personen)",
+        "opt.q2single": "2 Einzel-Quads (2 Personen)",
+        "opt.qbig": "Große Gruppe (+5 Personen)",
+        "opt.vippair": "VIP-Tour für zwei, Mittagessen inklusive",
+        "opt.p1": "1 Person", "opt.p2": "2 Personen", "opt.p3": "3 Personen", "opt.p4": "4 Personen",
+        "opt.a1": "1 Erwachsener", "opt.a2": "2 Erwachsene", "opt.a2n1": "2 Erwachsene + 1 Kind (2–12)", "opt.a2n2": "2 Erwachsene + 2 Kinder (2–12)", "opt.agrp": "Gruppe (auf Anfrage)",
+        "opt.priv": "Ganzes Boot, bis zu 22 Personen",
+        "calc.locDirect": "Ich komme direkt nach Las Chafiras",
+        "meet.colon3": "Puerto Colón, Pier 3 (Costa Adeje)",
+        "meet.colon4": "Puerto Colón, Pier 4 (Costa Adeje)",
+        "calc.undecided": "Datum offen",
+        "calc.onRequest": "Auf Anfrage",
+        "calc.payFullWa": "alles auf einmal",
+        "cal.prev": "Vormonat",
+        "cal.next": "Nächster Monat",
+        "footer.reqs": "Voraussetzungen",
+        "footer.faq": "FAQ",
+        "footer.contact": "Kontakt",
+        "float.cta": "Fragen? Über WhatsApp buchen",
+        "nav.bookSpot": "Platz reservieren",
+        "brand.subline": "Dein Abenteuer beginnt hier",
+        "contact.quickBtn": "Jetzt per WhatsApp anfragen",
+        "wa.hi": "Hallo! Ich buche über die Website (Ref: VIP-30).",
+        "wa.act": "Aktivität",
+        "wa.opt": "Option",
+        "wa.day": "Tag",
+        "wa.time": "Uhrzeit",
+        "wa.hotel": "Hotel/Gegend",
+        "wa.meet": "Treffpunkt",
+        "wa.total": "Gesamt",
+        "wa.pay": "Zahlung",
+        "wa.name": "Name",
+        "wa.payDeposit": "Anzahlung",
+        "wa.payDepositNow": "jetzt +",
+        "wa.payRest": "am Tag der Tour",
+        "wa.close": "Könnt ihr die Verfügbarkeit bestätigen? Ich weiß, dass die Bestätigung 12–24 Std. dauert. Danke!",
+        "wa.t.teide": "Ich möchte die Teide-Quad-Tour buchen. Habt ihr Plätze frei?",
+        "wa.t.sunset": "Ich möchte die Sunset Experience mit dem Quad buchen. Habt ihr Plätze frei?",
+        "wa.t.vip": "Ich möchte die Paar-VIP-Tour buchen.",
+        "wa.t.parasailing": "Ich möchte Parasailing buchen. Habt ihr Plätze frei?",
+        "wa.t.catamaran": "Ich möchte den 3-Std.-Katamaran buchen. Habt ihr Plätze frei?",
+        "wa.t.charter": "Ich möchte den privaten Katamaran buchen. Habt ihr Plätze frei?",
+        "wa.t.general": "Ich möchte die Verfügbarkeit für eine Quad-Tour anfragen."
       },
       ru: {
         "price.twoPeople": "2 человека",
@@ -2873,7 +3094,58 @@
         "contact.callUs": "Телефон",
         "contact.location": "База Выезда",
         "contact.ctaBoxTitle": "Быстрый ответ в WhatsApp",
-        "contact.ctaBoxDesc": "Напишите нам в WhatsApp. Мы проверим наличие мест и подтвердим в течение 12–24 часов."
+        "contact.ctaBoxDesc": "Напишите нам в WhatsApp. Мы проверим наличие мест и подтвердим в течение 12–24 часов.",
+        "act.teide": "Тур к Тейде (ок. 4 ч)",
+        "act.sunset": "Sunset Experience (ок. 4 ч)",
+        "act.vip": "Частный VIP-тур для двоих с обедом",
+        "act.parasailing": "Парасейлинг",
+        "act.catamaran": "Катамаран 3 ч",
+        "act.charter": "Частный катамаран 3 ч",
+        "opt.qdouble": "1 двухместный квадроцикл (2 чел.)",
+        "opt.qsingle": "1 одноместный квадроцикл (1 чел.)",
+        "opt.q2double": "2 двухместных квадроцикла (4 чел.)",
+        "opt.q2single": "2 одноместных квадроцикла (2 чел.)",
+        "opt.qbig": "Большая группа (+5 чел.)",
+        "opt.vippair": "VIP-тур для двоих, обед включён",
+        "opt.p1": "1 человек", "opt.p2": "2 человека", "opt.p3": "3 человека", "opt.p4": "4 человека",
+        "opt.a1": "1 взрослый", "opt.a2": "2 взрослых", "opt.a2n1": "2 взрослых + 1 ребёнок (2–12)", "opt.a2n2": "2 взрослых + 2 детей (2–12)", "opt.agrp": "Группа (по запросу)",
+        "opt.priv": "Весь катамаран, до 22 человек",
+        "calc.locDirect": "Приеду прямо в Las Chafiras",
+        "meet.colon3": "Пуэрто-Колон, пирс 3 (Коста-Адехе)",
+        "meet.colon4": "Пуэрто-Колон, пирс 4 (Коста-Адехе)",
+        "calc.undecided": "дата уточняется",
+        "calc.onRequest": "По запросу",
+        "calc.payFullWa": "оплатить всё сразу",
+        "cal.prev": "Предыдущий месяц",
+        "cal.next": "Следующий месяц",
+        "footer.reqs": "Требования",
+        "footer.faq": "Вопросы",
+        "footer.contact": "Контакты",
+        "float.cta": "Вопросы? Бронируйте в WhatsApp",
+        "nav.bookSpot": "Забронировать место",
+        "brand.subline": "Ваше приключение начинается здесь",
+        "contact.quickBtn": "Написать в WhatsApp",
+        "wa.hi": "Здравствуйте! Хочу забронировать с сайта (Ref: VIP-30).",
+        "wa.act": "Активность",
+        "wa.opt": "Вариант",
+        "wa.day": "Дата",
+        "wa.time": "Время",
+        "wa.hotel": "Отель/Район",
+        "wa.meet": "Место встречи",
+        "wa.total": "Итого",
+        "wa.pay": "Оплата",
+        "wa.name": "Имя",
+        "wa.payDeposit": "задаток",
+        "wa.payDepositNow": "сейчас +",
+        "wa.payRest": "в день тура",
+        "wa.close": "Подтвердите наличие мест, пожалуйста. Я знаю, что подтверждение занимает 12–24 часа. Спасибо!",
+        "wa.t.teide": "Хочу забронировать тур к Тейде на квадроцикле. Есть места?",
+        "wa.t.sunset": "Хочу забронировать Sunset Experience на квадроцикле. Есть места?",
+        "wa.t.vip": "Хочу забронировать VIP-тур для двоих.",
+        "wa.t.parasailing": "Хочу забронировать парасейлинг. Есть места?",
+        "wa.t.catamaran": "Хочу забронировать 3-часовой катамаран. Есть места?",
+        "wa.t.charter": "Хочу забронировать частный катамаран. Есть места?",
+        "wa.t.general": "Хочу узнать наличие мест на тур на квадроцикле."
       }
     };
 
@@ -2900,6 +3172,17 @@
       try { localStorage.setItem('letsgo_tenerife_lang', lang); } catch (e) { /* almacenamiento no disponible */ }
       refreshCalcLanguage();
       updateBookingCalc();
+      applyWhatsAppLinks();
+    }
+
+    // Rebuild all static WhatsApp links with the pre-filled message in the visitor's language
+    function applyWhatsAppLinks() {
+      const hello = t('wa.hi', '¡Hola! Reservo desde la web (Ref: VIP-30).');
+      document.querySelectorAll('a[data-wa]').forEach(a => {
+        const tour = a.getAttribute('data-wa');
+        const msg = hello + ' ' + t('wa.t.' + tour, '');
+        a.href = 'https://wa.me/' + CONFIG.phone + '?text=' + encodeURIComponent(msg);
+      });
     }
 
     function toggleMobileMenu() {
@@ -2913,17 +3196,21 @@
     }
 
     // Dynamic Booking Calculator with 30% Affiliate Tracking
-    const MEET_COLON3 = 'Puerto Colón, pantalán 3 (Costa Adeje)';
-    const MEET_COLON4 = 'Puerto Colón, pantalán 4 (Costa Adeje)';
-    const QUAD_OPTS = [['double', '1 Quad Doble (2 personas)', 160], ['single', '1 Quad Individual (1 persona)', 130], ['2double', '2 Quads Dobles (4 personas)', 320], ['2single', '2 Quads Individuales (2 personas)', 260], ['custom', 'Grupo grande (+5 personas)', null]];
+    // Activity names, options and meeting points are i18n keys resolved via t()
+    const QUAD_OPTS = [['double', 'opt.qdouble', 160], ['single', 'opt.qsingle', 130], ['2double', 'opt.q2double', 320], ['2single', 'opt.q2single', 260], ['custom', 'opt.qbig', null]];
     const ACTS = {
-      teide:       { group: 'quad', name: 'Teide Tour (aprox. 4h)', opts: QUAD_OPTS, slots: ['10:00', '14:00'], pickup: true },
-      sunset:      { group: 'quad', name: 'Sunset Experience (aprox. 4h)', opts: QUAD_OPTS, slots: ['10:00', '14:00'], pickup: true },
-      vip:         { group: 'quad', name: 'Tour VIP en pareja con comida', opts: [['vip', 'Tour VIP en pareja, 2 personas (comida incluida)', 280]], slots: ['10:00', '14:00'], pickup: true },
-      parasailing: { group: 'sea', name: 'Parasailing', opts: [['1', '1 persona', 60], ['2', '2 personas', 120], ['3', '3 personas', 180], ['4', '4 personas', 240]], slots: ['morning', 'afternoon'], meet: MEET_COLON3 },
-      catamaran:   { group: 'sea', name: 'Catamarán 3h', opts: [['1a', '1 adulto', 50], ['2a', '2 adultos', 100], ['2a1n', '2 adultos + 1 niño (2-12)', 140], ['2a2n', '2 adultos + 2 niños (2-12)', 180], ['grp', 'Grupo (consultar)', null]], slots: ['9:30', '12:30'], meet: MEET_COLON4 },
-      charter:     { group: 'sea', name: 'Catamarán privado 3h', opts: [['priv', 'Barco entero, hasta 22 personas', 765]], slots: ['morning', 'afternoon'], meet: MEET_COLON4 }
+      teide:       { group: 'quad', nameKey: 'act.teide', opts: QUAD_OPTS, slots: ['10:00', '14:00'], pickup: true },
+      sunset:      { group: 'quad', nameKey: 'act.sunset', opts: QUAD_OPTS, slots: ['10:00', '14:00'], pickup: true },
+      vip:         { group: 'quad', nameKey: 'act.vip', opts: [['vip', 'opt.vippair', 280]], slots: ['10:00', '14:00'], pickup: true },
+      parasailing: { group: 'sea', nameKey: 'act.parasailing', opts: [['1', 'opt.p1', 60], ['2', 'opt.p2', 120], ['3', 'opt.p3', 180], ['4', 'opt.p4', 240]], slots: ['morning', 'afternoon'], meetKey: 'meet.colon3' },
+      catamaran:   { group: 'sea', nameKey: 'act.catamaran', opts: [['1a', 'opt.a1', 50], ['2a', 'opt.a2', 100], ['2a1n', 'opt.a2n1', 140], ['2a2n', 'opt.a2n2', 180], ['grp', 'opt.agrp', null]], slots: ['9:30', '12:30'], meetKey: 'meet.colon4' },
+      charter:     { group: 'sea', nameKey: 'act.charter', opts: [['priv', 'opt.priv', 765]], slots: ['morning', 'afternoon'], meetKey: 'meet.colon4' }
     };
+
+    function actName(actKey) {
+      const act = ACTS[actKey];
+      return t(act.nameKey, actKey);
+    }
     let calView = null;      // first day of the month shown
     let calSelected = null;  // Date selected
     let calSlot = null;
@@ -2956,7 +3243,7 @@
       const groups = { quad: t('calc.grpQuad', 'Quad al Teide'), sea: t('calc.grpSea', 'Actividades en el mar') };
       sel.innerHTML = Object.entries(groups).map(([g, label]) =>
         '<optgroup label="' + label + '">' +
-        Object.entries(ACTS).filter(([, a]) => a.group === g).map(([k, a]) => '<option value="' + k + '">' + a.name + '</option>').join('') +
+        Object.entries(ACTS).filter(([, a]) => a.group === g).map(([k, a]) => '<option value="' + k + '">' + actName(k) + '</option>').join('') +
         '</optgroup>').join('');
       sel.value = current;
     }
@@ -2964,13 +3251,13 @@
     function buildOptions() {
       const act = ACTS[document.getElementById('calcTour').value];
       const typeSel = document.getElementById('calcType');
-      typeSel.innerHTML = act.opts.map(([v, label, price]) =>
-        '<option value="' + v + '">' + label + (typeof price === 'number' ? ' - ' + price + '€' : (price ? ' - ' + price : '')) + '</option>').join('');
+      typeSel.innerHTML = act.opts.map(([v, labelKey, price]) =>
+        '<option value="' + v + '">' + t(labelKey, labelKey) + (typeof price === 'number' ? ' - ' + price + '€' : (price ? ' - ' + price : '')) + '</option>').join('');
       if (!act.slots.includes(calSlot)) calSlot = act.slots[0];
       renderSlots();
       document.getElementById('calcPickupField').hidden = !act.pickup;
       document.getElementById('calcMeetField').hidden = !!act.pickup;
-      document.getElementById('calcMeet').textContent = act.meet || '';
+      document.getElementById('calcMeet').textContent = act.meetKey ? t(act.meetKey, '') : '';
     }
 
     function renderSlots() {
@@ -2992,7 +3279,7 @@
       const dows = [...Array(7)].map((_, i) => new Date(2024, 0, 1 + i).toLocaleDateString(locale, { weekday: 'short' }).slice(0, 2));
       const offset = (calView.getDay() + 6) % 7; // Monday first
       const daysInMonth = new Date(calView.getFullYear(), calView.getMonth() + 1, 0).getDate();
-      let html = '<div class="cal-head"><button type="button" class="cal-nav" onclick="moveMonth(-1)" aria-label="Mes anterior"' + (calView <= firstMonth ? ' disabled' : '') + '>‹</button><span>' + monthName + '</span><button type="button" class="cal-nav" onclick="moveMonth(1)" aria-label="Mes siguiente"' + (calView >= lastMonth ? ' disabled' : '') + '>›</button></div><div class="cal-grid">';
+      let html = '<div class="cal-head"><button type="button" class="cal-nav" onclick="moveMonth(-1)" aria-label="' + t('cal.prev', 'Mes anterior') + '"' + (calView <= firstMonth ? ' disabled' : '') + '>‹</button><span>' + monthName + '</span><button type="button" class="cal-nav" onclick="moveMonth(1)" aria-label="' + t('cal.next', 'Mes siguiente') + '"' + (calView >= lastMonth ? ' disabled' : '') + '>›</button></div><div class="cal-grid">';
       html += dows.map(d => '<div class="cal-dow">' + d + '</div>').join('');
       html += '<div></div>'.repeat(offset);
       for (let day = 1; day <= daysInMonth; day++) {
@@ -3035,7 +3322,7 @@
     function refreshCalcLanguage() {
       if (!calView) return;
       buildTourSelect();
-      renderSlots();
+      buildOptions(); // also re-renders option labels in the new language (calls renderSlots)
       renderCalendar();
     }
 
@@ -3046,28 +3333,34 @@
       const optKey = document.getElementById('calcType').value;
       const opt = act.opts.find(o => o[0] === optKey) || act.opts[0];
       const name = (document.getElementById('calcName')?.value || '').trim();
+      const locale = { es: 'es-ES', en: 'en-GB', fr: 'fr-FR', de: 'de-DE', ru: 'ru-RU' }[currentLang] || 'es-ES';
       const dateText = calSelected
-        ? calSelected.toLocaleDateString('es-ES', { weekday: 'long', day: 'numeric', month: 'long' })
-        : 'por decidir';
+        ? calSelected.toLocaleDateString(locale, { weekday: 'long', day: 'numeric', month: 'long' })
+        : t('calc.undecided', 'por decidir');
       const price = opt[2];
-      const priceText = typeof price === 'number' ? price + '€' : (price || 'A consultar');
+      const priceText = typeof price === 'number' ? price + '€' : (price || t('calc.onRequest', 'A consultar'));
       const deposit = typeof price === 'number' ? Math.round(price * 0.3) + '€' : '30%';
       const rest = typeof price === 'number' ? (price - Math.round(price * 0.3)) + '€' : '70%';
       document.getElementById('calcPriceDisplay').textContent = priceText;
       document.getElementById('calcDeposit').textContent = payMode === 'full' ? priceText : deposit;
+      const locSel = document.getElementById('calcLocation');
       const place = act.pickup
-        ? '• Recogida: ' + document.getElementById('calcLocation').value
-        : '• Punto de encuentro: ' + act.meet;
+        ? '• ' + t('wa.hotel', 'Hotel') + ': ' + locSel.options[locSel.selectedIndex].text
+        : '• ' + t('wa.meet', 'Punto de encuentro') + ': ' + t(act.meetKey, '');
 
-      const waMsg = `¡Hola! Quiero reservar desde la web (Ref: ${CONFIG.affiliateRef}).
-• Actividad: ${act.name}
-• Opción: ${opt[1]}
-• Día: ${dateText}
-• Hora: ${slotLabel(calSlot)}
+      const payText = payMode === 'full'
+        ? t('calc.payFullWa', 'todo de una vez')
+        : t('wa.payDeposit', 'señal') + ' ' + deposit + ' ' + t('wa.payDepositNow', 'ahora +') + ' ' + rest + ' ' + t('wa.payRest', 'el día de la actividad');
+
+      const waMsg = `${t('wa.hi')}
+• ${t('wa.act')}: ${actName(actKey)}
+• ${t('wa.opt')}: ${t(opt[1], opt[1])}
+• ${t('wa.day')}: ${dateText}
+• ${t('wa.time')}: ${slotLabel(calSlot)}
 ${place}
-• Total: ${priceText}
-• Pago: ${payMode === 'full' ? 'todo de una vez' : 'señal ' + deposit + ' ahora + ' + rest + ' el día de la actividad'}` + (name ? `\n• Nombre: ${name}` : '') + `
-¿Me confirmáis la disponibilidad? Sé que se confirma en 12-24 h. ¡Gracias!`;
+• ${t('wa.total')}: ${priceText}
+• ${t('wa.pay')}: ${payText}` + (name ? `\n• ${t('wa.name')}: ${name}` : '') + `
+${t('wa.close')}`;
 
       document.getElementById('btnWhatsAppCalc').href = `https://wa.me/${CONFIG.phone}?text=${encodeURIComponent(waMsg)}`;
     }
@@ -3087,6 +3380,9 @@ ${place}
       document.querySelectorAll('a[href*="wa.me"]').forEach(link => {
         link.href = link.href.replace(/wa\.me\/\d+/, `wa.me/${CONFIG.phone}`);
       });
+
+      // Rewrite WhatsApp pre-filled messages in the current language
+      applyWhatsAppLinks();
 
       updateBookingCalc();
 

@@ -1,0 +1,3395 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <base href="https://www.letsgotenerife.com/">
+
+  <!-- Primary Meta Tags -->
+  <title>Let's Go Tenerife | Excursions en quad au Teide, parasailing et catamaran</title>
+  <meta name="title" content="Let's Go Tenerife | Excursions en quad au Teide, parasailing et catamaran">
+  <meta name="description" content="Excursions guidées en quad au Parc National du Teide, parasailing et balades en catamaran à Costa Adeje. Réservation sur WhatsApp en français : 30 % d'acompte, prise en charge gratuite dans le sud, essence et assurance incluses.">
+  <meta name="keywords" content="excursion quad teide, quad tenerife sud, parachutes ascensionnel tenerife, catamaran costa adeje, sortie quad teide tenerife">
+  <meta name="author" content="Let's Go Tenerife">
+
+  <!-- Hreflang: tell Google about the language versions -->
+  <link rel="alternate" hreflang="x-default" href="https://www.letsgotenerife.com/">
+  <link rel="alternate" hreflang="es" href="https://www.letsgotenerife.com/">
+  <link rel="alternate" hreflang="en" href="https://www.letsgotenerife.com/en/">
+  <link rel="alternate" hreflang="fr" href="https://www.letsgotenerife.com/fr/">
+  <link rel="alternate" hreflang="de" href="https://www.letsgotenerife.com/de/">
+  <link rel="alternate" hreflang="ru" href="https://www.letsgotenerife.com/ru/">
+
+  <!-- Open Graph / Facebook / WhatsApp -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.letsgotenerife.com/fr/">
+  <meta property="og:title" content="Let's Go Tenerife | Excursions en quad au Teide, parasailing et catamaran">
+  <meta property="og:description" content="Excursions guidées en quad au Parc National du Teide, parasailing et balades en catamaran à Costa Adeje. Réservation sur WhatsApp en français : 30 % d'acompte, prise en charge gratuite dans le sud, essence et assurance incluses.">
+  <meta property="og:image" content="images/portada-carretera-teide.jpg">
+
+  <!-- Fonts & FontAwesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- PWA Manifest -->
+  <link rel="manifest" href="manifest.json">
+  <link rel="canonical" href="https://www.letsgotenerife.com/fr/">
+  <meta name="theme-color" content="#f97316">
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
+
+
+  <style>
+    :root {
+      --primary: #f97316;
+      --primary-hover: #ea580c;
+      --primary-glow: rgba(249, 115, 22, 0.45);
+      --dark-bg: #070a12;
+      --dark-surface: #0e1526;
+      --card-bg: #141c30;
+      --card-border: rgba(255, 255, 255, 0.09);
+      --card-hover-border: rgba(249, 115, 22, 0.55);
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --accent-gold: #fbbf24;
+      --accent-red: #ef4444;
+      --success: #22c55e;
+      --whatsapp-color: #25d366;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: var(--dark-bg);
+      color: var(--text-main);
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+
+    h1, h2, h3, h4, .font-heading {
+      font-family: 'Outfit', sans-serif;
+      letter-spacing: -0.02em;
+    }
+
+    /* Top Urgency Ticker */
+    .urgency-ticker {
+      background: linear-gradient(90deg, #b91c1c 0%, #ea580c 50%, #b91c1c 100%);
+      color: white;
+      font-size: 0.85rem;
+      font-weight: 700;
+      padding: 8px 16px;
+      text-align: center;
+      position: relative;
+      z-index: 1001;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      box-shadow: 0 2px 10px rgba(185, 28, 28, 0.35);
+    }
+
+    .urgency-ticker i {
+      animation: pulseAlert 1.5s infinite;
+    }
+
+    @keyframes pulseAlert {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.3); }
+      100% { transform: scale(1); }
+    }
+
+    /* Glass Header */
+    header {
+      position: sticky;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      background: rgba(7, 10, 18, 0.85);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      transition: all 0.3s ease;
+    }
+
+    .nav-container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 12px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      text-decoration: none;
+      color: white;
+    }
+
+    .brand-logo img {
+      height: 48px;
+      width: auto;
+      border-radius: 8px;
+      object-fit: contain;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 2px;
+    }
+
+    .brand-text-block {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .brand-title {
+      font-size: 1.35rem;
+      font-weight: 900;
+      letter-spacing: -0.5px;
+      text-transform: uppercase;
+      line-height: 1.1;
+      background: linear-gradient(135deg, #fff 0%, #e2e8f0 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .brand-title span {
+      background: linear-gradient(135deg, #fb923c 0%, #f97316 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .brand-subline {
+      font-size: 0.72rem;
+      color: var(--accent-gold);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 26px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: #cbd5e1;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.92rem;
+      transition: color 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+
+    /* Multi-language Selector */
+    .lang-pill-container {
+      display: flex;
+      background: rgba(255, 255, 255, 0.08);
+      padding: 3px;
+      border-radius: 30px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      gap: 2px;
+    }
+
+    .lang-btn {
+      background: transparent;
+      border: none;
+      color: #94a3b8;
+      padding: 5px 9px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 0.78rem;
+      font-weight: 700;
+      transition: all 0.2s;
+    }
+
+    .lang-btn.active {
+      background: var(--primary);
+      color: white;
+      box-shadow: 0 2px 8px var(--primary-glow);
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 13px 26px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      border-radius: 12px;
+      text-decoration: none;
+      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+      cursor: pointer;
+      border: none;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+      color: white;
+      box-shadow: 0 8px 24px var(--primary-glow);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 32px rgba(249, 115, 22, 0.6);
+      background: linear-gradient(135deg, #fb923c 0%, #f97316 100%);
+      color: white;
+    }
+
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.08);
+      color: white;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(8px);
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.16);
+      border-color: rgba(255, 255, 255, 0.3);
+      transform: translateY(-2px);
+      color: white;
+    }
+
+    .btn-whatsapp {
+      background: #25d366;
+      color: white;
+      box-shadow: 0 6px 20px rgba(37, 211, 102, 0.35);
+    }
+
+    .btn-whatsapp:hover {
+      background: #20bd5a;
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(37, 211, 102, 0.55);
+      color: white;
+    }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      min-height: 92vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 24px;
+      background: linear-gradient(180deg, rgba(7, 10, 18, 0.55) 0%, rgba(7, 10, 18, 0.35) 55%, rgba(7, 10, 18, 0.75) 92%, var(--dark-bg) 100%),
+                  url('images/portada-carretera-teide.jpg') center 65%/cover no-repeat;
+    }
+
+    .hero-container {
+      max-width: 1100px;
+      width: 100%;
+      min-width: 0;
+      margin: 0 auto;
+      text-align: center;
+      z-index: 2;
+    }
+
+    .hero-trust-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(251, 191, 36, 0.12);
+      border: 1px solid rgba(251, 191, 36, 0.35);
+      color: #fde68a;
+      padding: 8px 20px;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      margin-bottom: 24px;
+      backdrop-filter: blur(10px);
+    }
+
+    .hero-trust-pill i {
+      color: var(--accent-gold);
+    }
+
+    .hero h1 {
+      font-size: clamp(2.4rem, 5.8vw, 4.6rem);
+      font-weight: 900;
+      line-height: 1.08;
+      margin-bottom: 22px;
+      color: #ffffff;
+      text-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+    }
+
+    .hero h1 span {
+      color: #fb923c;
+      text-shadow: 0 2px 14px rgba(0, 0, 0, 0.55);
+    }
+
+    .hero-subtitle {
+      font-size: clamp(1.1rem, 2.2vw, 1.35rem);
+      color: #e2e8f0;
+      max-width: 820px;
+      margin: 0 auto 36px;
+      font-weight: 400;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.7);
+    }
+
+    .hero-cta-group {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
+      margin-bottom: 44px;
+    }
+
+    .hero-features-bar {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(210px, 100%), 1fr));
+      gap: 16px;
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 18px 24px;
+      background: rgba(14, 21, 38, 0.85);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 18px;
+      backdrop-filter: blur(14px);
+    }
+
+    .feature-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-size: 0.9rem;
+      color: #e2e8f0;
+      font-weight: 700;
+    }
+
+    .feature-item i {
+      color: var(--primary);
+      font-size: 1.2rem;
+    }
+
+    /* Container */
+    .container {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 80px 24px;
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 780px;
+      margin: 0 auto 50px;
+    }
+
+    .section-eyebrow {
+      color: var(--primary);
+      text-transform: uppercase;
+      font-size: 0.85rem;
+      font-weight: 800;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .section-title {
+      font-size: clamp(2rem, 3.8vw, 3rem);
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 14px;
+      line-height: 1.15;
+    }
+
+    .section-desc {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+    }
+
+    /* INTERACTIVE QUICK BOOKING CALCULATOR WIDGET (30% Commission Attribution Engine) */
+    .booking-engine-card {
+      background: linear-gradient(135deg, #121a2e 0%, #17223b 100%);
+      border: 2px solid rgba(249, 115, 22, 0.4);
+      border-radius: 24px;
+      padding: 36px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), 0 0 30px rgba(249, 115, 22, 0.15);
+      margin-bottom: 70px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .booking-engine-badge {
+      position: absolute;
+      top: 18px;
+      right: -35px;
+      background: #ef4444;
+      color: white;
+      transform: rotate(45deg);
+      padding: 6px 45px;
+      font-size: 0.72rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    .engine-header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 28px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      padding-bottom: 20px;
+    }
+
+    .engine-title h3 {
+      font-size: 1.6rem;
+      color: white;
+      margin-bottom: 4px;
+    }
+
+    .engine-title p {
+      color: var(--text-muted);
+      font-size: 0.92rem;
+    }
+
+    .promo-applied-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(34, 197, 94, 0.15);
+      border: 1px solid rgba(34, 197, 94, 0.4);
+      color: #4ade80;
+      padding: 6px 14px;
+      border-radius: 30px;
+      font-size: 0.85rem;
+      font-weight: 700;
+    }
+
+    .engine-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-bottom: 26px;
+    }
+
+    .engine-field {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    /* display:flex above overrides the hidden attribute — enforce it */
+    .engine-field[hidden] {
+      display: none !important;
+    }
+
+    .engine-field label {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #cbd5e1;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .engine-field select, .engine-field input {
+      background: rgba(7, 10, 18, 0.7);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: white;
+      padding: 12px 16px;
+      border-radius: 12px;
+      font-size: 0.95rem;
+      font-family: inherit;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .engine-field select:focus, .engine-field input:focus {
+      border-color: var(--primary);
+    }
+
+
+    /* Booking calendar */
+    .engine-field-wide { grid-column: 1 / -1; }
+    .cal { background: rgba(7, 10, 18, 0.7); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 14px; padding: 14px; max-width: 420px; }
+    .cal-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; font-weight: 700; }
+    .cal-nav { background: rgba(255, 255, 255, 0.08); border: none; color: white; width: 34px; height: 34px; border-radius: 10px; cursor: pointer; }
+    .cal-nav:disabled { opacity: 0.3; cursor: default; }
+    .cal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; text-align: center; }
+    .cal-dow { font-size: 0.7rem; color: #94a3b8; text-transform: uppercase; padding: 4px 0; }
+    .cal-day { background: transparent; border: 1px solid transparent; color: white; padding: 8px 0; border-radius: 10px; cursor: pointer; font-family: inherit; font-size: 0.9rem; }
+    .cal-day:hover:not(:disabled) { border-color: var(--primary); }
+    .cal-day:disabled { color: #475569; text-decoration: line-through; cursor: default; }
+    .cal-day.selected { background: var(--primary); box-shadow: 0 2px 10px var(--primary-glow); font-weight: 700; }
+    .slot-group { display: flex; gap: 10px; }
+    .slot-btn { flex: 1; background: rgba(7, 10, 18, 0.7); border: 1px solid rgba(255, 255, 255, 0.15); color: white; padding: 12px; border-radius: 12px; cursor: pointer; font-family: inherit; font-size: 0.95rem; }
+    .slot-btn.active { border-color: var(--primary); background: rgba(249, 115, 22, 0.15); font-weight: 700; }
+
+
+    /* Sea activities */
+    .sea-section { padding-top: 90px; }
+    .sea-visual { position: relative; height: 150px; display: flex; align-items: center; justify-content: center; background: radial-gradient(circle at 30% 20%, #38bdf8 0%, #0369a1 55%, #0c2340 100%); border-radius: 20px 20px 0 0; }
+    .sea-visual i { font-size: 3.6rem; color: rgba(255, 255, 255, 0.92); filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.35)); }
+    .sea-photo { position: relative; }
+    .sea-operator { position: absolute; z-index: 2; left: 14px; bottom: 12px; background: rgba(7, 10, 18, 0.65); color: #e2e8f0; font-size: 0.75rem; font-weight: 700; padding: 4px 10px; border-radius: 20px; }
+    .sea-price { font-weight: 800; font-size: 1.15rem; color: var(--primary); margin: 6px 0 16px; }
+    .meet-box { background: rgba(7, 10, 18, 0.7); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 12px; padding: 12px 16px; color: #e2e8f0; }
+    .availability-line { color: #fde68a !important; }
+    .deposit-line strong { color: var(--accent-gold); font-size: 1.05rem; }
+
+
+    .legal-strip { display: inline-flex; align-items: center; gap: 10px; margin-top: 18px; padding: 10px 18px; border-radius: 14px; background: rgba(34, 197, 94, 0.1); border: 1px solid rgba(34, 197, 94, 0.35); color: #d1fae5; font-size: 0.92rem; text-align: left; max-width: 760px; }
+    .legal-strip i { color: var(--success); font-size: 1.2rem; flex-shrink: 0; }
+    .legal-strip strong { color: #ffffff; }
+
+    .engine-summary-bar {
+      background: rgba(7, 10, 18, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 16px;
+      padding: 20px 24px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .calc-price-display {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+    }
+
+    .calc-price-display span {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    .calc-price-display strong {
+      font-size: 2.2rem;
+      font-family: 'Outfit', sans-serif;
+      color: var(--primary);
+      line-height: 1;
+    }
+
+    .calc-price-display .price-subtext {
+      font-size: 0.8rem;
+      color: #4ade80;
+      font-weight: 600;
+    }
+
+    .engine-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    /* Excursion Cards */
+    .tours-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 32px;
+    }
+
+    .tour-card {
+      background: var(--card-bg);
+      border-radius: 24px;
+      overflow: hidden;
+      border: 1px solid var(--card-border);
+      transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .tour-card:hover {
+      transform: translateY(-8px);
+      border-color: var(--card-hover-border);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), 0 0 25px rgba(249, 115, 22, 0.25);
+    }
+
+    .tour-image-wrap {
+      position: relative;
+      height: 250px;
+      overflow: hidden;
+    }
+
+    .tour-image-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+
+    .tour-card:hover .tour-image-wrap img {
+      transform: scale(1.06);
+    }
+
+    .tour-badge {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      padding: 6px 14px;
+      border-radius: 30px;
+      font-size: 0.8rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      z-index: 2;
+    }
+
+    .badge-bestseller {
+      background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+      color: white;
+      box-shadow: 0 4px 15px rgba(249, 115, 22, 0.5);
+    }
+
+    .badge-sunset {
+      background: linear-gradient(135deg, #ec4899 0%, #f43f5e 100%);
+      color: white;
+      box-shadow: 0 4px 15px rgba(236, 72, 153, 0.4);
+    }
+
+    .badge-vip {
+      background: linear-gradient(135deg, #eab308 0%, #ca8a04 100%);
+      color: #000;
+      box-shadow: 0 4px 15px rgba(234, 179, 8, 0.4);
+    }
+
+    .tour-content {
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .tour-meta {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 14px;
+      font-size: 0.85rem;
+      color: #94a3b8;
+    }
+
+    .tour-meta span {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .tour-meta i {
+      color: var(--primary);
+    }
+
+    .tour-title {
+      font-size: 1.7rem;
+      font-weight: 800;
+      color: white;
+      margin-bottom: 12px;
+    }
+
+    .tour-desc {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      flex-grow: 1;
+    }
+
+    .tour-perks {
+      list-style: none;
+      margin-bottom: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .tour-perks li {
+      font-size: 0.88rem;
+      color: #cbd5e1;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .tour-perks li i {
+      color: var(--success);
+      font-size: 0.85rem;
+    }
+
+    .tour-price-box {
+      background: rgba(255, 255, 255, 0.04);
+      padding: 16px;
+      border-radius: 14px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .price-col span {
+      display: block;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      color: #94a3b8;
+      font-weight: 600;
+    }
+
+    .price-col strong {
+      font-size: 1.4rem;
+      color: #f8fafc;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    .price-col strong.highlight {
+      color: var(--primary);
+    }
+
+    .tour-card-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    /* COMPARISON TABLE: US VS STREET KIOSKS & CHEAP AGENTS */
+    .comparison-section {
+      background: var(--dark-surface);
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .table-container {
+      overflow-x: auto;
+      border-radius: 18px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: var(--card-bg);
+    }
+
+    .comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.95rem;
+    }
+
+    .comparison-table th, .comparison-table td {
+      padding: 18px 24px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .comparison-table th {
+      background: rgba(7, 10, 18, 0.8);
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.05rem;
+    }
+
+    .comparison-table th.highlight-col {
+      background: rgba(249, 115, 22, 0.15);
+      color: var(--primary);
+      border-top: 3px solid var(--primary);
+    }
+
+    .comparison-table td.highlight-col {
+      background: rgba(249, 115, 22, 0.04);
+      font-weight: 600;
+    }
+
+    .check-icon {
+      color: #4ade80;
+      margin-right: 8px;
+    }
+
+    .cross-icon {
+      color: #f87171;
+      margin-right: 8px;
+    }
+
+    /* Safety & Requirements */
+    .safety-section {
+      background: var(--dark-bg);
+    }
+
+    .safety-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+
+    .safety-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      padding: 28px;
+      border-radius: 20px;
+      transition: all 0.3s ease;
+    }
+
+    .safety-card:hover {
+      border-color: rgba(249, 115, 22, 0.3);
+      transform: translateY(-4px);
+    }
+
+    .safety-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 14px;
+      background: rgba(249, 115, 22, 0.12);
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      margin-bottom: 18px;
+    }
+
+    .safety-card h3 {
+      font-size: 1.25rem;
+      color: white;
+      margin-bottom: 10px;
+    }
+
+    .safety-card p {
+      color: var(--text-muted);
+      font-size: 0.92rem;
+      line-height: 1.6;
+    }
+
+    /* Social Proof & Reviews */
+    .reviews-banner {
+      background: linear-gradient(135deg, rgba(249, 115, 22, 0.12) 0%, rgba(19, 27, 46, 0.85) 100%);
+      border: 1px solid rgba(249, 115, 22, 0.28);
+      border-radius: 24px;
+      padding: 40px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+      margin-bottom: 48px;
+    }
+
+    .reviews-score-box {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .score-number {
+      font-size: 3.5rem;
+      font-weight: 900;
+      color: var(--primary);
+      font-family: 'Outfit', sans-serif;
+      line-height: 1;
+    }
+
+    .score-details h4 {
+      font-size: 1.3rem;
+      color: white;
+      margin-bottom: 4px;
+    }
+
+    .stars-row {
+      color: var(--accent-gold);
+      font-size: 1.1rem;
+      margin-bottom: 4px;
+    }
+
+    .reviews-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+    }
+
+    .review-bubble {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      padding: 26px;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .review-text {
+      color: #cbd5e1;
+      font-size: 0.95rem;
+      font-style: italic;
+      margin-bottom: 18px;
+      line-height: 1.6;
+    }
+
+    .reviewer-info {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .reviewer-avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: #243048;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary);
+      font-weight: 800;
+      font-size: 1.1rem;
+      border: 2px solid rgba(249, 115, 22, 0.3);
+    }
+
+    .reviewer-name {
+      font-weight: 700;
+      color: white;
+      font-size: 0.95rem;
+    }
+
+    .reviewer-badge {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    /* Gallery */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery-item {
+      height: 240px;
+      border-radius: 18px;
+      overflow: hidden;
+      position: relative;
+      cursor: pointer;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.08);
+    }
+
+    /* FAQ Section */
+    .faq-container {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .faq-item {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      overflow: hidden;
+      transition: border-color 0.2s;
+    }
+
+    .faq-item:hover {
+      border-color: rgba(249, 115, 22, 0.3);
+    }
+
+    .faq-question {
+      padding: 20px 24px;
+      font-weight: 700;
+      font-size: 1.05rem;
+      color: white;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      user-select: none;
+    }
+
+    .faq-question i {
+      color: var(--primary);
+      transition: transform 0.3s;
+    }
+
+    .faq-answer {
+      padding: 0 24px 20px;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      line-height: 1.6;
+      display: none;
+    }
+
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+
+    .faq-item.active .faq-question i {
+      transform: rotate(180deg);
+    }
+
+    /* Contact Section */
+    .contact-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 40px;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 28px;
+      padding: 44px;
+    }
+
+    .contact-info-col h3 {
+      font-size: 1.8rem;
+      color: white;
+      margin-bottom: 14px;
+    }
+
+    .contact-info-col p {
+      color: var(--text-muted);
+      margin-bottom: 28px;
+    }
+
+    .contact-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .contact-list li {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .contact-icon-box {
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+      background: rgba(249, 115, 22, 0.12);
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      flex-shrink: 0;
+    }
+
+    .contact-link-text span {
+      display: block;
+      font-size: 0.8rem;
+      color: #94a3b8;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    .contact-link-text a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+
+    .contact-link-text a:hover {
+      color: var(--primary);
+    }
+
+    /* Footer */
+    footer {
+      background: #04060c;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      padding: 60px 24px 100px;
+      color: #64748b;
+      font-size: 0.9rem;
+    }
+
+    .footer-container {
+      max-width: 1240px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 20px;
+    }
+
+    .footer-links a {
+      color: #94a3b8;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover {
+      color: var(--primary);
+    }
+
+    /* Floating WhatsApp Button */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      z-index: 999;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: #25d366;
+      color: white;
+      padding: 13px 22px;
+      border-radius: 50px;
+      box-shadow: 0 10px 28px rgba(37, 211, 102, 0.45);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.95rem;
+      transition: all 0.3s ease;
+      animation: floatPulse 3s infinite;
+    }
+
+    .whatsapp-float i {
+      font-size: 1.55rem;
+    }
+
+    .whatsapp-float:hover {
+      transform: translateY(-4px) scale(1.03);
+      box-shadow: 0 14px 32px rgba(37, 211, 102, 0.6);
+      color: white;
+    }
+
+    @keyframes floatPulse {
+      0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6); }
+      70% { box-shadow: 0 0 0 14px rgba(37, 211, 102, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+    }
+
+    /* Mobile Bottom Sticky Action Bar */
+    .mobile-bottom-bar {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(7, 10, 18, 0.95);
+      backdrop-filter: blur(14px);
+      padding: 12px 18px;
+      z-index: 990;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 -10px 25px rgba(0,0,0,0.5);
+    }
+
+    .mobile-bottom-bar-inner {
+      display: flex;
+      gap: 12px;
+    }
+
+    .mobile-bottom-bar .btn {
+      flex: 1;
+      padding: 12px 14px;
+      font-size: 0.9rem;
+    }
+
+    /* Mobile Menu Drawer */
+    .mobile-menu-btn {
+      display: none;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    .mobile-nav-drawer {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background: rgba(7, 10, 18, 0.98);
+      backdrop-filter: blur(20px);
+      z-index: 1050;
+      display: none;
+      flex-direction: column;
+      padding: 24px;
+    }
+
+    .mobile-nav-drawer.open {
+      display: flex;
+    }
+
+    .drawer-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+
+    .drawer-links {
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+      list-style: none;
+      font-size: 1.25rem;
+      font-weight: 700;
+    }
+
+    .drawer-links a {
+      color: white;
+      text-decoration: none;
+    }
+
+
+    /* Quad + Paella */
+    .paella-section { padding: 90px 24px 40px; max-width: 1200px; margin: 0 auto; }
+    .paella-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 28px; align-items: stretch; }
+    .paella-story { position: relative; border-radius: 22px; overflow: hidden; min-height: 460px; background: #0e1526; }
+    .paella-story img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+    .paella-story-text { position: absolute; left: 0; right: 0; bottom: 0; padding: 28px; background: linear-gradient(180deg, rgba(7, 10, 18, 0) 0%, rgba(7, 10, 18, 0.92) 55%); }
+    .paella-story-text h3 { font-family: 'Outfit', sans-serif; font-size: 1.9rem; line-height: 1.15; margin-bottom: 10px; }
+    .paella-story-text h3 em { color: #fbbf24; }
+    .paella-story-text p { color: #cbd5e1; font-size: 0.98rem; }
+    .paella-side { display: flex; flex-direction: column; gap: 18px; }
+    .paella-photos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+    .paella-photos img { width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; border-radius: 14px; transition: transform 0.3s ease; }
+    .paella-photos img:hover { transform: scale(1.04); }
+    .paella-list { list-style: none; display: grid; gap: 10px; }
+    .paella-list li { display: flex; gap: 10px; align-items: flex-start; color: #e2e8f0; }
+    .paella-list i { color: #fbbf24; margin-top: 4px; }
+    .paella-note { font-size: 0.85rem; color: #94a3b8; }
+    @media (max-width: 900px) {
+      .paella-grid { grid-template-columns: 1fr; }
+      .paella-story { min-height: 380px; }
+    }
+
+
+    @media (max-width: 1150px) and (min-width: 901px) {
+      .nav-links { gap: 14px; }
+      .nav-links a { font-size: 0.82rem; }
+      .brand-subline { display: none; }
+    }
+
+    @media (max-width: 600px) {
+      .nav-container { padding: 10px 12px; gap: 8px; }
+      .brand-logo { gap: 8px; }
+      .brand-logo svg { width: 38px; height: 38px; }
+      .brand-title { font-size: 1rem; }
+      .brand-subline { font-size: 0.5rem; letter-spacing: 0.3px; display: block; }
+      .lang-btn { padding: 4px 5px; font-size: 0.68rem; }
+    }
+
+    @media (max-width: 900px) {
+      .nav-links {
+        display: none;
+      }
+
+      .mobile-menu-btn {
+        display: block;
+      }
+
+      .mobile-bottom-bar {
+        display: block;
+      }
+
+      .whatsapp-float {
+        bottom: 78px;
+        right: 18px;
+        padding: 12px;
+        border-radius: 50%;
+      }
+
+      .whatsapp-float span {
+        display: none;
+      }
+
+      .hero {
+        padding-top: 50px;
+        min-height: auto;
+        padding-bottom: 60px;
+      }
+
+      .hero h1 {
+        font-size: 2.3rem;
+      }
+
+      .reviews-banner {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+      }
+
+      .reviews-score-box {
+        flex-direction: column;
+      }
+
+      .contact-container {
+        padding: 24px;
+      }
+
+      .booking-engine-card {
+        padding: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Live Urgency Ticker -->
+  <div class="urgency-ticker">
+    <i class="fa-solid fa-fire"></i>
+    <span data-i18n="ticker.text">🌋 Quad al Teide · 🪂 Parasailing · ⛵ Catamarán — Reserva por WhatsApp en tu idioma</span>
+  </div>
+
+  <!-- Sticky Navbar -->
+  <header id="mainHeader">
+    <div class="nav-container">
+      <a href="#" class="brand-logo">
+        <svg width="48" height="48" style="flex-shrink:0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Let's Go Tenerife">
+  <defs>
+    <clipPath id="vtClip"><circle cx="60" cy="60" r="56"/></clipPath>
+    <linearGradient id="vtSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7c2d12"/>
+      <stop offset="1" stop-color="#f97316"/>
+    </linearGradient>
+  </defs>
+  <g clip-path="url(#vtClip)">
+    <rect width="120" height="120" fill="url(#vtSky)"/>
+    <circle cx="82" cy="38" r="13" fill="#fbbf24"/>
+    <path d="M-4 86 L40 40 L50 46 L58 30 L66 30 L74 46 L124 86 Z" fill="#070a12"/>
+    <path d="M58 30 L66 30 L70 38 L62 42 L54 38 Z" fill="#f4efe6"/>
+    <path d="M-4 84 Q15 78 30 84 T60 84 T90 84 T124 84 V124 H-4 Z" fill="#ea580c"/>
+    <path d="M-4 96 Q15 90 30 96 T60 96 T90 96 T124 96 V124 H-4 Z" fill="#fb923c" opacity=".85"/>
+  </g>
+  <circle cx="60" cy="60" r="56" fill="none" stroke="#fbbf24" stroke-width="4"/>
+</svg>
+        <div class="brand-text-block">
+          <div class="brand-title">Let's Go <span>Tenerife</span></div>
+          <span class="brand-subline" data-i18n="brand.subline">Your adventure starts here</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <ul class="nav-links">
+        <li><a href="#booking-calc" data-i18n="nav.calc">Calculadora & Reserva</a></li>
+        <li><a href="#tours" data-i18n="nav.tours">Excursiones</a></li>
+        <li><a href="#mar" data-i18n="nav.sea">Mar</a></li>
+        <li><a href="#comparativa" data-i18n="nav.compare">Por qué Nosotros</a></li>
+        <li><a href="#requisitos" data-i18n="nav.requirements">Requisitos</a></li>
+        <li><a href="#opiniones" data-i18n="nav.reviews">Opiniones</a></li>
+        <li><a href="#faq" data-i18n="nav.faq">Preguntas Frecuentes</a></li>
+        <li><a href="#contacto" data-i18n="nav.contact">Contacto</a></li>
+      </ul>
+
+      <!-- Language Selector -->
+      <div style="display: flex; align-items: center; gap: 14px;">
+        <div class="lang-pill-container">
+          <button class="lang-btn active" onclick="setLanguage('es')">🇪🇸 ES</button>
+          <button class="lang-btn" onclick="setLanguage('en')">🇬🇧 EN</button>
+          <button class="lang-btn" onclick="setLanguage('fr')">🇫🇷 FR</button>
+          <button class="lang-btn" onclick="setLanguage('de')">🇩🇪 DE</button>
+          <button class="lang-btn" onclick="setLanguage('ru')">🇷🇺 RU</button>
+        </div>
+
+        <a href="#booking-calc" class="btn btn-primary" style="padding: 9px 18px; font-size: 0.88rem; display: none; @media(min-width: 900px){display: inline-flex;}" data-i18n="nav.bookNow">
+          <i class="fa-solid fa-calendar-check"></i> Reservar
+        </a>
+
+        <!-- Hamburger Icon -->
+        <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Drawer -->
+  <div class="mobile-nav-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <div class="brand-title">Let's Go <span>Tenerife</span></div>
+      <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <ul class="drawer-links">
+      <li><a href="#booking-calc" onclick="toggleMobileMenu()" data-i18n="nav.calc">Calculadora de Reserva</a></li>
+      <li><a href="#tours" onclick="toggleMobileMenu()" data-i18n="nav.tours">Excursiones en Quad</a></li>
+      <li><a href="#mar" onclick="toggleMobileMenu()" data-i18n="nav.sea">Mar</a></li>
+      <li><a href="#comparativa" onclick="toggleMobileMenu()" data-i18n="nav.compare">Por qué Elegirnos</a></li>
+      <li><a href="#requisitos" onclick="toggleMobileMenu()" data-i18n="nav.requirements">Requisitos de Seguridad</a></li>
+      <li><a href="#opiniones" onclick="toggleMobileMenu()" data-i18n="nav.reviews">Opiniones</a></li>
+      <li><a href="#faq" onclick="toggleMobileMenu()" data-i18n="nav.faq">Preguntas Frecuentes</a></li>
+      <li><a href="#contacto" onclick="toggleMobileMenu()" data-i18n="nav.contact">Contacto Directo</a></li>
+    </ul>
+    <div style="margin-top: 36px; display: flex; flex-direction: column; gap: 14px;">
+      <a href="#booking-calc" class="btn btn-primary" onclick="toggleMobileMenu()" data-i18n="nav.bookSpot">
+        <i class="fa-solid fa-calendar-check"></i> Reservar Plaza
+      </a>
+      <a href="https://wa.me/34677644458?text=¡Hola!%20Vengo%20de%20la%20web%20(Ref:%20VIP-30).%20Quiero%20consultar%20disponibilidad%20para%20un%20tour%20en%20quad." class="btn btn-whatsapp" target="_blank" data-wa="general">
+        <i class="fa-brands fa-whatsapp"></i> WhatsApp Directo
+      </a>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-container">
+      <div class="hero-trust-pill">
+        <i class="fa-solid fa-star"></i>
+        <span data-i18n="hero.badge">Más de 1.500 aventureros han explorado el Teide en quad</span>
+      </div>
+
+      <h1 data-i18n="hero.title">
+        Siente la adrenalina del Teide en <span>Quad</span>
+      </h1>
+
+      <p class="hero-subtitle" data-i18n="hero.subtitle">Descubre paisajes volcánicos únicos, mares de nubes y atardeceres de película en el Parque Nacional del Teide. Salidas guiadas en grupos reducidos con recogida gratis en la zona sur, de Golf del Sur a Callao Salvaje.</p>
+
+      <div class="hero-cta-group">
+        <a href="#booking-calc" class="btn btn-primary" data-i18n="hero.ctaPrimary">
+          <i class="fa-solid fa-calendar-check"></i> Reservar ahora
+        </a>
+        <a href="https://wa.me/34677644458?text=¡Hola!%20Vengo%20de%20la%20web%20(Ref:%20VIP-30).%20Quiero%20información%20para%20reservar%20un%20tour%20en%20quad." class="btn btn-whatsapp" target="_blank" data-i18n="hero.ctaSecondary" data-wa="general">
+          <i class="fa-brands fa-whatsapp"></i> Hablar por WhatsApp Ahora
+        </a>
+      </div>
+
+      <div class="hero-features-bar">
+        <div class="feature-item">
+          <i class="fa-solid fa-van-shuttle"></i>
+          <span data-i18n="hero.f1">Recogida Gratis Zona Sur</span>
+        </div>
+        <div class="feature-item">
+          <i class="fa-solid fa-shield-halved"></i>
+          <span data-i18n="hero.f2">Gasolina y Seguro Incluidos</span>
+        </div>
+        <div class="feature-item">
+          <i class="fa-solid fa-user-group"></i>
+          <span data-i18n="hero.f3">Grupos de 1 a 9 Personas</span>
+        </div>
+        <div class="feature-item">
+          <i class="fa-solid fa-camera"></i>
+          <span data-i18n="hero.f4">Casco, Cubre-pelo y Guantes</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Container -->
+  <main class="container">
+
+    <!-- INTERACTIVE BOOKING CALCULATOR WIDGET (30% Commission Attribution Engine) -->
+    <section class="booking-engine-card" id="booking-calc">
+      <div class="booking-engine-badge">Promo 2026</div>
+
+      <div class="engine-header">
+        <div class="engine-title">
+          <h3 data-i18n="calc.title">📅 Reserva tu Aventura</h3>
+          <p data-i18n="calc.subtitle">Elige actividad, día y hora en 1 minuto. Reserva sujeta a disponibilidad: te confirmamos por WhatsApp en un plazo de 12 a 24 horas.</p>
+        </div>
+        <div class="promo-applied-tag">
+          <i class="fa-solid fa-tag"></i>
+          <span data-i18n="calc.promoTag">Código Activo: <strong>VIP-30</strong> (Recogida gratis zona sur)</span>
+        </div>
+      </div>
+
+      <div class="engine-grid">
+        <!-- Tour Select -->
+        <div class="engine-field">
+          <label data-i18n="calc.lblTour">1. Elige tu actividad</label>
+          <select id="calcTour" onchange="onTourChange()"></select>
+        </div>
+
+        <!-- Quad Type & Qty -->
+        <div class="engine-field">
+          <label data-i18n="calc.lblType">2. Opción</label>
+          <select id="calcType" onchange="updateBookingCalc()"></select>
+        </div>
+
+        <!-- Date (visual calendar) -->
+        <div class="engine-field engine-field-wide">
+          <label data-i18n="calc.lblDate">3. Elige el día</label>
+          <div class="cal" id="calcCalendar" aria-label="Calendario"></div>
+          <input type="hidden" id="calcDate">
+        </div>
+
+        <!-- Time slot -->
+        <div class="engine-field">
+          <label data-i18n="calc.lblSlot">4. Hora</label>
+          <div class="slot-group" id="calcSlots" role="radiogroup"></div>
+        </div>
+
+        <!-- Meeting point (sea activities) -->
+        <div class="engine-field" id="calcMeetField" hidden>
+          <label data-i18n="calc.lblMeet">5. Punto de encuentro</label>
+          <div class="meet-box" id="calcMeet"></div>
+        </div>
+
+        <!-- Hotel Location -->
+        <div class="engine-field" id="calcPickupField">
+          <label data-i18n="calc.lblHotel">5. Zona de Recogida</label>
+          <select id="calcLocation" onchange="updateBookingCalc()">
+            <option value="Playa de las Américas">Playa de las Américas</option>
+            <option value="Los Cristianos">Los Cristianos</option>
+            <option value="Costa Adeje">Costa Adeje</option>
+            <option value="Golf del Sur / San Miguel">Golf del Sur / San Miguel</option>
+            <option value="Callao Salvaje">Callao Salvaje</option>
+            <option value="Directo en Base (Las Chafiras)" data-i18n="calc.locDirect">Iré directo a Las Chafiras</option>
+          </select>
+        </div>
+
+        <!-- Name -->
+        <div class="engine-field">
+          <label data-i18n="calc.lblName">6. Tu nombre</label>
+          <input type="text" id="calcName" maxlength="60" autocomplete="name" oninput="updateBookingCalc()" data-i18n-placeholder="calc.phName" placeholder="Ej: Anna Smith">
+        </div>
+
+        <!-- Payment choice -->
+        <div class="engine-field">
+          <label data-i18n="calc.lblPay">7. Forma de pago</label>
+          <div class="slot-group" role="radiogroup">
+            <button type="button" class="slot-btn pay-btn active" data-pay="deposit" onclick="pickPay('deposit')"><span data-i18n="calc.payDeposit">30% ahora + 70% allí</span></button>
+            <button type="button" class="slot-btn pay-btn" data-pay="full" onclick="pickPay('full')"><span data-i18n="calc.payFull">Todo de una vez</span></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="engine-summary-bar">
+        <div class="calc-price-display">
+          <span data-i18n="calc.total">Total Estimado:</span>
+          <strong id="calcPriceDisplay">160€</strong>
+          <div class="price-subtext deposit-line"><span data-i18n="calc.deposit">Para reservar pagas</span> <strong id="calcDeposit">48€</strong></div>
+          <div class="price-subtext availability-line" data-i18n="calc.availability">⏳ Sujeto a disponibilidad · confirmación en 12–24 h · pagas la señal solo cuando te confirmemos</div>
+          <div class="price-subtext" data-i18n="calc.payOnArrival">✓ Señal del 30% y el 70% el día de la actividad, o todo de una vez · cancelación gratis hasta 24 h antes</div>
+        </div>
+
+        <div class="engine-actions">
+          <a id="btnWhatsAppCalc" href="https://wa.me/34677644458?text=¡Hola!%20Vengo%20con%20la%20oferta%20web%20(Ref:%20VIP-30).%20Quiero%20reservar%201%20Quad%20Doble%20para%20el%20Teide%20Tour.%20Recogida:%20Playa%20de%20las%20Américas." class="btn btn-whatsapp" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i> <span data-i18n="calc.btnWa">Reservar ahora</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tours Section -->
+    <section id="tours">
+      <div class="section-header">
+        <span class="section-eyebrow" data-i18n="tours.eyebrow">Aventuras Inolvidables</span>
+        <h2 class="section-title" data-i18n="tours.title">Nuestras Excursiones en Quad</h2>
+        <p class="section-desc" data-i18n="tours.desc">Salidas a las 10:00 y a las 14:00 (te recogemos en tu hotel entre 9:00–9:15 o 13:00–13:15). Duración aprox. 4 horas. Incluye guía, casco, cubre-pelo, guantes, gasolina, seguro y recogida gratis en la zona sur.</p>
+        <p class="legal-strip"><i class="fa-solid fa-shield-halved"></i> <span data-i18n="tours.legal"><strong>Empresa legal</strong>, con seguro y gasolina incluidos. Desconfía de los quads baratos de la calle: muchos no tienen seguro.</span></p>
+      </div>
+
+      <div class="tours-grid">
+
+        <!-- Tour 1: Teide Tour -->
+        <div class="tour-card">
+          <div class="tour-image-wrap">
+            <span class="tour-badge badge-bestseller" data-i18n="tours.t1.badge">🔥 Más Popular</span>
+            <img src="images/teide-tour.jpg" alt="Teide Tour Quad" loading="lazy" onerror="this.src='images/galeria-montana-nubes.jpg'">
+          </div>
+          <div class="tour-content">
+            <div class="tour-meta">
+              <span><i class="fa-regular fa-clock"></i> 4 Horas</span>
+              <span><i class="fa-solid fa-location-dot"></i> P.N. Teide</span>
+            </div>
+            <h3 class="tour-title">Teide Tour</h3>
+            <p class="tour-desc" data-i18n="tours.t1.desc">
+              Nuestra excursión estrella. Conduce a través del pinar de Vilaflor hasta el corazón volcánico del Teide, rodeado de paisajes lunares inolvidables y miradores a 2.400 metros de altitud.
+            </p>
+
+            <ul class="tour-perks">
+              <li><i class="fa-solid fa-check"></i> <span data-i18n="perks.guide">Guía profesional y briefing de seguridad</span></li>
+              <li><i class="fa-solid fa-check"></i> <span data-i18n="perks.gear">Casco, cubre-pelo y guantes incluidos</span></li>
+              <li><i class="fa-solid fa-check"></i> <span data-i18n="perks.transfer">Recogida gratis en furgoneta (Golf del Sur – Callao Salvaje)</span></li>
+              <li><i class="fa-solid fa-check"></i> <span data-i18n="perks.stops">Paradas fotográficas en miradores volcánicos</span></li>
+            </ul>
+
+            <div class="tour-price-box">
+              <div class="price-col">
+                <span data-i18n="price.single">Quad Individual</span>
+                <strong class="highlight">130€</strong>
+              </div>
+              <div class="price-col" style="text-align: right;">
+                <span data-i18n="price.double">Quad Doble (2 pax)</span>
+                <strong>160€</strong>
+              </div>
+            </div>
+
+            <div class="tour-card-actions">
+              <a href="https://wa.me/34677644458?text=¡Hola!%20Vengo%20de%20la%20web%20(Ref:%20VIP-30).%20Quiero%20reservar%20el%20Teide%20Tour%20en%20quad.%20¿Tenéis%20plazas?"
+                 class="btn btn-whatsapp"
+                 target="_blank"
+                 data-wa="teide">
+                <i class="fa-brands fa-whatsapp"></i> <span data-i18n="btn.bookWa">Reservar por WhatsApp</span>
+              </a>
+              <a href="#booking-calc" class="btn btn-secondary" onclick="pickTour('teide')">
+                <i class="fa-solid fa-calendar-check"></i> <span data-i18n="btn.calendar">Elegir día y turno</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tour 2: Sunset Experience -->
+        <div class="tour-card">
+          <div class="tour-image-wrap">
+            <span class="tour-badge badge-sunset" data-i18n="tours.t2.badge">🌅 Atardecer Mágico</span>
+            <img src="images/sunset-nubes.jpg" alt="Sunset Quad Experience" loading="lazy" onerror="this.src='images/galeria-quads-fila.jpg'">
+          </div>
+          <div class="tour-content">
+            <div class="tour-meta">
+              <span><i class="fa-regular fa-clock"></i> 4 Horas</span>
+              <span><i class="fa-solid fa-mountain-sun"></i> Teide Sunset</span>
+            </div>
+            <h3 class="tour-title">Sunset Experience</h3>
+            <p class="tour-desc" data-i18n="tours.t2.desc">
+              Ruta por la tarde con luz dorada sobre los paisajes volcánicos y vistas al mar de nubes y al océano Atlántico.
+            </p>
+
+            <ul class="tour-perks">
+              <li><i class="fa-solid fa-check"></i> <span data-i18n="perks.sunset">Puesta de sol por encima del mar de nubes</span></li>
+              <li><i class="fa-solid fa-check"></i> <span data-i18n="perks.smallGroups">Grupos súper reducidos y exclusivos</span></li>
+              <li><i class="fa-solid fa-check"></i> <span data-i18n="perks.stopCafe">Parada donde puedes tomar un café o un bocadillo</span></li>
+            </ul>
+
+            <div class="tour-price-box">
+              <div class="price-col">
+                <span data-i18n="price.single">Quad Individual</span>
+                <strong class="highlight">130€</strong>
+              </div>
+              <div class="price-col" style="text-align: right;">
+                <span data-i18n="price.double">Quad Doble (2 pax)</span>
+                <strong>160€</strong>
+              </div>
+            </div>
+
+            <div class="tour-card-actions">
+              <a href="https://wa.me/34677644458?text=¡Hola!%20Vengo%20de%20la%20web%20(Ref:%20VIP-30).%20Quiero%20reservar%20el%20Sunset%20Experience%20en%20quad.%20¿Tenéis%20plazas?"
+                 class="btn btn-whatsapp"
+                 target="_blank"
+                 data-wa="sunset">
+                <i class="fa-brands fa-whatsapp"></i> <span data-i18n="btn.bookWa">Reservar por WhatsApp</span>
+              </a>
+              <a href="#booking-calc" class="btn btn-secondary" onclick="pickTour('sunset')">
+                <i class="fa-solid fa-calendar-check"></i> <span data-i18n="btn.calendar">Elegir día y turno</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tour 3: VIP Tour -->
+        <div class="tour-card">
+          <div class="tour-image-wrap">
+            <span class="tour-badge badge-vip" data-i18n="tours.t3.badge">💑 Plan en Pareja</span>
+            <img src="images/vip-pareja-atardecer.jpg" alt="Pareja junto a un quad al atardecer" style="object-position: 30% center;" loading="lazy" onerror="this.src='images/galeria-teide-nubes.jpg'">
+          </div>
+          <div class="tour-content">
+            <div class="tour-meta">
+              <span><i class="fa-regular fa-clock"></i> 3 - 5 Horas</span>
+              <span><i class="fa-solid fa-heart"></i> Para 2 personas</span>
+            </div>
+            <h3 class="tour-title">VIP Tour en Pareja</h3>
+            <p class="tour-desc" data-i18n="tours.t3.desc">Una excursión privada solo para ti y tu pareja: ruta exclusiva por el Teide con guía y comida incluida en un restaurante. El plan perfecto para una ocasión especial.</p>
+
+            <ul class="tour-perks">
+              <li><i class="fa-solid fa-check"></i> <span data-i18n="perks.privateGuide">Ruta privada solo para vosotros dos, con guía</span></li>
+              <li><i class="fa-solid fa-check"></i> <span data-i18n="perks.flexSchedule">Horario flexible adaptado a vuestras vacaciones</span></li>
+              <li><i class="fa-solid fa-check"></i> <span data-i18n="perks.catering">Experiencia a tu medida (consúltanos)</span></li>
+              <li><i class="fa-solid fa-check"></i> <span data-i18n="perks.tailor">Ideal para aniversarios, lunas de miel o pedidas de mano</span></li>
+            </ul>
+
+            <div class="tour-price-box">
+              <div class="price-col">
+                <span data-i18n="price.startingFrom">Precio Especial</span>
+                <strong class="highlight" data-i18n="price.from280">Desde 280€</strong>
+              </div>
+              <div class="price-col" style="text-align: right;">
+                <span data-i18n="price.format">Precio por pareja</span>
+                <strong data-i18n="price.twoPeople">2 personas</strong>
+              </div>
+            </div>
+
+            <div class="tour-card-actions">
+              <a href="https://wa.me/34677644458?text=¡Hola!%20Vengo%20de%20la%20web%20(Ref:%20VIP-30).%20Quiero%20reservar%20el%20Tour%20VIP%20en%20pareja."
+                 class="btn btn-whatsapp"
+                 target="_blank"
+                 data-wa="vip">
+                <i class="fa-brands fa-whatsapp"></i> <span data-i18n="btn.customizeVip">Personalizar Tour VIP</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Sea activities -->
+    <section id="mar" class="sea-section">
+      <div class="section-header">
+        <span class="section-eyebrow" data-i18n="sea.eyebrow">Más aventuras</span>
+        <h2 class="section-title" data-i18n="sea.title">Actividades en el mar</h2>
+        <p class="section-desc" data-i18n="sea.desc">Desde Puerto Colón, en Costa Adeje. Con empresas locales de confianza y el mismo trato: reservas por WhatsApp en tu idioma.</p>
+      </div>
+      <div class="tours-grid">
+        <div class="tour-card sea-card">
+          <div class="tour-image-wrap sea-photo"><img src="images/mar-parasailing.jpg" alt="Paracaídas de parasailing tirado por una lancha" loading="lazy" width="1000" height="666"></div>
+          <div class="tour-content">
+            <h3 class="tour-title" data-i18n="sea.parasailing.title">Parasailing</h3>
+            <p class="tour-desc" data-i18n="sea.parasailing.desc">Vuela hasta 100 metros sobre el mar de Costa Adeje, tirado por una lancha. Apto desde 3 años y no hace falta saber nadar.</p>
+            <ul class="tour-perks">
+              <li><i class="fa-solid fa-check"></i> <span data-i18n="sea.parasailing.p1">≈ 10 min en el aire · 40 min en total</span></li>
+              <li><i class="fa-solid fa-check"></i> <span data-i18n="sea.parasailing.p2">Chaleco, seguro y paseo en barco incluidos</span></li>
+              <li><i class="fa-solid fa-check"></i> <span data-i18n="sea.parasailing.p3">Salida desde Puerto Colón (Costa Adeje)</span></li>
+            </ul>
+            <div class="sea-price" data-i18n="sea.parasailing.price">60€ / persona</div>
+            <div class="tour-card-actions">
+              <a href="https://wa.me/34677644458?text=%C2%A1Hola%21%20Vengo%20de%20la%20web%20%28Ref%3A%20VIP-30%29.%20Quiero%20reservar%3A%20Parasailing.%20%C2%BFTen%C3%A9is%20plazas%3F" class="btn btn-whatsapp" target="_blank" rel="noopener" data-wa="parasailing">
+                <i class="fa-brands fa-whatsapp"></i> <span data-i18n="btn.bookWa">Reservar por WhatsApp</span>
+              </a>
+              <a href="#booking-calc" class="btn btn-secondary" onclick="pickTour('parasailing')">
+                <i class="fa-solid fa-calendar-check"></i> <span data-i18n="btn.calendar">Elegir día y hora</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="tour-card sea-card">
+          <div class="tour-image-wrap sea-photo"><img src="images/mar-catamaran.jpg" alt="Catamarán navegando" loading="lazy" width="1000" height="666"></div>
+          <div class="tour-content">
+            <h3 class="tour-title" data-i18n="sea.catamaran.title">Catamarán 3 horas</h3>
+            <p class="tour-desc" data-i18n="sea.catamaran.desc">Navega por la costa de Costa Adeje, con baño y snorkel en una cala y la posibilidad de ver delfines y ballenas.</p>
+            <ul class="tour-perks">
+              <li><i class="fa-solid fa-check"></i> <span data-i18n="sea.catamaran.p1">Comida y bebida a bordo</span></li>
+              <li><i class="fa-solid fa-check"></i> <span data-i18n="sea.catamaran.p2">Equipo de snorkel incluido</span></li>
+              <li><i class="fa-solid fa-check"></i> <span data-i18n="sea.catamaran.p3">Salidas 9:30 y 12:30 desde Puerto Colón</span></li>
+            </ul>
+            <div class="sea-price" data-i18n="sea.catamaran.price">Adulto 50€ · Niño (2–12) 40€</div>
+            <div class="tour-card-actions">
+              <a href="https://wa.me/34677644458?text=%C2%A1Hola%21%20Vengo%20de%20la%20web%20%28Ref%3A%20VIP-30%29.%20Quiero%20reservar%3A%20Catamar%C3%A1n%203%20horas.%20%C2%BFTen%C3%A9is%20plazas%3F" class="btn btn-whatsapp" target="_blank" rel="noopener" data-wa="catamaran">
+                <i class="fa-brands fa-whatsapp"></i> <span data-i18n="btn.bookWa">Reservar por WhatsApp</span>
+              </a>
+              <a href="#booking-calc" class="btn btn-secondary" onclick="pickTour('catamaran')">
+                <i class="fa-solid fa-calendar-check"></i> <span data-i18n="btn.calendar">Elegir día y hora</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="tour-card sea-card">
+          <div class="tour-image-wrap sea-photo"><img src="images/mar-catamaran-privado.jpg" alt="Grupo de amigos en un catamarán" loading="lazy" width="1000" height="666"></div>
+          <div class="tour-content">
+            <h3 class="tour-title" data-i18n="sea.charter.title">Catamarán privado</h3>
+            <p class="tour-desc" data-i18n="sea.charter.desc">El catamarán solo para tu grupo durante 3 horas: cumpleaños, despedidas o reuniones familiares.</p>
+            <ul class="tour-perks">
+              <li><i class="fa-solid fa-check"></i> <span data-i18n="sea.charter.p1">Hasta 22 personas</span></li>
+              <li><i class="fa-solid fa-check"></i> <span data-i18n="sea.charter.p2">Comida, bebida y música a tu gusto</span></li>
+              <li><i class="fa-solid fa-check"></i> <span data-i18n="sea.charter.p3">Snorkel y baño incluidos</span></li>
+            </ul>
+            <div class="sea-price" data-i18n="sea.charter.price">765€ el barco entero</div>
+            <div class="tour-card-actions">
+              <a href="https://wa.me/34677644458?text=%C2%A1Hola%21%20Vengo%20de%20la%20web%20%28Ref%3A%20VIP-30%29.%20Quiero%20reservar%3A%20Catamar%C3%A1n%20privado.%20%C2%BFTen%C3%A9is%20plazas%3F" class="btn btn-whatsapp" target="_blank" rel="noopener" data-wa="charter">
+                <i class="fa-brands fa-whatsapp"></i> <span data-i18n="btn.bookWa">Reservar por WhatsApp</span>
+              </a>
+              <a href="#booking-calc" class="btn btn-secondary" onclick="pickTour('charter')">
+                <i class="fa-solid fa-calendar-check"></i> <span data-i18n="btn.calendar">Elegir día y hora</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- COMPARISON TABLE SECTION -->
+    <section class="container" id="comparativa" style="padding-top: 100px; padding-bottom: 20px;">
+      <div class="section-header">
+        <span class="section-eyebrow" data-i18n="comp.eyebrow">Máxima Calidad</span>
+        <h2 class="section-title" data-i18n="comp.title">Quad Tenerife vs Kioscos de la Calle y OTAs</h2>
+        <p class="section-desc" data-i18n="comp.desc">
+          No te la juegues en tus vacaciones. Comprueba por qué los viajeros eligen reservar directamente con nosotros.
+        </p>
+      </div>
+
+      <div class="table-container">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th data-i18n="comp.feature">Beneficio / Característica</th>
+              <th class="highlight-col"><i class="fa-solid fa-circle-check"></i> Quad Tenerife</th>
+              <th data-i18n="comp.streetKiosks">Kioscos de Calle & Agencias Masivas</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-i18n="comp.r1"><strong>Tamaño de Grupo</strong></td>
+              <td class="highlight-col"><i class="fa-solid fa-check check-icon"></i> Grupos pequeños de 1 a 9 personas, con guía</td>
+              <td><i class="fa-solid fa-xmark cross-icon"></i> A veces grupos grandes</td>
+            </tr>
+            <tr>
+              <td data-i18n="comp.r2">Casco, Cubre-pelo y Guantes</td>
+              <td class="highlight-col"><i class="fa-solid fa-check check-icon"></i> Casco, cubre-pelo y guantes incluidos</td>
+              <td><i class="fa-solid fa-xmark cross-icon"></i> No siempre incluido</td>
+            </tr>
+            <tr>
+              <td data-i18n="comp.r3"><strong>Recogida y Retorno al Hotel</strong></td>
+              <td class="highlight-col"><i class="fa-solid fa-check check-icon"></i> Gratis de Golf del Sur a Callao Salvaje</td>
+              <td><i class="fa-solid fa-xmark cross-icon"></i> A menudo con suplemento</td>
+            </tr>
+            <tr>
+              <td data-i18n="comp.r4"><strong>Pago y Flexibilidad</strong></td>
+              <td class="highlight-col"><i class="fa-solid fa-check check-icon"></i> Reserva con solo el 30% y paga el resto el día del tour</td>
+              <td><i class="fa-solid fa-xmark cross-icon"></i> Muchas piden el 100% por adelantado</td>
+            </tr>
+            <tr>
+              <td data-i18n="comp.r5">Gasolina y Seguro Incluidos</td>
+              <td class="highlight-col"><i class="fa-solid fa-check check-icon"></i> Gasolina y seguro incluidos</td>
+              <td><i class="fa-solid fa-xmark cross-icon"></i> A veces se cobra aparte</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Safety & Driving Requirements -->
+    <section class="container" id="requisitos">
+      <div class="section-header">
+        <span class="section-eyebrow" data-i18n="safety.eyebrow">Seguridad y Confianza</span>
+        <h2 class="section-title" data-i18n="safety.title">Requisitos de Conducción</h2>
+        <p class="section-desc" data-i18n="safety.desc">
+          Queremos que disfrutes la experiencia con total tranquilidad: seguro, gasolina y equipo incluidos.
+        </p>
+      </div>
+
+      <div class="safety-grid">
+        <div class="safety-card">
+          <div class="safety-icon"><i class="fa-solid fa-id-card"></i></div>
+          <h3 data-i18n="safety.c1.title">Permiso B de Conducir</h3>
+          <p data-i18n="safety.c1.desc">
+            Es obligatorio presentar el permiso de conducir B original en vigor (español, europeo o internacional), con un mínimo de <strong>2 años de antigüedad</strong>.
+          </p>
+        </div>
+
+        <div class="safety-card">
+          <div class="safety-icon"><i class="fa-solid fa-cake-candles"></i></div>
+          <h3 data-i18n="safety.c2.title">Edad Mínima: +25 Años</h3>
+          <p data-i18n="safety.c2.desc">
+            Para conducir el quad es necesario tener <strong>25 años o más</strong>. Los acompañantes (pasajeros) pueden ser menores a partir de 7 años.
+          </p>
+        </div>
+
+        <div class="safety-card">
+          <div class="safety-icon"><i class="fa-solid fa-shield-heart"></i></div>
+          <h3 data-i18n="safety.c3.title">Seguro incluido</h3>
+          <p data-i18n="safety.c3.desc">
+            Todos los quads tienen seguro, y la gasolina también está incluida en el precio.
+          </p>
+        </div>
+
+        <div class="safety-card">
+          <div class="safety-icon"><i class="fa-solid fa-vest"></i></div>
+          <h3 data-i18n="safety.c4.title">Equipamiento Homologado</h3>
+          <p data-i18n="safety.c4.desc">
+              Te damos casco homologado, cubre-pelo y guantes. Antes de salir hay un briefing con vídeo; durante la ruta se va en fila detrás del guía, respetando sus señales y sin usar el móvil mientras conduces.
+            </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social Proof & Reviews -->
+    <section class="container" id="opiniones" style="padding-top: 20px;">
+      <div class="reviews-banner">
+        <div class="reviews-score-box">
+          <div class="score-number">+1.500</div>
+          <div class="score-details">
+            <div class="stars-row">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h4 data-i18n="reviews.source">aventureros con Quad Tenerife</h4>
+            <p style="color: #94a3b8; font-size: 0.95rem;" data-i18n="reviews.count">Lee lo que opinan de sus excursiones en Google.</p>
+          </div>
+        </div>
+
+        <div>
+          <a href="https://www.google.com/maps/search/?api=1&query=Quad+Safari+C.+Hermano+Pedro,+131,+local+C+09,+38639+Santa+Cruz+de+Tenerife"
+             target="_blank"
+             class="btn btn-primary"
+             data-i18n="reviews.btn"><i class="fa-brands fa-google"></i> Ver opiniones en Google</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="container" id="galeria" style="padding-top: 40px;">
+      <div class="section-header">
+        <span class="section-eyebrow" data-i18n="gallery.eyebrow">Momentos Inolvidables</span>
+        <h2 class="section-title" data-i18n="gallery.title">Galería de Aventuras</h2>
+        <p class="section-desc" data-i18n="gallery.desc">
+          Los paisajes del Teide y la aventura en quad que te esperan.
+        </p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="images/galeria-montana-nubes.jpg" alt="Montaña con mar de nubes" loading="lazy" onerror="this.src='images/portada-carretera-teide.jpg'">
+        </div>
+        <div class="gallery-item">
+          <img src="images/galeria-quads-fila.jpg" alt="Grupo de quads en ruta" loading="lazy" onerror="this.src='images/sunset-nubes.jpg'">
+        </div>
+        <div class="gallery-item">
+          <img src="images/galeria-teide-rosa.jpg" alt="El Teide al atardecer" loading="lazy" onerror="this.src='images/teide-tour.jpg'">
+        </div>
+        <div class="gallery-item">
+          <img src="images/galeria-teide-nubes.jpg" alt="El Teide sobre el mar de nubes al atardecer" loading="lazy" onerror="this.src='images/vip-quad-ruta.jpg'">
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ ACCORDION SECTION -->
+    <section class="container" id="faq" style="padding-top: 20px;">
+      <div class="section-header">
+        <span class="section-eyebrow" data-i18n="faq.eyebrow">Dudas Resueltas</span>
+        <h2 class="section-title" data-i18n="faq.title">Preguntas Frecuentes</h2>
+        <p class="section-desc" data-i18n="faq.desc">
+          Todo lo que necesitas saber antes de tu excursión al Teide.
+        </p>
+      </div>
+
+      <div class="faq-container">
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span data-i18n="faq.q1">¿Me recogen gratis en mi hotel?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer" data-i18n="faq.a1">Sí. La recogida es gratis, ida y vuelta, en nuestra furgoneta de 9 plazas por toda la zona sur: desde Golf del Sur hasta Callao Salvaje (Los Cristianos, Las Américas, Costa Adeje…). Al reservar te confirmamos la hora exacta.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span data-i18n="faq.q2">¿Qué tipo de carnet de conducir necesito?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer" data-i18n="faq.a2">
+            Solo necesitas el permiso de conducir coche (tipo B estándar) original en vigor con al menos 2 años de antigüedad. Aceptamos permisos españoles, europeos e internacionales.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span data-i18n="faq.q3">¿Pueden ir niños o acompañantes en el quad?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer" data-i18n="faq.a3">
+            ¡Sí! En los quads dobles pueden viajar 2 personas. El conductor debe cumplir los requisitos de edad (+25) y carnet, mientras que el pasajero puede ser cualquier persona a partir de 7 años de edad.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span data-i18n="faq.q4">¿Qué ropa debo llevar? ¿Hace frío en el Teide?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer" data-i18n="faq.a4">A más de 2.000 metros de altitud la temperatura suele ser de 10°C a 15°C más baja que en la playa. Trae chaqueta o sudadera, pantalón largo y calzado cerrado. Nosotros te damos casco, cubre-pelo y guantes.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span data-i18n="faq.q5">¿Tengo que pagar todo ahora o puedo pagar el día del tour?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer" data-i18n="faq.a5">Tú eliges: pagas una señal del 30% para garantizar tu plaza y el 70% restante el día de la actividad, o lo pagas todo de una vez (te decimos cómo por WhatsApp). Si cancelas hasta 24 horas antes, te devolvemos lo pagado. Si hay mal tiempo y no puedes cambiar de día, te devolvemos el dinero.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span data-i18n="faq.q6">¿Cuándo me confirmáis la reserva?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer" data-i18n="faq.a6">Todas las reservas están sujetas a disponibilidad. Cuando nos escribes, comprobamos las plazas con la empresa de la actividad y te confirmamos por WhatsApp en un plazo de 12 a 24 horas. Solo después de la confirmación pagas la señal.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Location Section -->
+    <section class="container" id="contacto">
+      <div class="contact-container">
+        <div class="contact-info-col">
+          <h3 data-i18n="contact.title">¿Tienes preguntas o deseas reservar en grupo?</h3>
+          <p data-i18n="contact.desc">
+            Estamos a tu disposición todos los días para resolver cualquier duda, organizar traslados o preparar tu tour a medida.
+          </p>
+
+          <ul class="contact-list">
+            <li>
+              <div class="contact-icon-box"><i class="fa-solid fa-phone"></i></div>
+              <div class="contact-link-text">
+                <span data-i18n="contact.callUs">Teléfono</span>
+                <a href="tel:+34677644458">+34 677 64 44 58</a>
+              </div>
+            </li>
+
+            <li>
+              <div class="contact-icon-box"><i class="fa-brands fa-whatsapp"></i></div>
+              <div class="contact-link-text">
+                <span>WhatsApp Directo</span>
+                <a href="https://wa.me/34677644458?text=¡Hola!%20Vengo%20de%20la%20web%20(Ref:%20VIP-30)." target="_blank" data-wa="general">+34 677 64 44 58</a>
+              </div>
+            </li>
+
+            <li>
+              <div class="contact-icon-box"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="contact-link-text">
+                <span data-i18n="contact.location">Base de Salida</span>
+                <a href="https://maps.google.com/?q=Quad+Safari+calle+Hermano+Pedro+131+Las+Chafiras" target="_blank">
+                  Calle Hermano Pedro 131, Las Chafiras, Tenerife
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Quick Action Card -->
+        <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 20px; padding: 32px; display: flex; flex-direction: column; justify-content: center; text-align: center;">
+          <i class="fa-solid fa-headset" style="font-size: 3rem; color: var(--primary); margin-bottom: 20px;"></i>
+          <h4 style="font-size: 1.4rem; color: white; margin-bottom: 10px;" data-i18n="contact.ctaBoxTitle">Respuesta rápida por WhatsApp</h4>
+          <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 24px;" data-i18n="contact.ctaBoxDesc">
+            Escríbenos por WhatsApp. Comprobamos la disponibilidad y te confirmamos en un plazo de 12 a 24 horas.
+          </p>
+          <a href="https://wa.me/34677644458?text=¡Hola!%20Vengo%20de%20la%20web%20(Ref:%20VIP-30).%20Quiero%20consultar%20disponibilidad%20para%20un%20tour%20en%20quad." class="btn btn-whatsapp" target="_blank" style="width: 100%;" data-i18n="contact.quickBtn" data-wa="general">
+            <i class="fa-brands fa-whatsapp"></i> Hablar por WhatsApp Ahora
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div>
+        <strong style="color: white; font-size: 1.15rem; display: block; margin-bottom: 4px;">Let's Go Tenerife <span style="color: var(--primary); font-weight: 600; font-size: 0.85rem;">· Your adventure starts here</span></strong>
+        <p>© 2026 Let's Go Tenerife. Excursiones en quad operadas por Quad Tenerife — Calle Hermano Pedro 131, Las Chafiras.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#requisitos" data-i18n="footer.reqs">Requisitos</a>
+        <a href="#faq" data-i18n="footer.faq">Preguntas</a>
+        <a href="#contacto" data-i18n="footer.contact">Contacto</a>
+        <a href="aviso-legal.html">Aviso legal · Privacy</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp CTA Button (30% Commission Ref pre-filled) -->
+  <a href="https://wa.me/34677644458?text=¡Hola!%20Vengo%20de%20la%20web%20(Ref:%20VIP-30).%20¿Tenéis%20plazas%20disponibles%20para%20un%20tour%20en%20quad?" class="whatsapp-float" target="_blank" aria-label="WhatsApp" data-wa="general">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span data-i18n="float.cta">¿Dudas? Reserva por WhatsApp</span>
+  </a>
+
+  <!-- Mobile Sticky Bottom Booking Bar -->
+  <div class="mobile-bottom-bar">
+    <div class="mobile-bottom-bar-inner">
+      <a href="#booking-calc" class="btn btn-primary" data-i18n="btn.bookNow">
+        <i class="fa-solid fa-calendar-check"></i> Reservar
+      </a>
+      <a href="https://wa.me/34677644458?text=¡Hola!%20Vengo%20de%20la%20web%20(Ref:%20VIP-30).%20Quiero%20reservar%20un%20quad." class="btn btn-whatsapp" target="_blank" data-wa="general">
+        <i class="fa-brands fa-whatsapp"></i> WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <!-- Interactive Logic & Multilingual Dictionary (ES / EN / FR / DE) -->
+  <script>
+    // =========================================================================
+    // CONFIGURACIÓN DE CONTACTO Y COMISIÓN (Cambia aquí tu número si lo deseas)
+    // =========================================================================
+    const CONFIG = {
+      phone: "34677644458",          // Tu número de WhatsApp sin signos (ej: 34677644458)
+      phoneDisplay: "+34 677 64 44 58",// Cómo se muestra visualmente en el texto
+      affiliateRef: "VIP-30"          // Código de seguimiento de tu comisión (30%)
+    };
+
+    const translations = {
+      es: {
+        "price.twoPeople": "2 personas",
+        "faq.a6": "Todas las reservas están sujetas a disponibilidad. Cuando nos escribes, comprobamos las plazas con la empresa de la actividad y te confirmamos por WhatsApp en un plazo de 12 a 24 horas. Solo después de la confirmación pagas la señal.",
+        "faq.q6": "¿Cuándo me confirmáis la reserva?",
+        "calc.availability": "⏳ Sujeto a disponibilidad · confirmación en 12–24 h · pagas la señal solo cuando te confirmemos",
+        "calc.payFull": "Todo de una vez",
+        "calc.payDeposit": "30% ahora + 70% allí",
+        "calc.lblPay": "7. Forma de pago",
+        "reviews.source": "aventureros con Quad Tenerife",
+        "tours.legal": "<strong>Empresa legal</strong>, con seguro y gasolina incluidos. Desconfía de los quads baratos de la calle: muchos no tienen seguro.",
+        "sea.charter.p3": "Snorkel y baño incluidos",
+        "sea.charter.p2": "Comida, bebida y música a tu gusto",
+        "sea.charter.p1": "Hasta 22 personas",
+        "sea.charter.price": "765€ el barco entero",
+        "sea.charter.desc": "El catamarán solo para tu grupo durante 3 horas: cumpleaños, despedidas o reuniones familiares.",
+        "sea.charter.title": "Catamarán privado",
+        "sea.catamaran.p3": "Salidas 9:30 y 12:30 desde Puerto Colón",
+        "sea.catamaran.p2": "Equipo de snorkel incluido",
+        "sea.catamaran.p1": "Comida y bebida a bordo",
+        "sea.catamaran.price": "Adulto 50€ · Niño (2–12) 40€",
+        "sea.catamaran.desc": "Navega por la costa de Costa Adeje, con baño y snorkel en una cala y la posibilidad de ver delfines y ballenas.",
+        "sea.catamaran.title": "Catamarán 3 horas",
+        "sea.parasailing.p3": "Salida desde Puerto Colón (Costa Adeje)",
+        "sea.parasailing.p2": "Chaleco, seguro y paseo en barco incluidos",
+        "sea.parasailing.p1": "≈ 10 min en el aire · 40 min en total",
+        "sea.parasailing.price": "60€ / persona",
+        "sea.parasailing.desc": "Vuela hasta 100 metros sobre el mar de Costa Adeje, tirado por una lancha. Apto desde 3 años y no hace falta saber nadar.",
+        "sea.parasailing.title": "Parasailing",
+        "sea.operated": "Con",
+        "sea.desc": "Desde Puerto Colón, en Costa Adeje. Con empresas locales de confianza y el mismo trato: reservas por WhatsApp en tu idioma.",
+        "sea.title": "Actividades en el mar",
+        "sea.eyebrow": "Más aventuras",
+        "nav.sea": "Mar",
+        "calc.deposit": "Para reservar pagas",
+        "calc.grpSea": "🌊 Actividades en el mar",
+        "calc.grpQuad": "🏍️ Quad al Teide",
+        "calc.lblMeet": "5. Punto de encuentro",
+        "perks.stopCafe": "Parada donde puedes tomar un café o un bocadillo",
+        "btn.calendar": "Elegir día y hora",
+        "calc.lblName": "6. Tu nombre",
+        "calc.slotAfternoon": "Tarde",
+        "calc.slotMorning": "Mañana",
+        "calc.lblSlot": "4. Hora",
+        "paella.eyebrow": "Solo con Let's Go Tenerife",
+        "paella.title": "Quad + Paella en la Naturaleza",
+        "paella.desc": "Después de la ruta al Teide, te espera una paella auténtica hecha al momento por nuestro paellero, en un merendero rodeado de pinos.",
+        "paella.storyTitle": "Quad por la mañana, <em>paella</em> al mediodía",
+        "paella.storyText": "Paella de marisco, mixta o de verduras, cocinada al fuego en una paellera gigante. La experiencia española que tus amigos te van a envidiar.",
+        "paella.p1": "Ruta en quad al Teide con guía",
+        "paella.p2": "Paella hecha al momento por un paellero experto",
+        "paella.p3": "Comida en un merendero en plena naturaleza",
+        "paella.cta": "Pregunta precio y fechas",
+        "paella.note": "Plazas limitadas. No disponible los días de alerta por incendio.",
+        "ticker.text": "🌋 Quad al Teide · 🪂 Parasailing · ⛵ Catamarán — Reserva por WhatsApp en tu idioma",
+        "nav.calc": "Calculadora & Reserva",
+        "nav.tours": "Excursiones",
+        "nav.compare": "Por qué Nosotros",
+        "nav.requirements": "Requisitos",
+        "nav.reviews": "Opiniones",
+        "nav.faq": "Preguntas Frecuentes",
+        "nav.contact": "Contacto",
+        "nav.bookNow": "Reservar",
+        "hero.badge": "Más de 1.500 aventureros han explorado el Teide en quad",
+        "hero.title": "Siente la adrenalina del Teide en <span>Quad</span>",
+        "hero.subtitle": "Descubre paisajes volcánicos únicos, mares de nubes y atardeceres de película en el Parque Nacional del Teide. Salidas guiadas en grupos reducidos con recogida gratis en la zona sur, de Golf del Sur a Callao Salvaje.",
+        "hero.ctaPrimary": "Reservar ahora",
+        "hero.ctaSecondary": "Hablar por WhatsApp Ahora",
+        "hero.f1": "Recogida Gratis Zona Sur",
+        "hero.f2": "Gasolina y Seguro Incluidos",
+        "hero.f3": "Grupos de 1 a 9 Personas",
+        "hero.f4": "Casco, Cubre-pelo y Guantes",
+        "calc.title": "📅 Reserva tu Aventura",
+        "calc.subtitle": "Elige actividad, día y hora en 1 minuto. Reserva sujeta a disponibilidad: te confirmamos por WhatsApp en un plazo de 12 a 24 horas.",
+        "calc.promoTag": "Código Activo: <strong>VIP-30</strong> (Recogida gratis zona sur)",
+        "calc.lblTour": "1. Elige tu actividad",
+        "calc.lblType": "2. Opción",
+        "calc.lblDate": "3. Elige el día",
+        "calc.lblHotel": "5. Zona de Recogida",
+        "calc.total": "Total Estimado:",
+        "calc.payOnArrival": "✓ Señal del 30% y el 70% el día de la actividad, o todo de una vez · cancelación gratis hasta 24 h antes",
+        "calc.btnWa": "Reservar ahora",
+        "tours.eyebrow": "Aventuras Inolvidables",
+        "tours.title": "Nuestras Excursiones en Quad",
+        "tours.desc": "Salidas a las 10:00 y a las 14:00 (te recogemos en tu hotel entre 9:00–9:15 o 13:00–13:15). Duración aprox. 4 horas. Incluye guía, casco, cubre-pelo, guantes, gasolina, seguro y recogida gratis en la zona sur.",
+        "tours.t1.badge": "🔥 Más Popular",
+        "tours.t1.desc": "Nuestra excursión estrella. Conduce a través del pinar de Vilaflor hasta el corazón volcánico del Teide, rodeado de paisajes lunares inolvidables y miradores a 2.400 metros de altitud.",
+        "tours.t2.badge": "🌅 Atardecer Mágico",
+        "tours.t2.desc": "Ruta por la tarde con luz dorada sobre los paisajes volcánicos y vistas al mar de nubes y al océano Atlántico.",
+        "tours.t3.badge": "💑 Plan en Pareja",
+        "tours.t3.desc": "Una excursión privada solo para ti y tu pareja: ruta exclusiva por el Teide con guía y comida incluida en un restaurante. El plan perfecto para una ocasión especial.",
+        "perks.guide": "Guía profesional y briefing de seguridad",
+        "perks.gear": "Casco, cubre-pelo y guantes incluidos",
+        "perks.transfer": "Recogida gratis en furgoneta (Golf del Sur – Callao Salvaje)",
+        "perks.stops": "Paradas fotográficas en miradores volcánicos",
+        "perks.sunset": "Puesta de sol por encima del mar de nubes",
+        "perks.smallGroups": "Grupos súper reducidos y exclusivos",
+        "perks.privateGuide": "Ruta privada solo para vosotros dos, con guía",
+        "perks.flexSchedule": "Horario flexible adaptado a vuestras vacaciones",
+        "perks.catering": "Comida incluida en restaurante",
+        "perks.tailor": "Ideal para aniversarios, lunas de miel o pedidas de mano",
+        "price.single": "Quad Individual",
+        "price.double": "Quad Doble (2 pax)",
+        "price.startingFrom": "Precio Especial",
+        "price.from280": "Desde 280€",
+        "price.format": "Precio por pareja",
+        "btn.bookNow": "Reservar Ahora",
+        "btn.bookWa": "Reservar por WhatsApp",
+        "btn.customizeVip": "Personalizar Tour VIP",
+        "comp.eyebrow": "Máxima Calidad",
+        "comp.title": "Quad Tenerife vs Kioscos de la Calle y OTAs",
+        "comp.desc": "No te la juegues en tus vacaciones. Comprueba por qué los viajeros eligen reservar directamente con nosotros.",
+        "comp.feature": "Beneficio / Característica",
+        "comp.streetKiosks": "Kioscos de Calle & Agencias Masivas",
+        "comp.r1": "Tamaño de Grupo",
+        "comp.r2": "Casco, Cubre-pelo y Guantes",
+        "comp.r3": "Recogida y Retorno al Hotel",
+        "comp.r4": "Pago y Flexibilidad",
+        "comp.r5": "Gasolina y Seguro Incluidos",
+        "safety.eyebrow": "Seguridad y Confianza",
+        "safety.title": "Requisitos de Conducción",
+        "safety.desc": "Queremos que disfrutes la experiencia con total tranquilidad: seguro, gasolina y equipo incluidos.",
+        "safety.c1.title": "Permiso B de Conducir",
+        "safety.c1.desc": "Es obligatorio presentar el permiso de conducir B original en vigor (español, europeo o internacional), con un mínimo de 2 años de antigüedad.",
+        "safety.c2.title": "Edad Mínima: +25 Años",
+        "safety.c2.desc": "Para conducir el quad es necesario tener 25 años o más. Los acompañantes (pasajeros) pueden ser menores a partir de 7 años.",
+        "safety.c3.title": "Seguro incluido",
+        "safety.c3.desc": "Todos los quads tienen seguro, y la gasolina también está incluida en el precio.",
+        "safety.c4.title": "Equipamiento Homologado",
+        "safety.c4.desc": "Te damos casco homologado, cubre-pelo y guantes. Antes de salir hay un briefing con vídeo; durante la ruta se va en fila detrás del guía, respetando sus señales y sin usar el móvil mientras conduces.",
+        "reviews.count": "Lee lo que opinan de sus excursiones en Google.",
+        "reviews.btn": "<i class=\"fa-brands fa-google\"></i> Ver opiniones en Google",
+        "gallery.eyebrow": "Momentos Inolvidables",
+        "gallery.title": "Galería de Aventuras",
+        "gallery.desc": "Los paisajes del Teide y la aventura en quad que te esperan.",
+        "faq.eyebrow": "Dudas Resueltas",
+        "faq.title": "Preguntas Frecuentes",
+        "faq.desc": "Todo lo que necesitas saber antes de tu excursión al Teide.",
+        "faq.q1": "¿Me recogen gratis en mi hotel?",
+        "faq.a1": "Sí. La recogida es gratis, ida y vuelta, en nuestra furgoneta de 9 plazas por toda la zona sur: desde Golf del Sur hasta Callao Salvaje (Los Cristianos, Las Américas, Costa Adeje…). Al reservar te confirmamos la hora exacta.",
+        "faq.q2": "¿Qué tipo de carnet de conducir necesito?",
+        "faq.a2": "Solo necesitas el permiso de conducir coche (tipo B estándar) original en vigor con al menos 2 años de antigüedad. Aceptamos permisos españoles, europeos e internacionales.",
+        "faq.q3": "¿Pueden ir niños o acompañantes en el quad?",
+        "faq.a3": "¡Sí! En los quads dobles pueden viajar 2 personas. El conductor debe cumplir los requisitos de edad (+25) y carnet, mientras que el pasajero puede ser cualquier persona a partir de 7 años de edad.",
+        "faq.q4": "¿Qué ropa debo llevar? ¿Hace frío en el Teide?",
+        "faq.a4": "A más de 2.000 metros de altitud la temperatura suele ser de 10°C a 15°C más baja que en la playa. Trae chaqueta o sudadera, pantalón largo y calzado cerrado. Nosotros te damos casco, cubre-pelo y guantes.",
+        "faq.q5": "¿Tengo que pagar todo ahora o puedo pagar el día del tour?",
+        "faq.a5": "Tú eliges: pagas una señal del 30% para garantizar tu plaza y el 70% restante el día de la actividad, o lo pagas todo de una vez (te decimos cómo por WhatsApp). Si cancelas hasta 24 horas antes, te devolvemos lo pagado. Si hay mal tiempo y no puedes cambiar de día, te devolvemos el dinero.",
+        "contact.title": "¿Tienes preguntas o deseas reservar en grupo?",
+        "contact.desc": "Estamos a tu disposición todos los días para resolver cualquier duda, organizar traslados o preparar tu tour a medida.",
+        "contact.callUs": "Teléfono",
+        "contact.location": "Base de Salida",
+        "contact.ctaBoxTitle": "Respuesta rápida por WhatsApp",
+        "contact.ctaBoxDesc": "Escríbenos por WhatsApp. Comprobamos la disponibilidad y te confirmamos en un plazo de 12 a 24 horas.",
+        "act.teide": "Teide Tour (aprox. 4h)",
+        "act.sunset": "Sunset Experience (aprox. 4h)",
+        "act.vip": "Tour VIP en pareja con comida",
+        "act.parasailing": "Parasailing",
+        "act.catamaran": "Catamarán 3h",
+        "act.charter": "Catamarán privado 3h",
+        "opt.qdouble": "1 Quad Doble (2 personas)",
+        "opt.qsingle": "1 Quad Individual (1 persona)",
+        "opt.q2double": "2 Quads Dobles (4 personas)",
+        "opt.q2single": "2 Quads Individuales (2 personas)",
+        "opt.qbig": "Grupo grande (+5 personas)",
+        "opt.vippair": "Tour VIP en pareja, 2 personas (comida incluida)",
+        "opt.p1": "1 persona", "opt.p2": "2 personas", "opt.p3": "3 personas", "opt.p4": "4 personas",
+        "opt.a1": "1 adulto", "opt.a2": "2 adultos", "opt.a2n1": "2 adultos + 1 niño (2–12)", "opt.a2n2": "2 adultos + 2 niños (2–12)", "opt.agrp": "Grupo (consultar)",
+        "opt.priv": "Barco entero, hasta 22 personas",
+        "calc.locDirect": "Iré directo a Las Chafiras",
+        "meet.colon3": "Puerto Colón, pantalán 3 (Costa Adeje)",
+        "meet.colon4": "Puerto Colón, pantalán 4 (Costa Adeje)",
+        "calc.undecided": "por decidir",
+        "calc.onRequest": "A consultar",
+        "calc.payFullWa": "todo de una vez",
+        "cal.prev": "Mes anterior",
+        "cal.next": "Mes siguiente",
+        "footer.reqs": "Requisitos",
+        "footer.faq": "Preguntas",
+        "footer.contact": "Contacto",
+        "float.cta": "¿Dudas? Reserva por WhatsApp",
+        "nav.bookSpot": "Reservar Plaza",
+        "brand.subline": "Tu aventura empieza aquí",
+        "contact.quickBtn": "Hablar por WhatsApp Ahora",
+        "wa.hi": "¡Hola! Reservo desde la web (Ref: VIP-30).",
+        "wa.act": "Actividad",
+        "wa.opt": "Opción",
+        "wa.day": "Día",
+        "wa.time": "Hora",
+        "wa.hotel": "Hotel/Zona",
+        "wa.meet": "Punto de encuentro",
+        "wa.total": "Total",
+        "wa.pay": "Pago",
+        "wa.name": "Nombre",
+        "wa.payDeposit": "señal",
+        "wa.payDepositNow": "ahora +",
+        "wa.payRest": "el día de la actividad",
+        "wa.close": "¿Me confirmáis la disponibilidad? Sé que se confirma en 12-24 h. ¡Gracias!",
+        "wa.t.teide": "Quiero reservar el Teide Tour en quad. ¿Tenéis plazas?",
+        "wa.t.sunset": "Quiero reservar el Sunset Experience en quad. ¿Tenéis plazas?",
+        "wa.t.vip": "Quiero reservar el Tour VIP en pareja.",
+        "wa.t.parasailing": "Quiero reservar Parasailing. ¿Tenéis plazas?",
+        "wa.t.catamaran": "Quiero reservar el Catamarán de 3 horas. ¿Tenéis plazas?",
+        "wa.t.charter": "Quiero reservar el Catamarán privado. ¿Tenéis plazas?",
+        "wa.t.general": "Quiero consultar disponibilidad para un tour en quad."
+      },
+      en: {
+        "price.twoPeople": "2 people",
+        "faq.a6": "All bookings are subject to availability. When you message us, we check places with the activity provider and confirm on WhatsApp within 12 to 24 hours. You only pay the deposit after we confirm.",
+        "faq.q6": "When will my booking be confirmed?",
+        "calc.availability": "⏳ Subject to availability · confirmation within 12–24 h · you only pay the deposit once we confirm",
+        "calc.payFull": "Pay in full",
+        "calc.payDeposit": "30% now + 70% on the day",
+        "calc.lblPay": "7. Payment",
+        "reviews.source": "adventurers with Quad Tenerife",
+        "tours.legal": "<strong>Fully legal company</strong>, insurance and fuel included. Beware of cheap street quad offers: many have no insurance.",
+        "sea.charter.p3": "Snorkelling and swim stop included",
+        "sea.charter.p2": "Food, drinks and your own music",
+        "sea.charter.p1": "Up to 22 people",
+        "sea.charter.price": "€765 for the whole boat",
+        "sea.charter.desc": "The whole catamaran just for your group for 3 hours: birthdays, hen and stag parties or family gatherings.",
+        "sea.charter.title": "Private catamaran",
+        "sea.catamaran.p3": "Departures 9:30 and 12:30 from Puerto Colón",
+        "sea.catamaran.p2": "Snorkel gear included",
+        "sea.catamaran.p1": "Food and drinks on board",
+        "sea.catamaran.price": "Adult €50 · Child (2–12) €40",
+        "sea.catamaran.desc": "Sail along Costa Adeje with a swim and snorkel stop in a cove and the chance to see dolphins and whales.",
+        "sea.catamaran.title": "3-hour catamaran",
+        "sea.parasailing.p3": "Departs from Puerto Colón (Costa Adeje)",
+        "sea.parasailing.p2": "Life jacket, insurance and boat ride included",
+        "sea.parasailing.p1": "≈ 10 min in the air · 40 min in total",
+        "sea.parasailing.price": "€60 / person",
+        "sea.parasailing.desc": "Fly up to 100 metres above the sea off Costa Adeje, towed by a speedboat. From age 3, no swimming required.",
+        "sea.parasailing.title": "Parasailing",
+        "sea.operated": "With",
+        "sea.desc": "From Puerto Colón, Costa Adeje. With trusted local companies and the same service: book on WhatsApp in your language.",
+        "sea.title": "Sea activities",
+        "sea.eyebrow": "More adventures",
+        "nav.sea": "Sea",
+        "calc.deposit": "To book you pay",
+        "calc.grpSea": "🌊 Sea activities",
+        "calc.grpQuad": "🏍️ Quad to Teide",
+        "calc.lblMeet": "5. Meeting point",
+        "perks.stopCafe": "Stop where you can grab a coffee or a snack",
+        "btn.calendar": "Choose day & time",
+        "calc.lblName": "6. Your name",
+        "calc.slotAfternoon": "Afternoon",
+        "calc.slotMorning": "Morning",
+        "calc.lblSlot": "4. Time",
+        "paella.eyebrow": "Only with Let's Go Tenerife",
+        "paella.title": "Quad + Paella in Nature",
+        "paella.desc": "After your Teide quad tour, an authentic paella cooked on the spot by our paella chef awaits you in a picnic area surrounded by pine trees.",
+        "paella.storyTitle": "Quad in the morning, <em>paella</em> at lunch",
+        "paella.storyText": "Seafood, mixed or vegetable paella, cooked over the fire in a giant pan. The real Spanish experience your friends will envy.",
+        "paella.p1": "Guided quad tour to Mount Teide",
+        "paella.p2": "Paella cooked on the spot by an expert chef",
+        "paella.p3": "Lunch in a picnic area in the middle of nature",
+        "paella.cta": "Ask for price and dates",
+        "paella.note": "Limited places. Not available on fire-alert days.",
+        "ticker.text": "🌋 Quad to Teide · 🪂 Parasailing · ⛵ Catamaran — Book on WhatsApp in your language",
+        "nav.calc": "Calculator & Booking",
+        "nav.tours": "Quad Tours",
+        "nav.compare": "Why Us",
+        "nav.requirements": "Requirements",
+        "nav.reviews": "Reviews",
+        "nav.faq": "FAQ",
+        "nav.contact": "Contact",
+        "nav.bookNow": "Book Now",
+        "hero.badge": "Over 1,500 adventurers have explored Teide by quad",
+        "hero.title": "Feel the Thrill of Mount Teide on a <span>Quad</span>",
+        "hero.subtitle": "Discover surreal volcanic landscapes, seas of clouds and cinematic sunsets in Teide National Park. Guided small-group tours with free pick-up across the south, from Golf del Sur to Callao Salvaje.",
+        "hero.ctaPrimary": "Book now",
+        "hero.ctaSecondary": "Chat on WhatsApp Now",
+        "hero.f1": "Free Pick-up in the South",
+        "hero.f2": "Fuel & Insurance Included",
+        "hero.f3": "Groups of 1 to 9 People",
+        "hero.f4": "Helmet, Hair Cover & Gloves",
+        "calc.title": "📅 Book Your Adventure",
+        "calc.subtitle": "Pick activity, day and time in 1 minute. Booking subject to availability: we confirm on WhatsApp within 12 to 24 hours.",
+        "calc.promoTag": "Active Code: <strong>VIP-30</strong> (Free pick-up in the south)",
+        "calc.lblTour": "1. Choose your activity",
+        "calc.lblType": "2. Option",
+        "calc.lblDate": "3. Choose your day",
+        "calc.lblHotel": "5. Pick-up Area",
+        "calc.total": "Estimated Total:",
+        "calc.payOnArrival": "✓ 30% deposit and 70% on the day, or pay in full · free cancellation up to 24 h before",
+        "calc.btnWa": "Book now",
+        "tours.eyebrow": "Unforgettable Adventures",
+        "tours.title": "Our Guided Quad Tours",
+        "tours.desc": "Departures at 10:00 and 14:00 (hotel pick-up between 9:00–9:15 or 13:00–13:15). Approx. 4 hours. Includes guide, helmet, hair cover, gloves, fuel, insurance and free pick-up in the south.",
+        "tours.t1.badge": "🔥 Best Seller",
+        "tours.t1.desc": "Our signature adventure. Ride through Vilaflor pine forest up to Mount Teide's volcanic heart, surrounded by lunar vistas at 2,400 meters altitude.",
+        "tours.t2.badge": "🌅 Magic Sunset",
+        "tours.t2.desc": "Afternoon ride in golden light across volcanic landscapes, with views over the sea of clouds and the Atlantic Ocean.",
+        "tours.t3.badge": "💑 Couples Experience",
+        "tours.t3.desc": "A private tour just for you and your partner: an exclusive Teide route with your own guide and lunch included at a restaurant. The perfect plan for a special occasion.",
+        "perks.guide": "Professional guide & safety briefing",
+        "perks.gear": "Helmet, hair cover & gloves included",
+        "perks.transfer": "Free minibus pick-up (Golf del Sur – Callao Salvaje)",
+        "perks.stops": "Scenic photo stops at volcanic lookouts",
+        "perks.sunset": "Breathtaking sunset above the clouds",
+        "perks.smallGroups": "Exclusive ultra-small group experience",
+        "perks.privateGuide": "Private route just for the two of you, with a guide",
+        "perks.flexSchedule": "Flexible timing to fit your holiday",
+        "perks.catering": "Lunch included at a restaurant",
+        "perks.tailor": "Ideal for anniversaries, honeymoons or proposals",
+        "price.single": "Single Quad (1 rider)",
+        "price.double": "Double Quad (2 riders)",
+        "price.startingFrom": "Special Price",
+        "price.from280": "From €280",
+        "price.format": "Price per couple",
+        "btn.bookNow": "Book Now",
+        "btn.bookWa": "Book via WhatsApp",
+        "btn.customizeVip": "Customize VIP Tour",
+        "comp.eyebrow": "Top Quality Standards",
+        "comp.title": "Quad Tenerife vs Street Kiosks & Mass OTAs",
+        "comp.desc": "Do not risk your holiday experience. See why savvy travelers book directly with us.",
+        "comp.feature": "Feature / Benefit",
+        "comp.streetKiosks": "Street Kiosks & Mass Agencies",
+        "comp.r1": "Group Size",
+        "comp.r2": "Helmet, Hair Cover & Gloves",
+        "comp.r3": "Hotel Pick-up & Return",
+        "comp.r4": "Payment Flexibility",
+        "comp.r5": "Fuel & Insurance Included",
+        "safety.eyebrow": "Safety & Trust",
+        "safety.title": "Driving Requirements",
+        "safety.desc": "We want you to enjoy the experience with total peace of mind: insurance, fuel and gear included.",
+        "safety.c1.title": "Category B Driving License",
+        "safety.c1.desc": "Must present original physical driver's license (standard car license) with at least 2 years of experience.",
+        "safety.c2.title": "Minimum Age: 25+ Years",
+        "safety.c2.desc": "Drivers must be 25 years or older. Passengers can be younger (minimum age 7 years old).",
+        "safety.c3.title": "Insurance included",
+        "safety.c3.desc": "All quads are insured, and fuel is included in the price too.",
+        "safety.c4.title": "Certified Safety Gear",
+        "safety.c4.desc": "We provide an approved helmet, hair cover and gloves. Before departure there is a video briefing; on the route you ride in line behind the guide, follow their signals and don't use your phone while driving.",
+        "reviews.count": "Read what they say about the tours on Google.",
+        "reviews.btn": "<i class=\"fa-brands fa-google\"></i> See reviews on Google",
+        "gallery.eyebrow": "Unforgettable Moments",
+        "gallery.title": "Adventure Gallery",
+        "gallery.desc": "The Teide landscapes and the quad adventure waiting for you.",
+        "faq.eyebrow": "Common Questions",
+        "faq.title": "Frequently Asked Questions",
+        "faq.desc": "Everything you need to know before your Teide quad tour.",
+        "faq.q1": "Do you offer free hotel pick-up?",
+        "faq.a1": "Yes. Pick-up and drop-off are free in our 9-seat minibus across the south: from Golf del Sur to Callao Salvaje (Los Cristianos, Las Américas, Costa Adeje…). We confirm the exact time when you book.",
+        "faq.q2": "What driving license do I need?",
+        "faq.a2": "You only need a regular car driving license (Category B) with at least 2 years of holding. Valid for UK, EU and international licenses.",
+        "faq.q3": "Can children or passengers join the tour?",
+        "faq.a3": "Yes! On double quads, two people can ride together. The driver must meet the 25+ age & license rules, while the passenger can be anyone aged 7 or older.",
+        "faq.q4": "What should I wear? Is it cold at Mount Teide?",
+        "faq.a4": "Above 2,000 m it is usually 10°C to 15°C cooler than at the beach. Bring a jacket or hoodie, long trousers and closed shoes. We provide helmet, hair cover and gloves.",
+        "faq.q5": "Do I have to pay upfront or can I pay on arrival?",
+        "faq.a5": "Your choice: pay a 30% deposit to secure your spot and the remaining 70% on the day, or pay everything at once (we tell you how on WhatsApp). Cancel up to 24 hours before and we refund what you paid. If the weather is bad and you can't change the date, we refund you.",
+        "contact.title": "Have questions or planning a group tour?",
+        "contact.desc": "We are available every day to assist you, organize hotel transfers or design your bespoke tour.",
+        "contact.callUs": "Telephone",
+        "contact.location": "Base Location",
+        "contact.ctaBoxTitle": "Quick reply on WhatsApp",
+        "contact.ctaBoxDesc": "Message us on WhatsApp. We check availability and confirm within 12 to 24 hours.",
+        "act.teide": "Teide Tour (approx. 4h)",
+        "act.sunset": "Sunset Experience (approx. 4h)",
+        "act.vip": "Private couples VIP tour with lunch",
+        "act.parasailing": "Parasailing",
+        "act.catamaran": "3-hour catamaran",
+        "act.charter": "Private catamaran 3h",
+        "opt.qdouble": "1 double quad (2 people)",
+        "opt.qsingle": "1 single quad (1 person)",
+        "opt.q2double": "2 double quads (4 people)",
+        "opt.q2single": "2 single quads (2 people)",
+        "opt.qbig": "Large group (+5 people)",
+        "opt.vippair": "VIP tour for two, lunch included",
+        "opt.p1": "1 person", "opt.p2": "2 people", "opt.p3": "3 people", "opt.p4": "4 people",
+        "opt.a1": "1 adult", "opt.a2": "2 adults", "opt.a2n1": "2 adults + 1 child (2–12)", "opt.a2n2": "2 adults + 2 children (2–12)", "opt.agrp": "Group (on request)",
+        "opt.priv": "Whole boat, up to 22 people",
+        "calc.locDirect": "I'll come straight to Las Chafiras",
+        "meet.colon3": "Puerto Colón, pier 3 (Costa Adeje)",
+        "meet.colon4": "Puerto Colón, pier 4 (Costa Adeje)",
+        "calc.undecided": "flexible on date",
+        "calc.onRequest": "On request",
+        "calc.payFullWa": "paid in full",
+        "cal.prev": "Previous month",
+        "cal.next": "Next month",
+        "footer.reqs": "Requirements",
+        "footer.faq": "FAQ",
+        "footer.contact": "Contact",
+        "float.cta": "Questions? Book on WhatsApp",
+        "nav.bookSpot": "Book Your Spot",
+        "brand.subline": "Your adventure starts here",
+        "contact.quickBtn": "Chat on WhatsApp Now",
+        "wa.hi": "Hi! I'd like to book from the website (Ref: VIP-30).",
+        "wa.act": "Activity",
+        "wa.opt": "Option",
+        "wa.day": "Day",
+        "wa.time": "Time",
+        "wa.hotel": "Hotel/Area",
+        "wa.meet": "Meeting point",
+        "wa.total": "Total",
+        "wa.pay": "Payment",
+        "wa.name": "Name",
+        "wa.payDeposit": "deposit",
+        "wa.payDepositNow": "now +",
+        "wa.payRest": "on the day of the tour",
+        "wa.close": "Could you confirm availability? I understand confirmation takes 12–24 h. Thanks!",
+        "wa.t.teide": "I'd like to book the Teide Tour in quad. Do you have places?",
+        "wa.t.sunset": "I'd like to book the Sunset Experience in quad. Do you have places?",
+        "wa.t.vip": "I'd like to book the couples VIP tour.",
+        "wa.t.parasailing": "I'd like to book Parasailing. Do you have places?",
+        "wa.t.catamaran": "I'd like to book the 3-hour catamaran. Do you have places?",
+        "wa.t.charter": "I'd like to book the private catamaran. Do you have places?",
+        "wa.t.general": "I'd like to check availability for a quad tour."
+      },
+      fr: {
+        "price.twoPeople": "2 personnes",
+        "faq.a6": "Toutes les réservations sont sous réserve de disponibilité. Quand vous nous écrivez, nous vérifions les places auprès du prestataire et confirmons sur WhatsApp sous 12 à 24 heures. Vous ne payez l'acompte qu'après confirmation.",
+        "faq.q6": "Quand ma réservation est-elle confirmée ?",
+        "calc.availability": "⏳ Sous réserve de disponibilité · confirmation sous 12–24 h · vous payez l'acompte seulement après confirmation",
+        "calc.payFull": "Tout en une fois",
+        "calc.payDeposit": "30 % maintenant + 70 % sur place",
+        "calc.lblPay": "7. Paiement",
+        "reviews.source": "aventuriers avec Quad Tenerife",
+        "tours.legal": "<strong>Entreprise légale</strong>, assurance et essence incluses. Méfiez-vous des quads bon marché vendus dans la rue : beaucoup ne sont pas assurés.",
+        "sea.charter.p3": "Snorkeling et baignade inclus",
+        "sea.charter.p2": "Repas, boissons et musique au choix",
+        "sea.charter.p1": "Jusqu'à 22 personnes",
+        "sea.charter.price": "765 € le bateau entier",
+        "sea.charter.desc": "Le catamaran rien que pour votre groupe pendant 3 heures : anniversaires, EVJF/EVG ou réunions de famille.",
+        "sea.charter.title": "Catamaran privé",
+        "sea.catamaran.p3": "Départs 9h30 et 12h30 de Puerto Colón",
+        "sea.catamaran.p2": "Équipement de snorkeling inclus",
+        "sea.catamaran.p1": "Repas et boissons à bord",
+        "sea.catamaran.price": "Adulte 50 € · Enfant (2–12) 40 €",
+        "sea.catamaran.desc": "Naviguez le long de Costa Adeje avec baignade et snorkeling dans une crique et la possibilité de voir dauphins et baleines.",
+        "sea.catamaran.title": "Catamaran 3 heures",
+        "sea.parasailing.p3": "Départ de Puerto Colón (Costa Adeje)",
+        "sea.parasailing.p2": "Gilet, assurance et balade en bateau inclus",
+        "sea.parasailing.p1": "≈ 10 min en l'air · 40 min au total",
+        "sea.parasailing.price": "60 € / personne",
+        "sea.parasailing.desc": "Volez jusqu'à 100 mètres au-dessus de la mer de Costa Adeje, tiré par un bateau. Dès 3 ans, pas besoin de savoir nager.",
+        "sea.parasailing.title": "Parachute ascensionnel",
+        "sea.operated": "Avec",
+        "sea.desc": "Depuis Puerto Colón, à Costa Adeje. Avec des entreprises locales de confiance et le même service : réservation sur WhatsApp dans votre langue.",
+        "sea.title": "Activités en mer",
+        "sea.eyebrow": "Plus d'aventures",
+        "nav.sea": "Mer",
+        "calc.deposit": "Pour réserver, vous payez",
+        "calc.grpSea": "🌊 Activités en mer",
+        "calc.grpQuad": "🏍️ Quad au Teide",
+        "calc.lblMeet": "5. Point de rendez-vous",
+        "perks.stopCafe": "Pause où prendre un café ou un sandwich",
+        "btn.calendar": "Choisir jour et horaire",
+        "calc.lblName": "6. Votre nom",
+        "calc.slotAfternoon": "Après-midi",
+        "calc.slotMorning": "Matin",
+        "calc.lblSlot": "4. Horaire",
+        "paella.eyebrow": "Uniquement avec Let's Go Tenerife",
+        "paella.title": "Quad + Paella en Pleine Nature",
+        "paella.desc": "Après la sortie en quad au Teide, une vraie paella préparée sur place par notre chef vous attend dans une aire de pique-nique entourée de pins.",
+        "paella.storyTitle": "Quad le matin, <em>paella</em> à midi",
+        "paella.storyText": "Paella aux fruits de mer, mixte ou aux légumes, cuite sur le feu dans une poêle géante. La vraie expérience espagnole.",
+        "paella.p1": "Sortie en quad au Teide avec guide",
+        "paella.p2": "Paella préparée sur place par un chef expert",
+        "paella.p3": "Repas dans une aire de pique-nique en pleine nature",
+        "paella.cta": "Demandez prix et dates",
+        "paella.note": "Places limitées. Non disponible les jours d'alerte incendie.",
+        "ticker.text": "🌋 Quad au Teide · 🪂 Parachute ascensionnel · ⛵ Catamaran — Réservez sur WhatsApp dans votre langue",
+        "nav.calc": "Calculateur & Réservation",
+        "nav.tours": "Excursions",
+        "nav.compare": "Pourquoi Nous",
+        "nav.requirements": "Conditions",
+        "nav.reviews": "Avis",
+        "nav.faq": "FAQ",
+        "nav.contact": "Contact",
+        "nav.bookNow": "Réserver",
+        "hero.badge": "Plus de 1 500 aventuriers ont exploré le Teide en quad",
+        "hero.title": "Ressentez l'adrénaline du Teide en <span>Quad</span>",
+        "hero.subtitle": "Découvrez des paysages volcaniques lunaires, des mers de nuages et des couchers de soleil inoubliables dans le Parc National du Teide. Sorties guidées en petits groupes avec prise en charge gratuite dans le sud, de Golf del Sur à Callao Salvaje.",
+        "hero.ctaPrimary": "Réserver",
+        "hero.ctaSecondary": "Discuter sur WhatsApp Direct",
+        "hero.f1": "Prise en Charge Gratuite au Sud",
+        "hero.f2": "Essence et Assurance Incluses",
+        "hero.f3": "Groupes de 1 à 9 Personnes",
+        "hero.f4": "Casque, Charlotte et Gants",
+        "calc.title": "📅 Réservez votre Aventure",
+        "calc.subtitle": "Choisissez activité, jour et horaire en 1 minute. Réservation sous réserve de disponibilité : confirmation sur WhatsApp sous 12 à 24 heures.",
+        "calc.promoTag": "Code Actif : <strong>VIP-30</strong> (Prise en charge gratuite au sud)",
+        "calc.lblTour": "1. Choisissez votre activité",
+        "calc.lblType": "2. Option",
+        "calc.lblDate": "3. Choisissez le jour",
+        "calc.lblHotel": "5. Zone de prise en charge",
+        "calc.total": "Total Estimé :",
+        "calc.payOnArrival": "✓ Acompte de 30 % et 70 % le jour J, ou tout en une fois · annulation gratuite jusqu'à 24 h avant",
+        "calc.btnWa": "Réserver",
+        "tours.eyebrow": "Aventures Inoubliables",
+        "tours.title": "Nos Excursions en Quad",
+        "tours.desc": "Départs à 10h00 et 14h00 (prise en charge à l'hôtel entre 9h00–9h15 ou 13h00–13h15). Environ 4 heures. Inclut guide, casque, charlotte, gants, essence, assurance et prise en charge gratuite dans le sud.",
+        "tours.t1.badge": "🔥 Best Seller",
+        "tours.t1.desc": "Notre excursion phare. Traversez la forêt de pins de Vilaflor jusqu'au cœur volcanique du Teide au milieu de paysages lunaires grandioses à 2 400 m d'altitude.",
+        "tours.t2.badge": "🌅 Coucher de Soleil Féerique",
+        "tours.t2.desc": "Balade l'après-midi dans une lumière dorée à travers les paysages volcaniques, avec vue sur la mer de nuages et l'océan Atlantique.",
+        "tours.t3.badge": "💑 Escapade en Couple",
+        "tours.t3.desc": "Une excursion privée rien que pour vous deux : itinéraire exclusif au Teide avec guide et repas inclus au restaurant. Le plan idéal pour une occasion spéciale.",
+        "perks.guide": "Guide professionnel et briefing sécurité",
+        "perks.gear": "Casque, charlotte et gants inclus",
+        "perks.transfer": "Prise en charge gratuite en minibus (Golf del Sur – Callao Salvaje)",
+        "perks.stops": "Arrêts panoramiques photos aux miradors",
+        "perks.sunset": "Coucher de soleil au-dessus des nuages",
+        "perks.smallGroups": "Groupes très réduits et conviviaux",
+        "perks.privateGuide": "Itinéraire privé rien que pour vous deux, avec guide",
+        "perks.flexSchedule": "Horaires flexibles selon vos vacances",
+        "perks.catering": "Repas inclus au restaurant",
+        "perks.tailor": "Idéal pour anniversaires, lunes de miel ou demandes en mariage",
+        "price.single": "Quad Simple",
+        "price.double": "Quad Double (2 pers)",
+        "price.startingFrom": "Prix Spécial",
+        "price.from280": "À partir de 280 €",
+        "price.format": "Prix par couple",
+        "btn.bookNow": "Réserver Maintenant",
+        "btn.bookWa": "Réserver sur WhatsApp",
+        "btn.customizeVip": "Personnaliser le Tour VIP",
+        "comp.eyebrow": "Excellence & Confort",
+        "comp.title": "Quad Tenerife vs Kiosques de Rue & OTAs",
+        "comp.desc": "Ne gâchez pas vos vacances. Découvrez pourquoi les voyageurs avisés réservent directement avec nous.",
+        "comp.feature": "Avantage / Service",
+        "comp.streetKiosks": "Kiosques de Rue & Agences de Masse",
+        "comp.r1": "Taille du Groupe",
+        "comp.r2": "Casque, Charlotte et Gants",
+        "comp.r3": "Prise en Charge Hôtel",
+        "comp.r4": "Flexibilité de Paiement",
+        "comp.r5": "Essence et Assurance Incluses",
+        "safety.eyebrow": "Sécurité & Sérénité",
+        "safety.title": "Conditions de Conduite",
+        "safety.desc": "Nous voulons que vous profitiez en toute sérénité : assurance, essence et équipement inclus.",
+        "safety.c1.title": "Permis B Obligatoire",
+        "safety.c1.desc": "Le conducteur doit présenter l'original de son permis de conduire B valide, avec au moins 2 ans d'ancienneté.",
+        "safety.c2.title": "Âge Minimum : 25 Ans",
+        "safety.c2.desc": "Le conducteur doit être âgé d'au moins 25 ans. Les passagers peuvent être plus jeunes (dès 7 ans).",
+        "safety.c3.title": "Assurance incluse",
+        "safety.c3.desc": "Tous les quads sont assurés et l'essence est aussi incluse dans le prix.",
+        "safety.c4.title": "Équipement Homologué",
+        "safety.c4.desc": "Nous fournissons casque homologué, charlotte et gants. Avant le départ, briefing vidéo ; pendant la route, on roule en file derrière le guide, en respectant ses signaux et sans téléphone en conduisant.",
+        "reviews.count": "Lisez ce qu'ils pensent des excursions sur Google.",
+        "reviews.btn": "<i class=\"fa-brands fa-google\"></i> Voir les avis sur Google",
+        "gallery.eyebrow": "Souvenirs Marquants",
+        "gallery.title": "Galerie Photos",
+        "gallery.desc": "Les paysages du Teide et l'aventure en quad qui vous attendent.",
+        "faq.eyebrow": "Réponses Claires",
+        "faq.title": "Foire Aux Questions",
+        "faq.desc": "Tout ce que vous devez savoir avant votre aventure.",
+        "faq.q1": "La prise en charge à l'hôtel est-elle gratuite ?",
+        "faq.a1": "Oui. La prise en charge aller-retour est gratuite dans notre minibus de 9 places dans tout le sud : de Golf del Sur à Callao Salvaje (Los Cristianos, Las Américas, Costa Adeje…). L'heure exacte vous est confirmée à la réservation.",
+        "faq.q2": "Quel permis est requis ?",
+        "faq.a2": "Le permis de conduire voiture standard (permis B) valide depuis au moins 2 ans suffit amplement.",
+        "faq.q3": "Les enfants peuvent-ils monter en passager ?",
+        "faq.a3": "Oui ! Les passagers sont les bienvenus à partir de 7 ans sur nos quads biplaces tout confort.",
+        "faq.q4": "Fait-il froid au Teide ?",
+        "faq.a4": "Au-dessus de 2 000 m, il fait souvent 10°C à 15°C de moins qu'à la plage. Prévoyez une veste ou un sweat, un pantalon long et des chaussures fermées. Nous fournissons casque, charlotte et gants.",
+        "faq.q5": "Faut-il payer à l'avance ?",
+        "faq.a5": "À vous de choisir : un acompte de 30 % pour garantir votre place et les 70 % restants le jour J, ou tout en une fois (nous vous expliquons comment sur WhatsApp). Annulation jusqu'à 24 h avant : nous remboursons ce que vous avez payé. En cas de mauvais temps sans possibilité de changer de date, nous vous remboursons.",
+        "contact.title": "Une question ou un projet sur mesure ?",
+        "contact.desc": "Nous sommes à votre écoute 7j/7 pour vous renseigner, planifier vos transferts ou préparer votre sortie privée.",
+        "contact.callUs": "Téléphone",
+        "contact.location": "Point de Départ",
+        "contact.ctaBoxTitle": "Réponse rapide sur WhatsApp",
+        "contact.ctaBoxDesc": "Écrivez-nous sur WhatsApp. Nous vérifions la disponibilité et confirmons sous 12 à 24 heures.",
+        "act.teide": "Tour Teide (env. 4h)",
+        "act.sunset": "Sunset Experience (env. 4h)",
+        "act.vip": "Tour VIP privé en couple avec repas",
+        "act.parasailing": "Parachute ascensionnel",
+        "act.catamaran": "Catamaran 3h",
+        "act.charter": "Catamaran privé 3h",
+        "opt.qdouble": "1 quad double (2 personnes)",
+        "opt.qsingle": "1 quad simple (1 personne)",
+        "opt.q2double": "2 quads doubles (4 personnes)",
+        "opt.q2single": "2 quads simples (2 personnes)",
+        "opt.qbig": "Grand groupe (+5 personnes)",
+        "opt.vippair": "Tour VIP pour deux, repas inclus",
+        "opt.p1": "1 personne", "opt.p2": "2 personnes", "opt.p3": "3 personnes", "opt.p4": "4 personnes",
+        "opt.a1": "1 adulte", "opt.a2": "2 adultes", "opt.a2n1": "2 adultes + 1 enfant (2–12)", "opt.a2n2": "2 adultes + 2 enfants (2–12)", "opt.agrp": "Groupe (sur demande)",
+        "opt.priv": "Bateau entier, jusqu'à 22 personnes",
+        "calc.locDirect": "Je viens directement à Las Chafiras",
+        "meet.colon3": "Puerto Colón, ponton 3 (Costa Adeje)",
+        "meet.colon4": "Puerto Colón, ponton 4 (Costa Adeje)",
+        "calc.undecided": "date flexible",
+        "calc.onRequest": "Sur demande",
+        "calc.payFullWa": "tout en une fois",
+        "cal.prev": "Mois précédent",
+        "cal.next": "Mois suivant",
+        "footer.reqs": "Conditions",
+        "footer.faq": "FAQ",
+        "footer.contact": "Contact",
+        "float.cta": "Des questions ? Réservez sur WhatsApp",
+        "nav.bookSpot": "Réserver ma place",
+        "brand.subline": "Votre aventure commence ici",
+        "contact.quickBtn": "Discuter sur WhatsApp",
+        "wa.hi": "Bonjour ! Je réserve depuis le site web (Réf : VIP-30).",
+        "wa.act": "Activité",
+        "wa.opt": "Option",
+        "wa.day": "Jour",
+        "wa.time": "Horaire",
+        "wa.hotel": "Hôtel/Zone",
+        "wa.meet": "Point de rendez-vous",
+        "wa.total": "Total",
+        "wa.pay": "Paiement",
+        "wa.name": "Nom",
+        "wa.payDeposit": "acompte",
+        "wa.payDepositNow": "maintenant +",
+        "wa.payRest": "le jour de l'excursion",
+        "wa.close": "Pouvez-vous confirmer la disponibilité ? Je sais que la confirmation prend 12–24 h. Merci !",
+        "wa.t.teide": "Je voudrais réserver l'excursion en quad au Teide. Avez-vous des places ?",
+        "wa.t.sunset": "Je voudrais réserver la Sunset Experience en quad. Avez-vous des places ?",
+        "wa.t.vip": "Je voudrais réserver le Tour VIP en couple.",
+        "wa.t.parasailing": "Je voudrais réserver le parachute ascensionnel. Avez-vous des places ?",
+        "wa.t.catamaran": "Je voudrais réserver le catamaran de 3 heures. Avez-vous des places ?",
+        "wa.t.charter": "Je voudrais réserver le catamaran privé. Avez-vous des places ?",
+        "wa.t.general": "Je voudrais vérifier la disponibilité pour une sortie en quad."
+      },
+      de: {
+        "price.twoPeople": "2 Personen",
+        "faq.a6": "Alle Buchungen sind vorbehaltlich Verfügbarkeit. Wenn du uns schreibst, prüfen wir die Plätze beim Anbieter und bestätigen per WhatsApp innerhalb von 12 bis 24 Stunden. Die Anzahlung zahlst du erst nach der Bestätigung.",
+        "faq.q6": "Wann wird meine Buchung bestätigt?",
+        "calc.availability": "⏳ Vorbehaltlich Verfügbarkeit · Bestätigung in 12–24 Std. · Anzahlung erst nach unserer Bestätigung",
+        "calc.payFull": "Alles auf einmal",
+        "calc.payDeposit": "30 % jetzt + 70 % vor Ort",
+        "calc.lblPay": "7. Zahlung",
+        "reviews.source": "Abenteurer mit Quad Tenerife",
+        "tours.legal": "<strong>Legales Unternehmen</strong>, Versicherung und Benzin inklusive. Vorsicht bei billigen Quad-Angeboten auf der Straße: Viele sind nicht versichert.",
+        "sea.charter.p3": "Schnorcheln und Badestopp inklusive",
+        "sea.charter.p2": "Essen, Getränke und deine Musik",
+        "sea.charter.p1": "Bis zu 22 Personen",
+        "sea.charter.price": "765 € für das ganze Boot",
+        "sea.charter.desc": "Der ganze Katamaran nur für deine Gruppe, 3 Stunden: Geburtstage, Junggesellenabschiede oder Familienfeiern.",
+        "sea.charter.title": "Privater Katamaran",
+        "sea.catamaran.p3": "Abfahrten 9:30 und 12:30 ab Puerto Colón",
+        "sea.catamaran.p2": "Schnorchelausrüstung inklusive",
+        "sea.catamaran.p1": "Essen und Getränke an Bord",
+        "sea.catamaran.price": "Erwachsene 50 € · Kind (2–12) 40 €",
+        "sea.catamaran.desc": "Segle entlang der Küste von Costa Adeje mit Bade- und Schnorchelstopp in einer Bucht und der Chance auf Delfine und Wale.",
+        "sea.catamaran.title": "3 Stunden Katamaran",
+        "sea.parasailing.p3": "Start in Puerto Colón (Costa Adeje)",
+        "sea.parasailing.p2": "Schwimmweste, Versicherung und Bootsfahrt inklusive",
+        "sea.parasailing.p1": "≈ 10 Min. in der Luft · 40 Min. insgesamt",
+        "sea.parasailing.price": "60 € / Person",
+        "sea.parasailing.desc": "Flieg bis zu 100 Meter über dem Meer vor Costa Adeje, gezogen von einem Boot. Ab 3 Jahren, Schwimmen nicht nötig.",
+        "sea.parasailing.title": "Parasailing",
+        "sea.operated": "Mit",
+        "sea.desc": "Ab Puerto Colón in Costa Adeje. Mit vertrauenswürdigen lokalen Anbietern und gleichem Service: Buchung per WhatsApp in deiner Sprache.",
+        "sea.title": "Aktivitäten auf dem Meer",
+        "sea.eyebrow": "Mehr Abenteuer",
+        "nav.sea": "Meer",
+        "calc.deposit": "Zum Buchen zahlst du",
+        "calc.grpSea": "🌊 Aktivitäten auf dem Meer",
+        "calc.grpQuad": "🏍️ Quad zum Teide",
+        "calc.lblMeet": "5. Treffpunkt",
+        "perks.stopCafe": "Stopp für einen Kaffee oder ein Brötchen",
+        "btn.calendar": "Tag & Uhrzeit wählen",
+        "calc.lblName": "6. Dein Name",
+        "calc.slotAfternoon": "Nachmittag",
+        "calc.slotMorning": "Vormittag",
+        "calc.lblSlot": "4. Uhrzeit",
+        "paella.eyebrow": "Nur bei Let's Go Tenerife",
+        "paella.title": "Quad + Paella in der Natur",
+        "paella.desc": "Nach der Quad-Tour zum Teide wartet eine echte, frisch zubereitete Paella von unserem Paella-Koch auf dich – an einem Picknickplatz mitten im Pinienwald.",
+        "paella.storyTitle": "Morgens Quad, mittags <em>Paella</em>",
+        "paella.storyText": "Meeresfrüchte-, gemischte oder Gemüsepaella, über offenem Feuer in einer Riesenpfanne gekocht. Das echte spanische Erlebnis.",
+        "paella.p1": "Geführte Quad-Tour zum Teide",
+        "paella.p2": "Frisch gekochte Paella von einem erfahrenen Koch",
+        "paella.p3": "Essen an einem Picknickplatz mitten in der Natur",
+        "paella.cta": "Preis und Termine anfragen",
+        "paella.note": "Begrenzte Plätze. Nicht verfügbar an Tagen mit Waldbrandwarnung.",
+        "ticker.text": "🌋 Quad zum Teide · 🪂 Parasailing · ⛵ Katamaran — Buche per WhatsApp in deiner Sprache",
+        "nav.calc": "Rechner & Buchung",
+        "nav.tours": "Touren",
+        "nav.compare": "Warum Wir",
+        "nav.requirements": "Voraussetzungen",
+        "nav.reviews": "Bewertungen",
+        "nav.faq": "FAQ",
+        "nav.contact": "Kontakt",
+        "nav.bookNow": "Buchen",
+        "hero.badge": "Über 1.500 Abenteurer haben den Teide mit dem Quad erkundet",
+        "hero.title": "Spüre das Teide-Abenteuer auf dem <span>Quad</span>",
+        "hero.subtitle": "Entdecke Vulkanlandschaften, Wolkenmeere und spektakuläre Sonnenuntergänge im Teide-Nationalpark. Geführte Touren in kleinen Gruppen mit kostenloser Abholung im Süden, von Golf del Sur bis Callao Salvaje.",
+        "hero.ctaPrimary": "Jetzt buchen",
+        "hero.ctaSecondary": "Jetzt per WhatsApp anfragen",
+        "hero.f1": "Kostenlose Abholung im Süden",
+        "hero.f2": "Benzin & Versicherung inklusive",
+        "hero.f3": "Gruppen von 1 bis 9 Personen",
+        "hero.f4": "Helm, Haarschutz & Handschuhe",
+        "calc.title": "📅 Buche dein Abenteuer",
+        "calc.subtitle": "Wähle Aktivität, Tag und Uhrzeit in 1 Minute. Buchung vorbehaltlich Verfügbarkeit: Bestätigung per WhatsApp innerhalb von 12 bis 24 Stunden.",
+        "calc.promoTag": "Aktionscode: <strong>VIP-30</strong> (Kostenlose Abholung im Süden)",
+        "calc.lblTour": "1. Aktivität wählen",
+        "calc.lblType": "2. Option",
+        "calc.lblDate": "3. Tag wählen",
+        "calc.lblHotel": "5. Abholgebiet",
+        "calc.total": "Geschätzter Gesamtpreis:",
+        "calc.payOnArrival": "✓ 30 % Anzahlung und 70 % am Tag, oder alles auf einmal · kostenlose Stornierung bis 24 h vorher",
+        "calc.btnWa": "Jetzt buchen",
+        "tours.eyebrow": "Unvergessliche Erlebnisse",
+        "tours.title": "Unsere Geführten Quad-Touren",
+        "tours.desc": "Abfahrten um 10:00 und 14:00 Uhr (Abholung am Hotel zwischen 9:00–9:15 oder 13:00–13:15). Ca. 4 Stunden. Inklusive Guide, Helm, Haarschutz, Handschuhe, Benzin, Versicherung und kostenloser Abholung im Süden.",
+        "tours.t1.badge": "🔥 Bestseller",
+        "tours.t1.desc": "Unser Highlight. Fahre durch die Pinienwälder von Vilaflor hinauf ins Herz des Teide auf 2.400 Meter Höhe.",
+        "tours.t2.badge": "🌅 Magischer Sonnenuntergang",
+        "tours.t2.desc": "Nachmittagstour im goldenen Licht durch Vulkanlandschaften mit Blick auf das Wolkenmeer und den Atlantik.",
+        "tours.t3.badge": "💑 Für Paare",
+        "tours.t3.desc": "Eine private Tour nur für dich und deinen Partner: exklusive Route zum Teide mit eigenem Guide und Mittagessen im Restaurant. Der perfekte Plan für einen besonderen Anlass.",
+        "perks.guide": "Professioneller Guide & Sicherheitseinweisung",
+        "perks.gear": "Helm, Haarschutz & Handschuhe inklusive",
+        "perks.transfer": "Kostenlose Abholung im Kleinbus (Golf del Sur – Callao Salvaje)",
+        "perks.stops": "Fotostopps an spektakulären Aussichtspunkten",
+        "perks.sunset": "Sonnenuntergang über dem Wolkenmeer",
+        "perks.smallGroups": "Sehr kleine, persönliche Gruppen",
+        "perks.privateGuide": "Private Route nur für euch zwei, mit Guide",
+        "perks.flexSchedule": "Flexible Zeiten passend zu eurem Urlaub",
+        "perks.catering": "Mittagessen im Restaurant inklusive",
+        "perks.tailor": "Ideal für Jahrestage, Flitterwochen oder Heiratsanträge",
+        "price.single": "Einzel-Quad (1 Fahrer)",
+        "price.double": "Doppel-Quad (2 Pers.)",
+        "price.startingFrom": "Spezialpreis",
+        "price.from280": "Ab 280 €",
+        "price.format": "Preis pro Paar",
+        "btn.bookNow": "Jetzt Buchen",
+        "btn.bookWa": "Per WhatsApp buchen",
+        "btn.customizeVip": "VIP-Tour anpassen",
+        "comp.eyebrow": "Höchste Qualität",
+        "comp.title": "Quad Tenerife vs Straßenkioske & Massen-OTAs",
+        "comp.desc": "Gehe im Urlaub kein Risiko ein. Erfahre, warum clevere Urlauber direkt bei uns buchen.",
+        "comp.feature": "Leistung / Vorteil",
+        "comp.streetKiosks": "Straßenverkäufer & Massenagenturen",
+        "comp.r1": "Gruppengröße",
+        "comp.r2": "Helm, Haarschutz & Handschuhe",
+        "comp.r3": "Hotel-Transfer",
+        "comp.r4": "Zahlungsflexibilität",
+        "comp.r5": "Benzin & Versicherung inklusive",
+        "safety.eyebrow": "Sicherheit & Vertrauen",
+        "safety.title": "Voraussetzungen",
+        "safety.desc": "Wir möchten, dass du die Tour entspannt genießt: Versicherung, Benzin und Ausrüstung inklusive.",
+        "safety.c1.title": "Führerschein Klasse B",
+        "safety.c1.desc": "Gültiger Autoführerschein Klasse B im Original mit mindestens 2 Jahren Fahrpraxis erforderlich.",
+        "safety.c2.title": "Mindestalter: 25+ Jahre",
+        "safety.c2.desc": "Fahrer müssen mindestens 25 Jahre alt sein. Beifahrer sind ab 7 Jahren herzlich willkommen.",
+        "safety.c3.title": "Versicherung inklusive",
+        "safety.c3.desc": "Alle Quads sind versichert, und auch das Benzin ist im Preis inbegriffen.",
+        "safety.c4.title": "Geprüfte Ausrüstung",
+        "safety.c4.desc": "Wir stellen geprüften Helm, Haarschutz und Handschuhe. Vor dem Start gibt es eine Video-Einweisung; auf der Route fährst du in einer Reihe hinter dem Guide, achtest auf seine Zeichen und nutzt beim Fahren kein Handy.",
+        "reviews.count": "Lies auf Google, was sie über die Touren sagen.",
+        "reviews.btn": "<i class=\"fa-brands fa-google\"></i> Bewertungen auf Google ansehen",
+        "gallery.eyebrow": "Unvergessliche Momente",
+        "gallery.title": "Abenteuer-Galerie",
+        "gallery.desc": "Die Landschaften des Teide und das Quad-Abenteuer, das auf dich wartet.",
+        "faq.eyebrow": "Antworten",
+        "faq.title": "Häufig Gestellte Fragen",
+        "faq.desc": "Alles Wissenswerte vor deiner Quad-Tour zum Teide.",
+        "faq.q1": "Werden wir kostenlos am Hotel abgeholt?",
+        "faq.a1": "Ja. Hin- und Rückfahrt sind kostenlos in unserem 9-Sitzer-Kleinbus im ganzen Süden: von Golf del Sur bis Callao Salvaje (Los Cristianos, Las Américas, Costa Adeje…). Die genaue Uhrzeit bestätigen wir bei der Buchung.",
+        "faq.q2": "Welchen Führerschein benötige ich?",
+        "faq.a2": "Ein normaler Pkw-Führerschein (Klasse B) mit mindestens 2 Jahren Gültigkeit reicht vollkommen aus.",
+        "faq.q3": "Dürfen Kinder als Beifahrer mitfahren?",
+        "faq.a3": "Ja, ab 7 Jahren dürfen Kinder auf den bequemen Doppel-Quads mitfahren.",
+        "faq.q4": "Ist es kalt am Teide?",
+        "faq.a4": "Über 2.000 m ist es meist 10°C bis 15°C kühler als am Strand. Bring eine Jacke oder einen Pullover, lange Hose und geschlossene Schuhe mit. Helm, Haarschutz und Handschuhe bekommst du von uns.",
+        "faq.q5": "Muss ich im Voraus bezahlen?",
+        "faq.a5": "Du entscheidest: 30 % Anzahlung, um deinen Platz zu sichern, und die restlichen 70 % am Tag der Aktivität, oder alles auf einmal (wie, erklären wir dir per WhatsApp). Bei Stornierung bis 24 Stunden vorher erstatten wir den gezahlten Betrag. Bei schlechtem Wetter ohne Ersatztermin bekommst du dein Geld zurück.",
+        "contact.title": "Fragen oder Gruppenbuchung?",
+        "contact.desc": "Wir sind täglich für dich da, um Fragen zu beantworten oder deinen Privatausflug zu planen.",
+        "contact.callUs": "Telefon",
+        "contact.location": "Ausgangspunkt",
+        "contact.ctaBoxTitle": "Schnelle Antwort per WhatsApp",
+        "contact.ctaBoxDesc": "Schreib uns per WhatsApp. Wir prüfen die Verfügbarkeit und bestätigen innerhalb von 12 bis 24 Stunden.",
+        "act.teide": "Teide-Tour (ca. 4 Std.)",
+        "act.sunset": "Sunset Experience (ca. 4 Std.)",
+        "act.vip": "Private Paar-VIP-Tour mit Mittagessen",
+        "act.parasailing": "Parasailing",
+        "act.catamaran": "Katamaran 3 Std.",
+        "act.charter": "Privater Katamaran 3 Std.",
+        "opt.qdouble": "1 Doppel-Quad (2 Personen)",
+        "opt.qsingle": "1 Einzel-Quad (1 Person)",
+        "opt.q2double": "2 Doppel-Quads (4 Personen)",
+        "opt.q2single": "2 Einzel-Quads (2 Personen)",
+        "opt.qbig": "Große Gruppe (+5 Personen)",
+        "opt.vippair": "VIP-Tour für zwei, Mittagessen inklusive",
+        "opt.p1": "1 Person", "opt.p2": "2 Personen", "opt.p3": "3 Personen", "opt.p4": "4 Personen",
+        "opt.a1": "1 Erwachsener", "opt.a2": "2 Erwachsene", "opt.a2n1": "2 Erwachsene + 1 Kind (2–12)", "opt.a2n2": "2 Erwachsene + 2 Kinder (2–12)", "opt.agrp": "Gruppe (auf Anfrage)",
+        "opt.priv": "Ganzes Boot, bis zu 22 Personen",
+        "calc.locDirect": "Ich komme direkt nach Las Chafiras",
+        "meet.colon3": "Puerto Colón, Pier 3 (Costa Adeje)",
+        "meet.colon4": "Puerto Colón, Pier 4 (Costa Adeje)",
+        "calc.undecided": "Datum offen",
+        "calc.onRequest": "Auf Anfrage",
+        "calc.payFullWa": "alles auf einmal",
+        "cal.prev": "Vormonat",
+        "cal.next": "Nächster Monat",
+        "footer.reqs": "Voraussetzungen",
+        "footer.faq": "FAQ",
+        "footer.contact": "Kontakt",
+        "float.cta": "Fragen? Über WhatsApp buchen",
+        "nav.bookSpot": "Platz reservieren",
+        "brand.subline": "Dein Abenteuer beginnt hier",
+        "contact.quickBtn": "Jetzt per WhatsApp anfragen",
+        "wa.hi": "Hallo! Ich buche über die Website (Ref: VIP-30).",
+        "wa.act": "Aktivität",
+        "wa.opt": "Option",
+        "wa.day": "Tag",
+        "wa.time": "Uhrzeit",
+        "wa.hotel": "Hotel/Gegend",
+        "wa.meet": "Treffpunkt",
+        "wa.total": "Gesamt",
+        "wa.pay": "Zahlung",
+        "wa.name": "Name",
+        "wa.payDeposit": "Anzahlung",
+        "wa.payDepositNow": "jetzt +",
+        "wa.payRest": "am Tag der Tour",
+        "wa.close": "Könnt ihr die Verfügbarkeit bestätigen? Ich weiß, dass die Bestätigung 12–24 Std. dauert. Danke!",
+        "wa.t.teide": "Ich möchte die Teide-Quad-Tour buchen. Habt ihr Plätze frei?",
+        "wa.t.sunset": "Ich möchte die Sunset Experience mit dem Quad buchen. Habt ihr Plätze frei?",
+        "wa.t.vip": "Ich möchte die Paar-VIP-Tour buchen.",
+        "wa.t.parasailing": "Ich möchte Parasailing buchen. Habt ihr Plätze frei?",
+        "wa.t.catamaran": "Ich möchte den 3-Std.-Katamaran buchen. Habt ihr Plätze frei?",
+        "wa.t.charter": "Ich möchte den privaten Katamaran buchen. Habt ihr Plätze frei?",
+        "wa.t.general": "Ich möchte die Verfügbarkeit für eine Quad-Tour anfragen."
+      },
+      ru: {
+        "price.twoPeople": "2 человека",
+        "faq.a6": "Все бронирования зависят от наличия мест. Когда вы нам пишете, мы проверяем места у организатора и подтверждаем в WhatsApp в течение 12–24 часов. Задаток оплачивается только после подтверждения.",
+        "faq.q6": "Когда подтвердят мою бронь?",
+        "calc.availability": "⏳ Зависит от наличия мест · подтверждение за 12–24 ч · задаток оплачивается только после подтверждения",
+        "calc.payFull": "Всё сразу",
+        "calc.payDeposit": "30 % сейчас + 70 % на месте",
+        "calc.lblPay": "7. Оплата",
+        "reviews.source": "путешественников с Quad Tenerife",
+        "tours.legal": "<strong>Легальная компания</strong>, страховка и бензин включены. Остерегайтесь дешёвых предложений квадроциклов на улице: у многих нет страховки.",
+        "sea.charter.p3": "Снорклинг и купание включены",
+        "sea.charter.p2": "Еда, напитки и ваша музыка",
+        "sea.charter.p1": "До 22 человек",
+        "sea.charter.price": "765 € за весь катамаран",
+        "sea.charter.desc": "Весь катамаран только для вашей компании на 3 часа: дни рождения, девичники и семейные праздники.",
+        "sea.charter.title": "Частный катамаран",
+        "sea.catamaran.p3": "Отправление в 9:30 и 12:30 из Пуэрто-Колон",
+        "sea.catamaran.p2": "Снаряжение для снорклинга включено",
+        "sea.catamaran.p1": "Еда и напитки на борту",
+        "sea.catamaran.price": "Взрослый 50 € · ребёнок (2–12) 40 €",
+        "sea.catamaran.desc": "Прогулка вдоль Коста-Адехе с купанием и снорклингом в бухте и шансом увидеть дельфинов и китов.",
+        "sea.catamaran.title": "Катамаран 3 часа",
+        "sea.parasailing.p3": "Отправление из Пуэрто-Колон (Коста-Адехе)",
+        "sea.parasailing.p2": "Жилет, страховка и прогулка на катере включены",
+        "sea.parasailing.p1": "≈ 10 мин в воздухе · 40 мин всего",
+        "sea.parasailing.price": "60 € / чел.",
+        "sea.parasailing.desc": "Полёт на высоте до 100 метров над морем у Коста-Адехе за катером. С 3 лет, умение плавать не требуется.",
+        "sea.parasailing.title": "Парасейлинг",
+        "sea.operated": "С компанией",
+        "sea.desc": "Из Пуэрто-Колон в Коста-Адехе. С надёжными местными компаниями и тем же сервисом: бронирование в WhatsApp на вашем языке.",
+        "sea.title": "Морские активности",
+        "sea.eyebrow": "Больше приключений",
+        "nav.sea": "Море",
+        "calc.deposit": "Для брони вы платите",
+        "calc.grpSea": "🌊 Морские активности",
+        "calc.grpQuad": "🏍️ Квадроцикл к Тейде",
+        "calc.lblMeet": "5. Место встречи",
+        "perks.stopCafe": "Остановка, где можно выпить кофе или перекусить",
+        "btn.calendar": "Выбрать день и время",
+        "calc.lblName": "6. Ваше имя",
+        "calc.slotAfternoon": "День",
+        "calc.slotMorning": "Утро",
+        "calc.lblSlot": "4. Время",
+        "paella.eyebrow": "Только у Let's Go Tenerife",
+        "paella.title": "Квадроцикл + паэлья на природе",
+        "paella.desc": "После тура на квадроцикле к Тейде вас ждёт настоящая паэлья, приготовленная нашим поваром прямо на месте, на площадке для пикника среди сосен.",
+        "paella.storyTitle": "Утром квадроцикл, днём <em>паэлья</em>",
+        "paella.storyText": "Паэлья с морепродуктами, смешанная или овощная, приготовленная на огне в огромной сковороде. Настоящая Испания.",
+        "paella.p1": "Тур на квадроцикле к Тейде с гидом",
+        "paella.p2": "Паэлья, приготовленная на месте опытным поваром",
+        "paella.p3": "Обед на площадке для пикника на природе",
+        "paella.cta": "Узнать цену и даты",
+        "paella.note": "Количество мест ограничено. Не проводится в дни пожарной тревоги.",
+        "ticker.text": "🌋 Квадроцикл к Тейде · 🪂 Парасейлинг · ⛵ Катамаран — бронируйте в WhatsApp на русском",
+        "nav.calc": "Калькулятор и Бронь",
+        "nav.tours": "Экскурсии",
+        "nav.compare": "Почему Мы",
+        "nav.requirements": "Требования",
+        "nav.reviews": "Отзывы",
+        "nav.faq": "Частые Вопросы",
+        "nav.contact": "Контакты",
+        "nav.bookNow": "Забронировать",
+        "hero.badge": "Более 1 500 путешественников уже побывали на Тейде на квадроцикле",
+        "hero.title": "Почувствуйте адреналин Тейде на <span>Квадроцикле</span>",
+        "hero.subtitle": "Вулканические пейзажи, море облаков и невероятные закаты в национальном парке Тейде. Экскурсии с гидом в небольших группах и бесплатный трансфер на юге острова — от Гольф-дель-Сур до Кальяо-Сальвахе.",
+        "hero.ctaPrimary": "Забронировать",
+        "hero.ctaSecondary": "Написать в WhatsApp Сейчас",
+        "hero.f1": "Бесплатный трансфер на юге",
+        "hero.f2": "Бензин и страховка включены",
+        "hero.f3": "Группы от 1 до 9 человек",
+        "hero.f4": "Шлем, подшлемник и перчатки",
+        "calc.title": "📅 Забронируйте приключение",
+        "calc.subtitle": "Выберите активность, день и время за 1 минуту. Бронь зависит от наличия мест: подтвердим в WhatsApp в течение 12–24 часов.",
+        "calc.promoTag": "Активный код: <strong>VIP-30</strong> (Бесплатный трансфер на юге)",
+        "calc.lblTour": "1. Выберите активность",
+        "calc.lblType": "2. Вариант",
+        "calc.lblDate": "3. Выберите день",
+        "calc.lblHotel": "5. Место трансфера",
+        "calc.total": "Примерная Стоимость:",
+        "calc.payOnArrival": "✓ Задаток 30 % и 70 % в день активности, или всё сразу · бесплатная отмена за 24 ч",
+        "calc.btnWa": "Забронировать",
+        "tours.eyebrow": "Незабываемые Приключения",
+        "tours.title": "Наши Экскурсии на Квадроциклах",
+        "tours.desc": "Отправление в 10:00 и 14:00 (трансфер из отеля с 9:00 до 9:15 или с 13:00 до 13:15). Около 4 часов. Включены гид, шлем, подшлемник, перчатки, бензин, страховка и бесплатный трансфер на юге.",
+        "tours.t1.badge": "🔥 Хит Продаж",
+        "tours.t1.desc": "Наш главный тур. Поднимитесь через реликтовые сосновые леса Вилафлора к вулканическому сердцу Тейде на высоту 2 400 метров в окружении лунных пейзажей.",
+        "tours.t2.badge": "🌅 Закат над Облаками",
+        "tours.t2.desc": "Дневная поездка в золотом свете по вулканическим пейзажам с видом на море облаков и Атлантический океан.",
+        "tours.t3.badge": "💑 Для пар",
+        "tours.t3.desc": "Частная экскурсия только для вас двоих: эксклюзивный маршрут к Тейде с гидом и обедом в ресторане. Идеальный план для особого случая.",
+        "perks.guide": "Профессиональный гид и инструктаж по безопасности",
+        "perks.gear": "Шлем, подшлемник и перчатки включены",
+        "perks.transfer": "Бесплатный трансфер на микроавтобусе (Гольф-дель-Сур – Кальяо-Сальвахе)",
+        "perks.stops": "Остановки для фото на лучших смотровых площадках",
+        "perks.sunset": "Закат солнца над морем облаков",
+        "perks.smallGroups": "Эксклюзивные мини-группы",
+        "perks.privateGuide": "Частный маршрут только для вас двоих, с гидом",
+        "perks.flexSchedule": "Гибкое время под ваш отпуск",
+        "perks.catering": "Обед в ресторане включён",
+        "perks.tailor": "Идеально для годовщин, медового месяца или предложения руки и сердца",
+        "price.single": "Одиночный Квадроцикл (1 чел)",
+        "price.double": "Двойной Квадроцикл (2 чел)",
+        "price.startingFrom": "Специальная Цена",
+        "price.from280": "От 280 €",
+        "price.format": "Цена за пару",
+        "btn.bookNow": "Забронировать Сейчас",
+        "btn.bookWa": "Забронировать в WhatsApp",
+        "btn.customizeVip": "Настроить VIP Тур",
+        "comp.eyebrow": "Премиальное Качество",
+        "comp.title": "Quad Tenerife против Уличных Киосков и Агентств",
+        "comp.desc": "Не рискуйте своим отдыхом. Узнайте, почему опытные путешественники выбирают нас напрямую.",
+        "comp.feature": "Преимущество / Услуга",
+        "comp.streetKiosks": "Уличные Киоски и Массовые Туры",
+        "comp.r1": "Размер Группы",
+        "comp.r2": "Шлем, подшлемник и перчатки",
+        "comp.r3": "Трансфер из Отеля",
+        "comp.r4": "Гибкость Оплаты",
+        "comp.r5": "Бензин и страховка включены",
+        "safety.eyebrow": "Безопасность и Надежность",
+        "safety.title": "Требования к Водителю",
+        "safety.desc": "Мы хотим, чтобы вы наслаждались поездкой спокойно: страховка, бензин и экипировка включены.",
+        "safety.c1.title": "Водительские Права Категории B",
+        "safety.c1.desc": "Обязательно наличие оригинала водительских прав категории B со стажем вождения не менее 2 лет.",
+        "safety.c2.title": "Минимальный Возраст: 25+ Лет",
+        "safety.c2.desc": "Водитель должен быть старше 25 лет. Пассажирами могут быть взрослые и дети от 7 лет.",
+        "safety.c3.title": "Страховка включена",
+        "safety.c3.desc": "Все квадроциклы застрахованы, бензин тоже включён в стоимость.",
+        "safety.c4.title": "Сертифицированная Экипировка",
+        "safety.c4.desc": "Мы выдаём сертифицированный шлем, подшлемник и перчатки. Перед стартом — видеоинструктаж; на маршруте едут колонной за гидом, следуя его сигналам и не пользуясь телефоном за рулём.",
+        "reviews.count": "Читайте их отзывы об экскурсиях в Google.",
+        "reviews.btn": "<i class=\"fa-brands fa-google\"></i> Отзывы в Google",
+        "gallery.eyebrow": "Незабываемые моменты",
+        "gallery.title": "Галерея Приключений",
+        "gallery.desc": "Пейзажи Тейде и приключение на квадроцикле, которое вас ждёт.",
+        "faq.eyebrow": "Ответы на Вопросы",
+        "faq.title": "Часто Задаваемые Вопросы",
+        "faq.desc": "Все, что вам нужно знать перед поездкой.",
+        "faq.q1": "Трансфер из отеля действительно бесплатный?",
+        "faq.a1": "Да. Трансфер туда и обратно бесплатный, на нашем 9-местном микроавтобусе по всему югу: от Гольф-дель-Сур до Кальяо-Сальвахе (Лос-Кристианос, Лас-Америкас, Коста-Адехе…). Точное время подтвердим при бронировании.",
+        "faq.q2": "Какие водительские права нужны?",
+        "faq.a2": "Обычные водительские права на автомобиль (категория B) со стажем от 2 лет.",
+        "faq.q3": "Можно ли брать детей в качестве пассажиров?",
+        "faq.a3": "Да! На двухместном квадроцикле могут ехать 2 человека. Пассажирами могут быть дети от 7 лет.",
+        "faq.q4": "Холодно ли на Тейде и что надеть?",
+        "faq.a4": "На высоте более 2000 м обычно на 10–15°C холоднее, чем на пляже. Возьмите куртку или толстовку, длинные брюки и закрытую обувь. Шлем, подшлемник и перчатки выдаём мы.",
+        "faq.q5": "Нужно ли платить заранее?",
+        "faq.a5": "Выбирайте сами: задаток 30 %, чтобы гарантировать место, и остальные 70 % в день активности, или всё сразу (как — расскажем в WhatsApp). При отмене за 24 часа вернём оплаченное. Если из-за погоды нельзя перенести дату, вернём деньги.",
+        "contact.title": "Есть вопросы или хотите групповой тур?",
+        "contact.desc": "Мы на связи каждый день, чтобы помочь вам и организовать ваш индивидуальный отдых.",
+        "contact.callUs": "Телефон",
+        "contact.location": "База Выезда",
+        "contact.ctaBoxTitle": "Быстрый ответ в WhatsApp",
+        "contact.ctaBoxDesc": "Напишите нам в WhatsApp. Мы проверим наличие мест и подтвердим в течение 12–24 часов.",
+        "act.teide": "Тур к Тейде (ок. 4 ч)",
+        "act.sunset": "Sunset Experience (ок. 4 ч)",
+        "act.vip": "Частный VIP-тур для двоих с обедом",
+        "act.parasailing": "Парасейлинг",
+        "act.catamaran": "Катамаран 3 ч",
+        "act.charter": "Частный катамаран 3 ч",
+        "opt.qdouble": "1 двухместный квадроцикл (2 чел.)",
+        "opt.qsingle": "1 одноместный квадроцикл (1 чел.)",
+        "opt.q2double": "2 двухместных квадроцикла (4 чел.)",
+        "opt.q2single": "2 одноместных квадроцикла (2 чел.)",
+        "opt.qbig": "Большая группа (+5 чел.)",
+        "opt.vippair": "VIP-тур для двоих, обед включён",
+        "opt.p1": "1 человек", "opt.p2": "2 человека", "opt.p3": "3 человека", "opt.p4": "4 человека",
+        "opt.a1": "1 взрослый", "opt.a2": "2 взрослых", "opt.a2n1": "2 взрослых + 1 ребёнок (2–12)", "opt.a2n2": "2 взрослых + 2 детей (2–12)", "opt.agrp": "Группа (по запросу)",
+        "opt.priv": "Весь катамаран, до 22 человек",
+        "calc.locDirect": "Приеду прямо в Las Chafiras",
+        "meet.colon3": "Пуэрто-Колон, пирс 3 (Коста-Адехе)",
+        "meet.colon4": "Пуэрто-Колон, пирс 4 (Коста-Адехе)",
+        "calc.undecided": "дата уточняется",
+        "calc.onRequest": "По запросу",
+        "calc.payFullWa": "оплатить всё сразу",
+        "cal.prev": "Предыдущий месяц",
+        "cal.next": "Следующий месяц",
+        "footer.reqs": "Требования",
+        "footer.faq": "Вопросы",
+        "footer.contact": "Контакты",
+        "float.cta": "Вопросы? Бронируйте в WhatsApp",
+        "nav.bookSpot": "Забронировать место",
+        "brand.subline": "Ваше приключение начинается здесь",
+        "contact.quickBtn": "Написать в WhatsApp",
+        "wa.hi": "Здравствуйте! Хочу забронировать с сайта (Ref: VIP-30).",
+        "wa.act": "Активность",
+        "wa.opt": "Вариант",
+        "wa.day": "Дата",
+        "wa.time": "Время",
+        "wa.hotel": "Отель/Район",
+        "wa.meet": "Место встречи",
+        "wa.total": "Итого",
+        "wa.pay": "Оплата",
+        "wa.name": "Имя",
+        "wa.payDeposit": "задаток",
+        "wa.payDepositNow": "сейчас +",
+        "wa.payRest": "в день тура",
+        "wa.close": "Подтвердите наличие мест, пожалуйста. Я знаю, что подтверждение занимает 12–24 часа. Спасибо!",
+        "wa.t.teide": "Хочу забронировать тур к Тейде на квадроцикле. Есть места?",
+        "wa.t.sunset": "Хочу забронировать Sunset Experience на квадроцикле. Есть места?",
+        "wa.t.vip": "Хочу забронировать VIP-тур для двоих.",
+        "wa.t.parasailing": "Хочу забронировать парасейлинг. Есть места?",
+        "wa.t.catamaran": "Хочу забронировать 3-часовой катамаран. Есть места?",
+        "wa.t.charter": "Хочу забронировать частный катамаран. Есть места?",
+        "wa.t.general": "Хочу узнать наличие мест на тур на квадроцикле."
+      }
+    };
+
+    let currentLang = 'es';
+
+    function setLanguage(lang) {
+      if (!translations[lang]) return;
+      currentLang = lang;
+
+      // Update buttons
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.textContent.includes(lang.toUpperCase()));
+      });
+
+      // Update text
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (translations[lang][key]) {
+          el.innerHTML = translations[lang][key];
+        }
+      });
+
+      document.documentElement.lang = lang;
+      try { localStorage.setItem('letsgo_tenerife_lang', lang); } catch (e) { /* almacenamiento no disponible */ }
+      refreshCalcLanguage();
+      updateBookingCalc();
+      applyWhatsAppLinks();
+    }
+
+    // Rebuild all static WhatsApp links with the pre-filled message in the visitor's language
+    function applyWhatsAppLinks() {
+      const hello = t('wa.hi', '¡Hola! Reservo desde la web (Ref: VIP-30).');
+      document.querySelectorAll('a[data-wa]').forEach(a => {
+        const tour = a.getAttribute('data-wa');
+        const msg = hello + ' ' + t('wa.t.' + tour, '');
+        a.href = 'https://wa.me/' + CONFIG.phone + '?text=' + encodeURIComponent(msg);
+      });
+    }
+
+    function toggleMobileMenu() {
+      const drawer = document.getElementById('mobileDrawer');
+      drawer.classList.toggle('open');
+    }
+
+    function toggleFaq(el) {
+      const parent = el.parentElement;
+      parent.classList.toggle('active');
+    }
+
+    // Dynamic Booking Calculator with 30% Affiliate Tracking
+    // Activity names, options and meeting points are i18n keys resolved via t()
+    const QUAD_OPTS = [['double', 'opt.qdouble', 160], ['single', 'opt.qsingle', 130], ['2double', 'opt.q2double', 320], ['2single', 'opt.q2single', 260], ['custom', 'opt.qbig', null]];
+    const ACTS = {
+      teide:       { group: 'quad', nameKey: 'act.teide', opts: QUAD_OPTS, slots: ['10:00', '14:00'], pickup: true },
+      sunset:      { group: 'quad', nameKey: 'act.sunset', opts: QUAD_OPTS, slots: ['10:00', '14:00'], pickup: true },
+      vip:         { group: 'quad', nameKey: 'act.vip', opts: [['vip', 'opt.vippair', 280]], slots: ['10:00', '14:00'], pickup: true },
+      parasailing: { group: 'sea', nameKey: 'act.parasailing', opts: [['1', 'opt.p1', 60], ['2', 'opt.p2', 120], ['3', 'opt.p3', 180], ['4', 'opt.p4', 240]], slots: ['morning', 'afternoon'], meetKey: 'meet.colon3' },
+      catamaran:   { group: 'sea', nameKey: 'act.catamaran', opts: [['1a', 'opt.a1', 50], ['2a', 'opt.a2', 100], ['2a1n', 'opt.a2n1', 140], ['2a2n', 'opt.a2n2', 180], ['grp', 'opt.agrp', null]], slots: ['9:30', '12:30'], meetKey: 'meet.colon4' },
+      charter:     { group: 'sea', nameKey: 'act.charter', opts: [['priv', 'opt.priv', 765]], slots: ['morning', 'afternoon'], meetKey: 'meet.colon4' }
+    };
+
+    function actName(actKey) {
+      const act = ACTS[actKey];
+      return t(act.nameKey, actKey);
+    }
+    let calView = null;      // first day of the month shown
+    let calSelected = null;  // Date selected
+    let calSlot = null;
+    let payMode = 'deposit';
+
+    function pickPay(mode) {
+      payMode = mode;
+      document.querySelectorAll('.pay-btn').forEach(b => b.classList.toggle('active', b.dataset.pay === mode));
+      updateBookingCalc();
+    }
+
+    function t(key, fallback) {
+      return (translations[currentLang] && translations[currentLang][key]) || fallback;
+    }
+
+    function slotLabel(slot) {
+      if (slot === 'morning') return t('calc.slotMorning', 'Mañana');
+      if (slot === 'afternoon') return t('calc.slotAfternoon', 'Tarde');
+      return slot;
+    }
+
+    function toISO(d) {
+      return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
+    }
+
+    function buildTourSelect() {
+      const sel = document.getElementById('calcTour');
+      if (!sel) return;
+      const current = sel.value || 'teide';
+      const groups = { quad: t('calc.grpQuad', 'Quad al Teide'), sea: t('calc.grpSea', 'Actividades en el mar') };
+      sel.innerHTML = Object.entries(groups).map(([g, label]) =>
+        '<optgroup label="' + label + '">' +
+        Object.entries(ACTS).filter(([, a]) => a.group === g).map(([k, a]) => '<option value="' + k + '">' + actName(k) + '</option>').join('') +
+        '</optgroup>').join('');
+      sel.value = current;
+    }
+
+    function buildOptions() {
+      const act = ACTS[document.getElementById('calcTour').value];
+      const typeSel = document.getElementById('calcType');
+      typeSel.innerHTML = act.opts.map(([v, labelKey, price]) =>
+        '<option value="' + v + '">' + t(labelKey, labelKey) + (typeof price === 'number' ? ' - ' + price + '€' : (price ? ' - ' + price : '')) + '</option>').join('');
+      if (!act.slots.includes(calSlot)) calSlot = act.slots[0];
+      renderSlots();
+      document.getElementById('calcPickupField').hidden = !act.pickup;
+      document.getElementById('calcMeetField').hidden = !!act.pickup;
+      document.getElementById('calcMeet').textContent = act.meetKey ? t(act.meetKey, '') : '';
+    }
+
+    function renderSlots() {
+      const act = ACTS[document.getElementById('calcTour').value];
+      const icons = ['fa-sun', 'fa-cloud-sun'];
+      document.getElementById('calcSlots').innerHTML = act.slots.map((sl, i) =>
+        '<button type="button" class="slot-btn' + (sl === calSlot ? ' active' : '') + '" onclick="pickSlot(\'' + sl + '\')"><i class="fa-solid ' + icons[i % 2] + '"></i> ' + slotLabel(sl) + '</button>').join('');
+    }
+
+    function renderCalendar() {
+      const box = document.getElementById('calcCalendar');
+      if (!box) return;
+      const locale = { es: 'es-ES', en: 'en-GB', fr: 'fr-FR', de: 'de-DE', ru: 'ru-RU' }[currentLang] || 'es-ES';
+      const today = new Date(); today.setHours(0, 0, 0, 0);
+      const firstMonth = new Date(today.getFullYear(), today.getMonth(), 1);
+      const lastMonth = new Date(today.getFullYear(), today.getMonth() + 3, 1);
+      const monthRaw = calView.toLocaleDateString(locale, { month: 'long', year: 'numeric' });
+      const monthName = monthRaw.charAt(0).toUpperCase() + monthRaw.slice(1);
+      const dows = [...Array(7)].map((_, i) => new Date(2024, 0, 1 + i).toLocaleDateString(locale, { weekday: 'short' }).slice(0, 2));
+      const offset = (calView.getDay() + 6) % 7; // Monday first
+      const daysInMonth = new Date(calView.getFullYear(), calView.getMonth() + 1, 0).getDate();
+      let html = '<div class="cal-head"><button type="button" class="cal-nav" onclick="moveMonth(-1)" aria-label="' + t('cal.prev', 'Mes anterior') + '"' + (calView <= firstMonth ? ' disabled' : '') + '>‹</button><span>' + monthName + '</span><button type="button" class="cal-nav" onclick="moveMonth(1)" aria-label="' + t('cal.next', 'Mes siguiente') + '"' + (calView >= lastMonth ? ' disabled' : '') + '>›</button></div><div class="cal-grid">';
+      html += dows.map(d => '<div class="cal-dow">' + d + '</div>').join('');
+      html += '<div></div>'.repeat(offset);
+      for (let day = 1; day <= daysInMonth; day++) {
+        const date = new Date(calView.getFullYear(), calView.getMonth(), day);
+        const isPast = date <= today;
+        const isSel = calSelected && toISO(date) === toISO(calSelected);
+        html += '<button type="button" class="cal-day' + (isSel ? ' selected' : '') + '"' + (isPast ? ' disabled' : '') + ' onclick="pickDay(' + day + ')">' + day + '</button>';
+      }
+      box.innerHTML = html + '</div>';
+    }
+
+    function moveMonth(delta) {
+      calView = new Date(calView.getFullYear(), calView.getMonth() + delta, 1);
+      renderCalendar();
+    }
+
+    function pickDay(day) {
+      calSelected = new Date(calView.getFullYear(), calView.getMonth(), day);
+      document.getElementById('calcDate').value = toISO(calSelected);
+      renderCalendar();
+      updateBookingCalc();
+    }
+
+    function pickSlot(slot) {
+      calSlot = slot;
+      renderSlots();
+      updateBookingCalc();
+    }
+
+    function onTourChange() {
+      buildOptions();
+      updateBookingCalc();
+    }
+
+    function pickTour(tour) {
+      const sel = document.getElementById('calcTour');
+      if (sel && ACTS[tour]) { sel.value = tour; onTourChange(); }
+    }
+
+    function refreshCalcLanguage() {
+      if (!calView) return;
+      buildTourSelect();
+      buildOptions(); // also re-renders option labels in the new language (calls renderSlots)
+      renderCalendar();
+    }
+
+    function updateBookingCalc() {
+      const actKey = document.getElementById('calcTour').value;
+      const act = ACTS[actKey];
+      if (!act) return;
+      const optKey = document.getElementById('calcType').value;
+      const opt = act.opts.find(o => o[0] === optKey) || act.opts[0];
+      const name = (document.getElementById('calcName')?.value || '').trim();
+      const locale = { es: 'es-ES', en: 'en-GB', fr: 'fr-FR', de: 'de-DE', ru: 'ru-RU' }[currentLang] || 'es-ES';
+      const dateText = calSelected
+        ? calSelected.toLocaleDateString(locale, { weekday: 'long', day: 'numeric', month: 'long' })
+        : t('calc.undecided', 'por decidir');
+      const price = opt[2];
+      const priceText = typeof price === 'number' ? price + '€' : (price || t('calc.onRequest', 'A consultar'));
+      const deposit = typeof price === 'number' ? Math.round(price * 0.3) + '€' : '30%';
+      const rest = typeof price === 'number' ? (price - Math.round(price * 0.3)) + '€' : '70%';
+      document.getElementById('calcPriceDisplay').textContent = priceText;
+      document.getElementById('calcDeposit').textContent = payMode === 'full' ? priceText : deposit;
+      const locSel = document.getElementById('calcLocation');
+      const place = act.pickup
+        ? '• ' + t('wa.hotel', 'Hotel') + ': ' + locSel.options[locSel.selectedIndex].text
+        : '• ' + t('wa.meet', 'Punto de encuentro') + ': ' + t(act.meetKey, '');
+
+      const payText = payMode === 'full'
+        ? t('calc.payFullWa', 'todo de una vez')
+        : t('wa.payDeposit', 'señal') + ' ' + deposit + ' ' + t('wa.payDepositNow', 'ahora +') + ' ' + rest + ' ' + t('wa.payRest', 'el día de la actividad');
+
+      const waMsg = `${t('wa.hi')}
+• ${t('wa.act')}: ${actName(actKey)}
+• ${t('wa.opt')}: ${t(opt[1], opt[1])}
+• ${t('wa.day')}: ${dateText}
+• ${t('wa.time')}: ${slotLabel(calSlot)}
+${place}
+• ${t('wa.total')}: ${priceText}
+• ${t('wa.pay')}: ${payText}` + (name ? `\n• ${t('wa.name')}: ${name}` : '') + `
+${t('wa.close')}`;
+
+      document.getElementById('btnWhatsAppCalc').href = `https://wa.me/${CONFIG.phone}?text=${encodeURIComponent(waMsg)}`;
+    }
+
+    // Initialize
+    window.addEventListener('DOMContentLoaded', () => {
+      // Calendar starts on the current month, tomorrow preselected
+      const now = new Date();
+      calView = new Date(now.getFullYear(), now.getMonth(), 1);
+      const tomorrow = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
+      calView = new Date(tomorrow.getFullYear(), tomorrow.getMonth(), 1);
+      buildTourSelect();
+      buildOptions();
+      pickDay(tomorrow.getDate());
+
+      // Update all WhatsApp links to use CONFIG.phone
+      document.querySelectorAll('a[href*="wa.me"]').forEach(link => {
+        link.href = link.href.replace(/wa\.me\/\d+/, `wa.me/${CONFIG.phone}`);
+      });
+
+      // Rewrite WhatsApp pre-filled messages in the current language
+      applyWhatsAppLinks();
+
+      updateBookingCalc();
+
+      setLanguage('fr'); // Fixed language for this URL version (SEO page)
+    });
+  </script>
+</body>
+</html>
